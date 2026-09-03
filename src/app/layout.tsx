@@ -15,9 +15,9 @@ const barlow = Barlow({
 });
 
 export const metadata: Metadata = {
-  title: "Serving Good Vibes",
+  title: "Social Entertainment",
   description:
-    "Serving Good Vibes is a social entertainment company building unforgettable experiences through hospitality, events, media and community.",
+    "We build places people want to be. Social Entertainment creates and grows hospitality brands and real-world experiences that bring people together.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

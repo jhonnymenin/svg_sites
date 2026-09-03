@@ -12,7 +12,7 @@
   --color-brick-deep: #58100a;
   --color-ochre: #a8690f;
   --color-ochre-card: #9b5d02;
-  --color-ink: #141411;
+  --color-ink: #1b1712;
 
   /* Marks */
   --color-gold: #c9954a;
@@ -28,6 +28,18 @@
 
   /* Forest is near-black; icons/links on parchment need a readable mid-green */
   --color-forest-icon: #1f4536;
+
+  /* Masterbrand (Social Entertainment) palette — editorial collage / retro
+     Americana: black, cream, rust, mustard, muted teal. The SGV tokens
+     above stay in use as the "Serving Good Vibes" sub-brand's own colors,
+     reused deliberately in that one section so it reads as a distinct
+     platform inside the parent site. */
+  --color-rust: #b8502e;
+  --color-rust-deep: #8c3b21;
+  --color-mustard: #d2a02c;
+  --color-mustard-deep: #b3841e;
+  --color-teal: #4a7b74;
+  --color-teal-deep: #375d57;
 
   --radius-card: 4px;
   --radius-control: 3px;
@@ -58,6 +70,12 @@
   --color-stripe-gold: var(--color-stripe-gold);
   --color-stripe-red: var(--color-stripe-red);
   --color-forest-icon: var(--color-forest-icon);
+  --color-rust: var(--color-rust);
+  --color-rust-deep: var(--color-rust-deep);
+  --color-mustard: var(--color-mustard);
+  --color-mustard-deep: var(--color-mustard-deep);
+  --color-teal: var(--color-teal);
+  --color-teal-deep: var(--color-teal-deep);
 
   --radius-card: var(--radius-card);
   --radius-control: var(--radius-control);
@@ -66,14 +84,50 @@
   --font-text: var(--font-barlow);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-ink);
   color: var(--color-ink);
   font-family: var(--font-text), system-ui, sans-serif;
 }
 
+section[id] {
+  scroll-margin-top: 76px;
+}
+
 /* Tight, printed hairline used to flank the pillars title */
 .hairline-gold {
   background-color: var(--color-gold);
   opacity: 0.55;
+}
+
+/* Subtle paper-grain texture for the "textured paper" editorial feel */
+.paper-grain {
+  position: relative;
+}
+.paper-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* Horizontal rails: scrollable, no visible scrollbar */
+.rail {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.rail::-webkit-scrollbar {
+  display: none;
+}
+
+/* Unifies photography sourced from different shoots into one tonal grade */
+.photo-grade {
+  filter: contrast(1.06) saturate(1.1) brightness(0.98);
 }
