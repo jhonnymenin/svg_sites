@@ -1,6 +1,7 @@
 import { Container } from "./Container";
 import { MasterLogo } from "./MasterLogo";
 import { Reveal } from "./Reveal";
+import { NewsletterForm } from "./NewsletterForm";
 
 const LINKS = ["Food + Drink", "Serving Good Vibes", "Now + Next", "Our People", "SC Advising", "Contact"];
 
@@ -42,22 +43,7 @@ export function Footer() {
               Updates on openings, events, and everything good.
             </p>
           </div>
-          <form className="flex w-full max-w-md items-stretch gap-2 md:w-auto">
-            <input
-              type="email"
-              required
-              placeholder="Your email address"
-              className="min-w-0 flex-1 border border-ink/20 bg-cream px-4 py-[10px] text-[14px] text-ink placeholder:text-ink/45 transition-shadow focus:outline-none focus:ring-2 focus:ring-ink/40"
-              style={{ borderRadius: "var(--radius-control)" }}
-            />
-            <button
-              type="submit"
-              className="shrink-0 bg-ink px-6 py-[10px] font-display text-[13px] font-bold uppercase tracking-[0.06em] text-cream transition-all duration-150 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_4px_0_-1px_rgba(0,0,0,0.5)]"
-              style={{ borderRadius: "var(--radius-control)" }}
-            >
-              Subscribe
-            </button>
-          </form>
+          <NewsletterForm />
         </Container>
       </div>
 

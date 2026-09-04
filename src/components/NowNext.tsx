@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Rail } from "./Rail";
+import { Rail, RailCard } from "./Rail";
 
 type Status = "In Development" | "Now Open" | "Coming Soon" | "In Progress";
 
@@ -15,7 +15,7 @@ const PROJECTS: { name: string; status: Status; img: string; pos: string }[] = [
   { name: "Bayou Teche Brewery Downtown", status: "Now Open", img: "/nownext/brewery.jpg", pos: "50% 42%" },
   { name: "Tropical Smoothie #12", status: "Coming Soon", img: "/nownext/smoothie.jpg", pos: "50% 45%" },
   { name: "Sala Braziliana", status: "Coming Soon", img: "/nownext/sala.jpg", pos: "50% 55%" },
-  { name: "Good Vibes Mobile Bus", status: "In Progress", img: "/nownext/bus.jpg", pos: "50% 55%" },
+  { name: "Good Vibes Mobile Bus", status: "In Progress", img: "/nownext/bus.jpg", pos: "50% 85%" },
   { name: "Braziliana Poetry Booth", status: "In Progress", img: "/nownext/poetry.jpg", pos: "50% 45%" },
 ];
 
@@ -23,13 +23,8 @@ export function NowNext() {
   return (
     <section id="now-next" className="bg-ink py-10 md:py-14">
       <Rail title="Now + Next" index={3} cta={{ label: "View All Projects", href: "#" }} tone="dark">
-        {PROJECTS.map(({ name, status, img, pos }) => (
-          <a
-            key={name}
-            data-rail-card
-            href="#"
-            className="group w-[230px] shrink-0 [scroll-snap-align:start] sm:w-[250px] md:w-[270px]"
-          >
+        {PROJECTS.map(({ name, status, img, pos }, i) => (
+          <RailCard key={name} href="#" index={i} className="w-[230px] sm:w-[250px] md:w-[270px]">
             <div
               className="relative aspect-[4/5] overflow-hidden transition-transform duration-300 ease-out group-hover:-translate-y-1"
               style={{ borderRadius: "var(--radius-card)" }}
@@ -48,10 +43,18 @@ export function NowNext() {
                 {status}
               </span>
             </div>
-            <h3 className="mt-2.5 border-t border-white/12 pt-2 font-display text-[15px] font-bold uppercase leading-[1.15] text-white">
-              {name}
-            </h3>
-          </a>
+            <div className="mt-2.5 flex items-start justify-between gap-2 border-t border-white/12 pt-2">
+              <h3 className="font-display text-[15px] font-bold uppercase leading-[1.15] text-white">
+                {name}
+              </h3>
+              <span
+                aria-hidden
+                className="mt-1 shrink-0 -translate-x-1 text-mustard opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
+              >
+                →
+              </span>
+            </div>
+          </RailCard>
         ))}
       </Rail>
     </section>

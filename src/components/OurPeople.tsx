@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "./Container";
-import { Reveal } from "./Reveal";
+import { Reveal, RevealItem } from "./Reveal";
 import { SectionEyebrow } from "./SectionEyebrow";
 
 const PEOPLE = [
@@ -28,10 +28,9 @@ export function OurPeople() {
           </p>
         </Reveal>
 
-        <Reveal delay={0.1}>
-          <div className="rail mt-8 flex gap-4 overflow-x-auto px-(--gutter) -mx-(--gutter) md:mt-14 md:gap-5 md:overflow-visible md:px-0 md:mx-0">
+        <div className="rail mt-8 flex gap-4 overflow-x-auto px-(--gutter) -mx-(--gutter) md:mt-14 md:gap-5 md:overflow-visible md:px-0 md:mx-0">
             {PEOPLE.map(({ img, offset }, i) => (
-              <div key={img} className={`group w-[150px] shrink-0 sm:w-[180px] md:w-[19%] ${offset}`}>
+              <RevealItem key={img} index={i} className={`group w-[150px] shrink-0 sm:w-[180px] md:w-[19%] ${offset}`}>
                 <div
                   className="relative aspect-[3/4] overflow-hidden"
                   style={{ borderRadius: "var(--radius-card)" }}
@@ -49,10 +48,9 @@ export function OurPeople() {
                 <span className="mt-1 block font-display text-[11px] font-semibold uppercase tracking-[0.08em] text-ink/50">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-              </div>
+              </RevealItem>
             ))}
-          </div>
-        </Reveal>
+        </div>
 
         <a
           href="#"

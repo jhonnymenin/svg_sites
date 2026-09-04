@@ -1,5 +1,5 @@
 import { Container } from "./Container";
-import { Reveal } from "./Reveal";
+import { Reveal, RevealItem } from "./Reveal";
 import { SectionEyebrow } from "./SectionEyebrow";
 
 const SERVICES = [
@@ -28,7 +28,7 @@ export function SCAdvising() {
 
         <div className="mt-6 grid grid-cols-1 divide-y divide-cream/25 sm:grid-cols-2 sm:divide-y-0 sm:divide-x lg:grid-cols-4 md:mt-8">
           {SERVICES.map(({ label, detail }, i) => (
-            <div key={label} className="py-5 first:pt-0 sm:px-6 sm:py-0 sm:first:pl-0 lg:px-7">
+            <RevealItem key={label} index={i} className="py-5 first:pt-0 sm:px-6 sm:py-0 sm:first:pl-0 lg:px-7">
               <span className="font-display text-[13px] font-bold text-cream/60">
                 {String(i + 1).padStart(2, "0")}
               </span>
@@ -36,7 +36,7 @@ export function SCAdvising() {
                 {label}
               </h3>
               <p className="mt-2 text-[13.5px] leading-[1.35] text-cream/85">{detail}</p>
-            </div>
+            </RevealItem>
           ))}
         </div>
 

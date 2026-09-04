@@ -1,6 +1,6 @@
 import { Logo } from "./Logo";
 import { Container } from "./Container";
-import { Reveal } from "./Reveal";
+import { Reveal, RevealItem } from "./Reveal";
 import { SectionEyebrow } from "./SectionEyebrow";
 
 const OFFERINGS = [
@@ -40,12 +40,13 @@ export function ServingGoodVibes() {
             </a>
           </Reveal>
 
-          <Reveal className="lg:col-span-7" delay={0.1}>
+          <div className="lg:col-span-7">
             <div className="grid grid-cols-2 border-t border-gold/30 sm:grid-cols-4">
               {OFFERINGS.map((label, i) => (
-                <div
+                <RevealItem
                   key={label}
-                  className="group relative border-r border-b border-gold/30 px-4 py-6 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r sm:[&:nth-child(4n)]:border-r-0"
+                  index={i}
+                  className="group relative border-r border-b border-gold/30 px-4 py-5 transition-colors duration-200 hover:bg-white/[0.03] sm:py-6 [&:nth-child(2n)]:border-r-0 sm:[&:nth-child(2n)]:border-r sm:[&:nth-child(4n)]:border-r-0"
                 >
                   <span className="font-display text-[11px] font-semibold text-gold/70">
                     {String(i + 1).padStart(2, "0")}
@@ -59,10 +60,10 @@ export function ServingGoodVibes() {
                       →
                     </span>
                   </h3>
-                </div>
+                </RevealItem>
               ))}
             </div>
-          </Reveal>
+          </div>
         </div>
       </Container>
     </section>
