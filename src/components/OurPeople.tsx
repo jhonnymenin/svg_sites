@@ -44,8 +44,8 @@ export function OurPeople() {
                     style={{ objectPosition: "50% 25%" }}
                   />
                 </div>
-                <span aria-hidden className="mt-2 block h-[2px] w-6 bg-rust" />
-                <span className="mt-1 block font-display text-[11px] font-semibold uppercase tracking-[0.08em] text-ink/50">
+                <span aria-hidden className="mt-2 block h-[2px] w-6 bg-rust transition-[width] duration-300 group-hover:w-12" />
+                <span className="mt-1 block font-display text-[11px] font-semibold uppercase tracking-[0.08em] text-ink/50 transition-colors duration-300 group-hover:text-rust">
                   {String(i + 1).padStart(2, "0")}
                 </span>
               </RevealItem>

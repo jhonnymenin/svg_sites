@@ -26,9 +26,8 @@ export function Footer() {
     <footer className="bg-ink pt-12 md:pt-16">
       <Container>
         <Reveal>
-          <p className="max-w-3xl font-display text-[26px] font-bold uppercase leading-[1.05] text-cream sm:text-[34px] md:text-[42px]">
-            Building places. Creating experiences.
-            <br className="sm:hidden" /> Serving good vibes.
+          <p className="max-w-3xl font-display text-[26px] font-bold uppercase leading-[1.05] text-cream [text-wrap:balance] sm:text-[34px] md:text-[42px]">
+            Building places. Creating experiences. Serving good vibes.
           </p>
         </Reveal>
       </Container>

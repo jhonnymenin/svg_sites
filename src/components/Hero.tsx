@@ -99,7 +99,7 @@ export function Hero() {
 
           <motion.p
             variants={item}
-            className="mt-3 font-display text-[11.5px] font-semibold uppercase tracking-[0.07em] text-mustard md:text-[12.5px]"
+            className="mt-3 font-display text-[11.5px] font-semibold uppercase tracking-[0.07em] text-mustard [text-wrap:balance] md:text-[12.5px]"
           >
             Businesses. Investments. Experiences. Development. Community.
           </motion.p>
