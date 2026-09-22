@@ -1,0 +1,97 @@
+SGV - Landing Page Copy & Build Specification
+1
+ SERVING GOOD VIBES
+Selected homepage - copy and construction specification.
+APPROVED LP DIRECTION
+COPY + BUILD NOTES
+1. HERO
+Headline
+WE CREATE
+EXPERIENCES THAT
+BRING PEOPLE
+TOGETHER.
+Serving Good Vibes is a social entertainment company building unforgettable experiences through hospitality, events, media
+and community. We celebrate culture, connection and the spirit of good vibes.
+CTA: EXPLORE OUR WORLD
+2. FIVE WAYS WE SERVE GOOD VIBES
+  EVENTS - Signature festivals, community gatherings and unforgettable moments.
+  STAYS - Distinctive properties designed for comfort, connection and inspiration.
+  HOSPITALITY - Extraordinary hospitality experiences, food, beverages and services that make every moment special.
+  PRODUCTION & MEDIA - Stories that move people and content that creates impact.
+  COMMUNITY & DEVELOPMENT - Investing in people, culture and the future of our communities.
+ 
+3. UPCOMING EVENTS
+  Downtown Rising Music Festival
+  Braziliana Summer Fest
+  Sunset Grove Sessions
+  Independence Day Block Party
+  Braziliana FC Match Day
+  Dinner Under the Oaks
+ CTA: VIEW ALL EVENTS
+4. STAYS
+  Chez La Fête - Lafayette, Louisiana
+  Sunset Grove - Broussard, Louisiana
+  Saint John Inn - Lafayette, Louisiana
+  Camellia Cottage - Lafayette, Louisiana
+  Villa BO - São Paulo, Brazil
+  Salty Air Retreat - Pensacola Key, Florida
+ CTA: VIEW ALL PROPERTIES
+5. BRAZILIANA
+CULTURE. COMMUNITY. GOOD VIBES.
+Honoring Brazilian culture and Louisiana roots through food, music, art and experiences that bring people together.
+  Events & Cultural Exchange
+ 
+SGV - Landing Page Copy & Build Specification
+2
+ Food & Beverage
+  Sala Braziliana
+  Good Vibes Mobile
+  Merch & Subscriptions
+ CTA: EXPLORE BRAZILIANA
+6. HOSPITALITY
+  Good Vibes Photo Booth - Capture memories with style.
+  Party Rentals - Everything you need to host the perfect event.
+  Food & Beverage Operations - Exceptional food and drinks, made with passion.
+  Good Vibes Mobile - Bringing the vibes wherever we go.
+ CTA: VIEW ALL HOSPITALITY
+7. PRODUCTION & MEDIA
+  Video and Photography
+  Podcast
+  Live Streaming
+  Brand Content
+  Media Strategy
+ CTA: EXPLORE MEDIA
+8. COMMUNITY & DEVELOPMENT
+  Community Initiatives
+  Educational Programs
+  Cultural Programming
+  Economic Development
+  Volunteer Partnerships
+ CTA: EXPLORE IMPACT
+9. NEWSLETTER
+STAY IN THE LOOP
+Be the first to know about upcoming events, new experiences and special offers.
+CTA: SUBSCRIBE
+
+SGV - Landing Page Copy & Build Specification
+3
+ LP BUILD SPECIFICATION
+Executive implementation notes based on the selected visual direction.
+Element
+Direction
+Brand
+Serving Good Vibes masterbrand with the Social Entertainment relationship visible in the header.
+Visual language
+Dark, cinematic hero; cream content bands; deep green Braziliana band; navy Production & Media; warm red/gold Community & Development.
+Hero
+Full-width real event image at dusk/night. Strong condensed headline on left. One principal CTA.
+Navigation
+Events; Stays; Braziliana; Hospitality; Production & Media; Community & Development; About Us; Get in Touch.
+Architecture
+Homepage acts as a portfolio gateway. Each vertical receives a clear section, concise proposition and direct CTA.
+Cards
+Event and stay cards use real photography, short metadata and direct conversion actions.
+Imagery
+Prioritize real SGV events, venues, products and community. Maintain strong nighttime/event atmosphere where relevant.
+Footer
+Newsletter capture + complete vertical/company navigation + social channels.

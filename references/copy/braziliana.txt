@@ -1,0 +1,93 @@
+SGV - Landing Page Copy & Build Specification
+1
+ BRAZILIANA
+Selected landing page - copy and construction specification.
+APPROVED LP DIRECTION
+COPY + BUILD NOTES
+1. HERO / JOIN BRAZILIANA
+Headline
+CULTURE.
+COMMUNITY.
+GOOD VIBES.
+Braziliana is the philanthropic and community arm of Serving Good Vibes.
+Uniting people through culture, experiences, and purpose - creating positive impact in our community and beyond.
+Join form
+Be part of something bigger. Choose how you want to get involved.
+  Cultural Exchange
+  Event Participant
+  Sponsor / Partner
+ Fields: Full Name / Email Address
+CTA: JOIN BRAZILIANA
+2. SALA BRAZILIANA
+A CULTURAL LIVING ROOM
+425 JEFFERSON STREET
+A cultural destination in the heart of Lafayette. A space for art, music, community, and unforgettable experiences.
+  Live Music
+  Art Exhibitions
+  Private Events
+  Cultural Gatherings
+ CTA: DISCOVER SALA BRAZILIANA
+3. EVENTS
+Bringing people together through unforgettable experiences.
+  Annual Braziliana/SGV Benefit
+  Annual Braziliana Summer Fest
+  Workshops & Talks
+  Community Initiatives
+ CTA: SEE UPCOMING EVENTS
+4. FOOD & BEVERAGE
+Rooted in Brazilian flavors. Made with quality. Shared with good vibes.
+  Cheese Bread Bites
+  Sugarcane Juice - Fresh & Natural
+  Pilsner - Powered by Bayou Teche Downtown
+ 
+SGV - Landing Page Copy & Build Specification
+2
+ Coffee by Reve - Brazil in every cup
+ 
+5. BRAZILIANA HOUSE BAND
+The sound of Brazil.
+The soul of our community.
+The energy of our community.
+CTA: MEET THE BAND
+6. MEDIA & EXPERIENCES
+Stories that inspire. Connections that last.
+  The Good Vibes Mobile
+  The Good Vibes/Braziliana Podcast
+ CTA: EXPLORE MEDIA
+7. PRODUCTS & MERCHANDISING
+Wear it. Share it. Live the good vibes.
+  Braziliana/SGV Gift Box Subscription
+  Merchandise: shirts, hats, and mugs
+ CTA: SHOP NOW
+8. OUR PARTNERS. OUR IMPACT.
+Thank you to our amazing partners for believing in culture, community, and good vibes.
+Partner-logo wall follows the selected visual.
+9. FINAL CTA
+TOGETHER, WE CREATE Good Vibes.
+Join Braziliana and be part of a movement that celebrates culture, builds community, and creates positive change.
+CTA: JOIN BRAZILIANA
+
+SGV - Landing Page Copy & Build Specification
+3
+ LP BUILD SPECIFICATION
+Executive implementation notes based on the selected visual direction.
+Element
+Direction
+Brand hierarchy
+Braziliana is the philanthropic/community platform. Serving Good Vibes logo appears as the parent brand.
+Naming
+Always spell 'Braziliana' with Z. 'Sala Braziliana' must also use Z.
+Visual language
+Brazilian cultural collage: cream paper texture, deep green, yellow, blue and red accents; expressive illustration and bold display typography.
+Hero
+Culture-led visual with immediate Join Braziliana form. Form should remain prominent and conversion-oriented.
+Navigation
+Cultural Exchange; Sala Braziliana; Events; Food & Beverage; Braziliana House Band; Media & Experiences; Products & Merchandising; Sponsors.
+Sala Braziliana
+Dedicated feature block with logo, address, proposition and four core uses: live music, art exhibitions, private events, cultural gatherings.
+Content rhythm
+Alternate illustrated/photographic modules; strong horizontal color bands for Food & Beverage, House Band, Media and Merch.
+Partners
+Large partner-logo wall near the bottom to demonstrate ecosystem and community impact.
+Final CTA
+Repeat Join Braziliana at page end.

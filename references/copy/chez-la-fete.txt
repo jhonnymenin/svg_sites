@@ -1,0 +1,108 @@
+SGV - Landing Page Copy & Build Specification
+1
+ CHEZ LA FÊTE
+Selected landing page - copy and construction specification.
+APPROVED LP DIRECTION
+COPY + BUILD NOTES
+1. HERO
+Headline
+LAFAYETTE’S
+PREMIER DOWNTOWN
+URBAN OASIS
+A Parisian-inspired guest house & event venue in the heart of Downtown Lafayette.
+CTAs: CHECK STAY AVAILABILITY    |    INQUIRE ABOUT EVENTS
+2. STAYS
+YOUR HOME AWAY FROM HOME IN DOWNTOWN LAFAYETTE
+Chez La Fête is a historic estate that blends European charm with modern comfort. Perfect for weekend getaways, family
+vacations, or business retreats.
+  4 spacious bedrooms, 2 bathrooms
+  Sleeps up to 10 guests
+  Resort-style pool & outdoor lounge
+  Private backyard with yard games, BBQ grill, tree deck, ping pong & more
+  Sophisticated Bar Bijou & curated vinyl collection
+  Prep kitchen for cooking or catering
+  Handicap accessible throughout
+  Street & gated parking + bikes for exploring Downtown Lafayette
+ Booking module: Check-in / Check-out / Guests / CHECK AVAILABILITY
+3. PRIVATE EVENTS
+YOUR EVENT. OUR PRIVILEGE.
+From intimate celebrations to memorable corporate retreats, Chez La Fête offers a one-of-a-kind setting for unforgettable
+events in Lafayette, LA.
+  Weddings & Receptions
+  Rehearsal Dinners
+  Corporate Retreats
+  Birthday Parties & Showers
+  Milestone Celebrations
+  Private Dinners & Gatherings
+ Lead form: Event Type / Event Date / Guest Count / Name / Email / Phone / Tell us about your event / SEND INQUIRY
+4. EVENT FEATURES
+  Fête House Lounge - private, enclosed backyard available by request.
+  Fully Stocked Wet Bar - ice machine, cooler, and everything you need.
+  Stylish Piano Lounge - cozy seating, smart TV & integrated sound system.
+ 
+SGV - Landing Page Copy & Build Specification
+2
+ Outdoor Restrooms - for your guests’ convenience during events.
+ 
+5. PARTY RENTALS & ADD-ONS
+ELEVATE EVERY OCCASION.
+Through our partnership with Social Entertainment, we offer add-on services to make your stay or event truly unforgettable.
+  Photo booth rentals
+  Mobile beer service
+  Karaoke setup
+  Catering options
+  Custom event planning services
+ CTA: LEARN MORE ABOUT ADD-ONS
+6. CITY EVENTS
+EXPERIENCE LAFAYETTE.
+Chez La Fête is ideally located near Lafayette’s best festivals, concerts, dining, and cultural attractions. See what’s happening
+around the city during your stay.
+  Downtown Rising Music Festival
+  Braziliana Summer Fest
+  Sunset Grove Sessions
+  Braziliana FC Match Day
+ CTA: SEE WHAT’S HAPPENING
+7. SISTER STAYS
+MORE INCREDIBLE PLACES.
+Explore other unique properties from Serving Good Vibes, each with its own character and charm across Louisiana and
+beyond.
+  Sunset Grove - Broussard, Louisiana
+  Saint John Inn - Lafayette, Louisiana
+  Camellia Cottage - Lafayette, Louisiana
+  Salty Air Retreat - Pensacola Key, Florida
+ 
+8. PRACTICAL INFO
+  Address: 811 Lafayette Street, Lafayette, LA 70501
+  Directions: Easy access to I-10
+  Check-in / Check-out: Check-in 4:00 PM / Check-out 11:00 AM
+  Parking: Complimentary street & gated parking + bikes available
+  Policies: No smoking / No pets
+  Contact: (337) 123-4567 / stay@chezlafete.com
+ 
+9. NEWSLETTER
+STAY IN THE KNOW
+Be the first to know about special offers, exclusive events, and news from Chez La Fête.
+CTA: SUBSCRIBE
+
+SGV - Landing Page Copy & Build Specification
+3
+ LP BUILD SPECIFICATION
+Executive implementation notes based on the selected visual direction.
+Element
+Direction
+Brand hierarchy
+Chez La Fête is primary. Serving Good Vibes appears as parent endorsement: 'Part of Serving Good Vibes'.
+Visual language
+Elegant French/Louisiana hospitality: ivory background, black typography, restrained gold accents, fleur-de-lis details.
+Hero
+Large real exterior/night image. Position the dual business model immediately: stays + private events.
+Conversion
+Two separate funnels: booking availability for stays and inquiry form for events.
+Navigation
+Stays; Private Events; Party Rentals; City Events; Sister Stays; Practical Info.
+Content order
+Stay first, Events second, then add-ons, city context, sister stays and practical information.
+Photography
+Use real property photography throughout; distinguish rooms, outdoor entertaining and event setups.
+Cross-sell
+Party Rentals links to Social Entertainment/SGV services; Sister Stays links to SGV portfolio.

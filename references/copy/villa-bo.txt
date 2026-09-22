@@ -1,0 +1,105 @@
+SGV - Landing Page Copy & Build Specification
+1
+ VILLA BO
+Selected landing page - copy and construction specification.
+APPROVED LP DIRECTION
+COPY + BUILD NOTES
+1. HERO
+Headline
+Stay.
+Lifestyle.
+City
+Experience.
+A boutique stay in the heart of Jardins, São Paulo’s most desirable address.
+CTA: RESERVE YOUR STAY
+2. STAYS AT VILLA BO
+Designed for your lifestyle. Built for the city. Enjoy a seamless stay, with balancing comfort, design and convenience.
+  Contemporary design & décor
+  Prime location in Jardins
+  24-hour security & concierge
+  24-hour delivery reception
+  Pool & fitness center
+  Coworking & meeting rooms
+  Steps from the best restaurants, bars, cafés & culture
+  Near Oscar Freire metro station
+ Booking module: Check-in / Check-out / Guests / CHECK AVAILABILITY
+3. DESIGN & HOSPITALITY
+Villa BO combines contemporary design with warm hospitality to create the perfect stay.
+  Designed for lifestyle
+  Warm atmosphere
+  Natural materials
+  Complete kitchen
+  Premium linens
+  Premium towels
+ 
+4. EXCLUSIVE AMENITIES
+Everything you need. Right where you are.
+  Swimming Pool
+  Gym & Fitness
+  Coworking & Meeting Rooms
+  Meeting Rooms for Professionals
+ 
+5. PERFECTLY LOCATED
+
+SGV - Landing Page Copy & Build Specification
+2
+Live the Jardins lifestyle every day.
+  Oscar Freire - Shopping & Fashion
+  Jardins Paulista - Museums & Culture
+  Parque Ibirapuera - Nature & Leisure
+  Shopping Cidade São Paulo - Top Shopping
+  Conjunto Nacional - Landmark
+  St. Marché - Premium Market
+ 
+6. RESTAURANTS, BARS & CAFÉS
+The best of São Paulo, just steps away.
+  Restaurants: Fasano, Paris 6, Arturito, Tiquim Brabazon and many more
+  Bars: Seen São Paulo, Le Bar, TonTon, Jiquitaia and many more
+  Cafés: Suplicy, L’Etincelle, Porto Café, Santo Grão and many more
+ 
+7. MEDICAL TOURISM
+World-class care in São Paulo.
+  Sírio-Libanês
+  Hospital das Clínicas
+  InCor HCFMUSP
+  Hospital Nove de Julho
+ 
+8. THE BO - THE STORY BEHIND BO.
+BO was the nickname of one of the founders’ fathers.
+A man remembered for elegance, integrity and attention to what truly matters.
+Villa BO is a tribute to that legacy.
+9. PRACTICAL INFO
+  24/7 Security & Concierge
+  High-speed Wi-Fi
+  Self Check-in
+  Air Conditioning
+  Smart TV
+  Fully Equipped Kitchen
+  Washer & Dryer (in unit)
+  Work Space
+  Iron & Ironing Board
+  Basic Toiletries
+ Location: Rua Gabriel Monteiro da Silva, 35 - Jardins, São Paulo - SP, 01441-000
+
+SGV - Landing Page Copy & Build Specification
+3
+ LP BUILD SPECIFICATION
+Executive implementation notes based on the selected visual direction.
+Element
+Direction
+Brand
+Villa BO is primary; Serving Good Vibes appears as a discreet parent endorsement.
+Visual language
+Premium urban hospitality. Warm off-white background, terracotta/rust accent, elegant serif display type, clean editorial grid.
+Hero
+Use the selected Villa BO building/exterior imagery only - no Chez La Fête imagery. Keep architecture prominent.
+Booking
+Availability module immediately below hero with check-in, check-out and guest fields.
+Story image
+Use the original supplied BO/family photograph without altering faces or recreating the people.
+Content
+Balance property sales arguments with neighborhood, lifestyle, medical tourism and practical stay information.
+Practical info
+Public-facing amenities only. Do not publish Wi-Fi passwords or other private access credentials.
+Photography
+Real Villa BO apartment, balcony, building and amenity photography. Avoid generic substitutions.

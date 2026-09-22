@@ -1,0 +1,82 @@
+SGV - Landing Page Copy & Build Specification
+1
+ SOCIAL ENTERTAINMENT
+Selected landing page - copy and construction specification.
+APPROVED LP DIRECTION
+COPY + BUILD NOTES
+1. HERO
+Headline
+WE BUILD PLACES
+PEOPLE WANT TO BE
+Businesses. Investments. Experiences. Development. Community.
+We create and grow hospitality brands and real-world experiences that bring people together and make a lasting impact.
+CTAs
+EXPLORE PORTFOLIO    |    LEARN OUR STORY
+2. FOOD + DRINK
+A portfolio of craveable concepts and experiences that feed our communities and fuel connection.
+  Central Pizza
+  Bayou Teche Brewery Downtown
+  Tropical Smoothie
+  Reba Water
+  Saudades - cheese bread bites
+  Braziliana - sugarcane juice
+  Sala Braziliana
+ CTA: VIEW ALL BRANDS
+3. SERVING GOOD VIBES
+Serving Good Vibes is our hub for hospitality, experiences, events, media, community, catering, consulting, and the Braziliana
+cultural portfolio. It is how we bring ideas to life and culture to the community.
+  Hospitality
+  Experiences
+  Events
+  Media
+  Community
+  Catering
+  Consulting
+  Braziliana
+ CTA: ENTER SERVING GOOD VIBES
+4. NOW + NEXT
+What’s open, what’s coming, and what’s on the horizon.
+  Hotel Lafayette - In Development
+  Bayou Teche Brewery Downtown - Now Open
+  Tropical Smoothie #12 - Coming Soon
+ 
+SGV - Landing Page Copy & Build Specification
+2
+ Sala Braziliana - Coming Soon
+  Good Vibes Mobile Bus - In Progress
+  Braziliana Poetry Booth - In Progress
+ CTA: VIEW ALL PROJECTS
+5. OUR PEOPLE
+A team of builders, doers, creators, and curators who lead with heart and deliver with excellence.
+CTA: MEET THE TEAM
+6. SC ADVISING
+Strategic guidance for brands, real estate, design, operations, and growth. We help strong ideas become great businesses.
+  Strategy - market insight & brand strategy
+  Development - real estate & project advisory
+  Operations - systems, staffing & profitability
+  Growth - capital strategy & long-term value
+ CTA: LEARN MORE
+7. FOOTER / LEAD CAPTURE
+Building places. Creating experiences. Serving good vibes.
+Stay in the loop: Updates on openings, events, and everything good.
+
+SGV - Landing Page Copy & Build Specification
+3
+ LP BUILD SPECIFICATION
+Executive implementation notes based on the selected visual direction.
+Element
+Direction
+Brand hierarchy
+Social Entertainment is the parent/company brand. Serving Good Vibes appears as a major portfolio platform, not as the site masterbrand.
+Visual language
+Editorial collage / retro Americana / textured paper / black, cream, rust, mustard and muted teal. Strong condensed display typography.
+Hero
+Large left-aligned statement with architectural/hospitality collage on the right. Two primary CTAs.
+Navigation
+Food + Drink; Serving Good Vibes; Now + Next; Our People; SC Advising; Contact; Partner With Us.
+Modules
+Horizontal card rails for Food + Drink and Now + Next; people strip; SC Advising service bar; newsletter footer.
+Photography
+Real brand, venue, people and product imagery. Avoid generic stock imagery.
+CTA behavior
+Clear destination CTAs at section level; Partner With Us remains persistent in header.

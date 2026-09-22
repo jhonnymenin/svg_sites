@@ -1,31 +1,24 @@
 {
-  "name": "good-vibes-web",
-  "version": "0.1.0",
+  "name": "svg-sites",
   "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "npm@10.9.2",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "lucide-react": "^1.40.0",
-    "motion": "^13.2.0",
-    "next": "16.3.4",
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
-    "tailwind-merge": "^3.6.0"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "dev:se": "npm run dev -w @sgv/social-entertainment",
+    "dev:sgv": "npm run dev -w @sgv/serving-good-vibes",
+    "dev:braziliana": "npm run dev -w @sgv/braziliana",
+    "dev:chez": "npm run dev -w @sgv/chez-la-fete",
+    "dev:villabo": "npm run dev -w @sgv/villa-bo"
   },
   "devDependencies": {
     "@playwright/test": "^1.62.1",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.3.4",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "turbo": "^2.5.0"
   }
 }
