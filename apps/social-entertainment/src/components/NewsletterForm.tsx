@@ -2,19 +2,19 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
+import { ArrowRight, Check } from "lucide-react";
 import { EASE } from "./Reveal";
 
 /**
- * Email capture UI. No backend is wired yet — submit is handled client-side
- * so the interaction is complete; connect `onSubmit` to the real list
- * provider when it exists.
+ * Email capture. No backend is wired yet — submit is handled client-side so
+ * the interaction is complete; connect `onSubmit` to the list provider.
  */
 export function NewsletterForm() {
   const [done, setDone] = useState(false);
   const reduce = useReducedMotion();
 
   return (
-    <div className="relative w-full max-w-md md:w-auto">
+    <div className="relative mt-5 min-h-[50px]">
       <AnimatePresence mode="wait" initial={false}>
         {done ? (
           <motion.p
@@ -23,10 +23,10 @@ export function NewsletterForm() {
             initial={reduce ? false : { opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.35, ease: EASE }}
-            className="flex h-[42px] items-center gap-2 font-display text-[14px] font-bold uppercase tracking-[0.04em] text-ink"
+            className="flex h-[50px] items-center gap-3 font-label text-[17px] font-semibold uppercase tracking-[0.06em] text-cream"
           >
-            <span aria-hidden className="flex h-5 w-5 items-center justify-center bg-ink text-[11px] text-mustard">
-              ✓
+            <span aria-hidden className="flex h-7 w-7 items-center justify-center rounded-full bg-cream text-rust">
+              <Check size={16} strokeWidth={3} />
             </span>
             You&apos;re on the list.
           </motion.p>
@@ -35,7 +35,8 @@ export function NewsletterForm() {
             key="form"
             exit={reduce ? undefined : { opacity: 0, y: -6 }}
             transition={{ duration: 0.2 }}
-            className="flex items-stretch gap-2"
+            className="group/f flex h-[50px] items-stretch bg-cream shadow-[inset_0_0_0_1px_rgba(0,0,0,0.12)] focus-within:ring-2 focus-within:ring-mustard"
+            style={{ borderRadius: 2 }}
             onSubmit={(e) => {
               e.preventDefault();
               setDone(true);
@@ -49,16 +50,15 @@ export function NewsletterForm() {
               type="email"
               required
               autoComplete="email"
-              placeholder="Your email address"
-              className="min-w-0 flex-1 border border-ink/20 bg-cream px-4 py-[10px] text-[14px] text-ink placeholder:text-ink/45 transition-shadow focus:outline-none focus:ring-2 focus:ring-ink/40"
-              style={{ borderRadius: "var(--radius-control)" }}
+              placeholder="Enter your email"
+              className="min-w-0 flex-1 bg-transparent px-4 text-[15px] text-ink placeholder:text-ink/50 focus:outline-none"
             />
             <button
               type="submit"
-              className="shrink-0 bg-ink px-6 py-[10px] font-display text-[13px] font-bold uppercase tracking-[0.06em] text-cream transition-all duration-150 hover:-translate-y-[1px] hover:bg-black hover:shadow-[0_4px_0_-1px_rgba(0,0,0,0.5)] active:translate-y-0 active:shadow-none"
-              style={{ borderRadius: "var(--radius-control)" }}
+              aria-label="Subscribe"
+              className="flex w-[54px] shrink-0 items-center justify-center text-ink transition-colors duration-150 hover:bg-ink hover:text-cream"
             >
-              Subscribe
+              <ArrowRight size={20} strokeWidth={2} />
             </button>
           </motion.form>
         )}

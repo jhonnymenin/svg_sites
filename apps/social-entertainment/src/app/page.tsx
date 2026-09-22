@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { Ticker } from "@/components/Ticker";
 import { FoodDrink } from "@/components/FoodDrink";
 import { ServingGoodVibes } from "@/components/ServingGoodVibes";
 import { NowNext } from "@/components/NowNext";
@@ -10,10 +11,9 @@ import { Footer } from "@/components/Footer";
 export default function Home() {
   return (
     <main>
-      <div className="relative">
-        <Nav />
-        <Hero />
-      </div>
+      <Nav />
+      <Hero />
+      <Ticker />
       <FoodDrink />
       <ServingGoodVibes />
       <NowNext />

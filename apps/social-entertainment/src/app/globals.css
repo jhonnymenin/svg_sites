@@ -1,87 +1,72 @@
 @import "tailwindcss";
 
+/*
+  Social Entertainment — editorial collage / retro Americana.
+  Printed ink on cream paper, black grounds with dust, and four spot colours
+  used like a screen printer would: rust, mustard, muted teal, and ink.
+*/
 :root {
-  /* Fields */
-  --color-parchment: #ebe4da;
-  --color-parchment-hi: #f4efe7;
-  --color-forest: #041c0c;
-  --color-forest-card: #0b3314;
-  --color-navy: #04101b;
-  --color-navy-card: #0b2b37;
-  --color-brick: #61110c;
-  --color-brick-deep: #58100a;
-  --color-ochre: #a8690f;
-  --color-ochre-card: #9b5d02;
-  --color-ink: #1b1712;
+  /* Paper */
+  --color-paper: #ebdfc9;
+  --color-paper-hi: #f3eadb;
+  --color-paper-deep: #dccbad;
 
-  /* Marks */
-  --color-gold: #c9954a;
-  --color-gold-bright: #d9a94f;
-  --color-cream: #ebe4da;
-  --color-cream-dim: #c6bcac;
-  --color-slate-dim: #93a3b4;
+  /* Ink grounds */
+  --color-ink: #151412;
+  --color-ink-2: #1c1b18;
+  --color-ink-3: #2a2824;
+  --color-cream: #efe6d4;
 
-  /* Stripe device — brighter than the field colors so it reads on dark grounds */
-  --color-stripe-green: #0a6b2d;
-  --color-stripe-gold: #ee9708;
-  --color-stripe-red: #960e10;
+  /* Spot colours */
+  --color-rust: #a5401f;
+  --color-rust-hi: #c05a35; /* rust that holds up on black */
+  --color-rust-deep: #82311a;
+  --color-mustard: #c79237;
+  --color-mustard-deep: #9f7330;
+  --color-teal: #3b6562;
+  --color-teal-hi: #6f9790; /* teal type on black */
+  --color-teal-deep: #1f3536;
+  --color-teal-ink: #152829;
 
-  /* Forest is near-black; icons/links on parchment need a readable mid-green */
-  --color-forest-icon: #1f4536;
-
-  /* Masterbrand (Social Entertainment) palette — editorial collage / retro
-     Americana: black, cream, rust, mustard, muted teal. The SGV tokens
-     above stay in use as the "Serving Good Vibes" sub-brand's own colors,
-     reused deliberately in that one section so it reads as a distinct
-     platform inside the parent site. */
-  --color-rust: #b8502e;
-  --color-rust-deep: #8c3b21;
-  --color-mustard: #d2a02c;
-  --color-mustard-deep: #b3841e;
-  --color-teal: #4a7b74;
-  --color-teal-deep: #375d57;
-
-  --radius-card: 4px;
-  --radius-control: 3px;
-
-  /* Page frame */
-  --gutter: clamp(16px, 3.55vw, 64px);
+  --gutter: clamp(16px, 3.4vw, 56px);
   --page-max: 1520px;
+  /* left edge of the page frame, for rails that bleed off the right */
+  --edge: max(var(--gutter), calc((100vw - var(--page-max)) / 2 + var(--gutter)));
+  --header-h: 64px;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --header-h: 76px;
+  }
 }
 
 @theme inline {
-  --color-parchment: var(--color-parchment);
-  --color-parchment-hi: var(--color-parchment-hi);
-  --color-forest: var(--color-forest);
-  --color-forest-card: var(--color-forest-card);
-  --color-navy: var(--color-navy);
-  --color-navy-card: var(--color-navy-card);
-  --color-brick: var(--color-brick);
-  --color-brick-deep: var(--color-brick-deep);
-  --color-ochre: var(--color-ochre);
-  --color-ochre-card: var(--color-ochre-card);
+  --color-paper: var(--color-paper);
+  --color-paper-hi: var(--color-paper-hi);
+  --color-paper-deep: var(--color-paper-deep);
   --color-ink: var(--color-ink);
-  --color-gold: var(--color-gold);
-  --color-gold-bright: var(--color-gold-bright);
+  --color-ink-2: var(--color-ink-2);
+  --color-ink-3: var(--color-ink-3);
   --color-cream: var(--color-cream);
-  --color-cream-dim: var(--color-cream-dim);
-  --color-slate-dim: var(--color-slate-dim);
-  --color-stripe-green: var(--color-stripe-green);
-  --color-stripe-gold: var(--color-stripe-gold);
-  --color-stripe-red: var(--color-stripe-red);
-  --color-forest-icon: var(--color-forest-icon);
   --color-rust: var(--color-rust);
+  --color-rust-hi: var(--color-rust-hi);
   --color-rust-deep: var(--color-rust-deep);
   --color-mustard: var(--color-mustard);
   --color-mustard-deep: var(--color-mustard-deep);
   --color-teal: var(--color-teal);
+  --color-teal-hi: var(--color-teal-hi);
   --color-teal-deep: var(--color-teal-deep);
+  --color-teal-ink: var(--color-teal-ink);
 
-  --radius-card: var(--radius-card);
-  --radius-control: var(--radius-control);
-
-  --font-display: var(--font-oswald);
+  --font-display: var(--font-anton);
+  --font-label: var(--font-barlow-condensed);
   --font-text: var(--font-barlow);
+  --font-heavy: var(--font-archivo-black);
+  --font-script: var(--font-yellowtail);
+  --font-brush: var(--font-kaushan);
+  --font-western: var(--font-rye);
+  --font-serif: var(--font-dm-serif);
 }
 
 html {
@@ -95,27 +80,57 @@ body {
 }
 
 section[id] {
-  scroll-margin-top: 76px;
+  scroll-margin-top: calc(var(--header-h) - 8px);
 }
 
-/* Tight, printed hairline used to flank the pillars title */
-.hairline-gold {
-  background-color: var(--color-gold);
-  opacity: 0.55;
+::selection {
+  background: var(--color-mustard);
+  color: var(--color-ink);
 }
 
-/* Subtle paper-grain texture for the "textured paper" editorial feel */
-.paper-grain {
-  position: relative;
+/* ---------- Surfaces ---------- */
+
+/* Cream stock: tone + a baked, tileable paper texture (mottling, tooth, fibres). */
+.paper {
+  background-color: var(--color-paper);
+  background-image: url("/textures/paper.png");
+  background-size: 512px 512px;
 }
-.paper-grain::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  opacity: 0.05;
-  mix-blend-mode: multiply;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+
+/* Black grounds carry a little dust so they read printed, not digital. */
+.dusty {
+  background-color: var(--color-ink);
+  background-image: url("/textures/dust.png");
+  background-size: 512px 512px;
+}
+
+.dusty-teal {
+  background-color: var(--color-teal-deep);
+  background-image: url("/textures/dust.png"), url("/textures/paper.png");
+  background-size: 512px 512px, 700px 700px;
+}
+
+/* Halftone screens — spot-colour dot patches used across the collage. */
+.halftone {
+  --dot: var(--color-mustard);
+  --pitch: 12px;
+  --size: 2.4px;
+  background-image: radial-gradient(circle, var(--dot) var(--size), transparent calc(var(--size) + 0.6px));
+  background-size: var(--pitch) var(--pitch);
+}
+
+/* Worn letterpress: a few specks of ink knocked out of big display type. */
+.worn {
+  -webkit-mask-image: url("/textures/ink-wear.png");
+  mask-image: url("/textures/ink-wear.png");
+  -webkit-mask-size: 260px 260px;
+  mask-size: 260px 260px;
+}
+@media (min-width: 640px) {
+  .worn {
+    -webkit-mask-size: 400px 400px;
+    mask-size: 400px 400px;
+  }
 }
 
 /* Horizontal rails: scrollable, no visible scrollbar */
@@ -127,7 +142,140 @@ section[id] {
   display: none;
 }
 
-/* Unifies photography sourced from different shoots into one tonal grade */
+/* One grade for placeholder photography from mixed shoots: warm, a touch faded, printed. */
 .photo-grade {
-  filter: contrast(1.06) saturate(1.1) brightness(0.98);
+  filter: contrast(1.08) saturate(0.9) sepia(0.14) brightness(0.95);
+}
+
+/* ---------- Hero entrance (pure CSS so it runs even before/without JS) ----------
+   Fill mode is `backwards`, not `both`: once an entrance finishes the element
+   drops back to its own (identical) resting style and the animation layer is
+   released — full-page captures and print never catch a half-composited frame. */
+
+@keyframes se-rise {
+  from {
+    transform: translateY(105%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes se-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* a piece of paper being laid down on the board */
+@keyframes se-paste {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -18px, 0) rotate(var(--from-rot, 3deg)) scale(1.05);
+  }
+  60% {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes se-stamp {
+  0% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+  55% {
+    opacity: 1;
+    transform: scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.hero-line {
+  display: block;
+  animation: se-rise 0.95s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.hero-fade {
+  animation: se-fade-up 0.8s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.paste {
+  animation: se-paste 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+.stamp-in {
+  animation: se-stamp 0.65s cubic-bezier(0.3, 0.8, 0.3, 1) backwards;
+}
+
+/* marquee bulbs + string lights: slow, warm, never frantic */
+@keyframes se-chase {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+.bulb {
+  animation: se-chase 1.8s ease-in-out infinite;
+}
+@keyframes se-twinkle {
+  0%,
+  100% {
+    opacity: 0.95;
+  }
+  45% {
+    opacity: 0.5;
+  }
+}
+.twinkle {
+  animation: se-twinkle 3.4s ease-in-out infinite;
+}
+
+/* ---------- Ticker strip ---------- */
+@keyframes se-ticker {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.ticker-track {
+  animation: se-ticker 52s linear infinite;
+}
+.ticker:hover .ticker-track {
+  animation-play-state: paused;
+}
+
+@keyframes se-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(21, 20, 18, 0.55);
+  }
+  100% {
+    box-shadow: 0 0 0 7px rgba(21, 20, 18, 0);
+  }
+}
+.live-dot {
+  animation: se-pulse 1.8s ease-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .hero-line,
+  .hero-fade,
+  .paste,
+  .stamp-in,
+  .bulb,
+  .twinkle,
+  .ticker-track,
+  .live-dot {
+    animation: none !important;
+  }
 }

@@ -1,0 +1,31 @@
+import type { SVGProps } from "react";
+
+/**
+ * Hand-drawn fleur-de-lis — the house's punctuation mark. Drawn for this
+ * site (not a font glyph) so its weight matches the Cormorant display face.
+ * Uses currentColor; size it with width/height or font-size via className.
+ */
+export function Fleur({ title, ...props }: SVGProps<SVGSVGElement> & { title?: string }) {
+  return (
+    <svg
+      viewBox="0 0 100 112"
+      fill="currentColor"
+      aria-hidden={title ? undefined : true}
+      role={title ? "img" : undefined}
+      {...props}
+    >
+      {title ? <title>{title}</title> : null}
+      {/* central petal */}
+      <path d="M50 2c7.5 11 13.5 23.5 13.5 36.5 0 10.5-4.4 19.2-9.2 26.5h-8.6C40.9 57.7 36.5 49 36.5 38.5 36.5 25.5 42.5 13 50 2Z" />
+      {/* side petals */}
+      <path d="M41.5 66c-2.2-9.6-7.4-19.4-15.8-22.6-8.4-3.2-17.3 1-18.9 9.4-1.2 6.4 2.7 12 8.3 12.6-3.6-3.6-3.9-9-.3-11.8 4.5-3.5 11.2-.8 15.4 4.4 3.1 3.9 4.6 7.7 5.3 8Z" />
+      <path d="M58.5 66c2.2-9.6 7.4-19.4 15.8-22.6 8.4-3.2 17.3 1 18.9 9.4 1.2 6.4-2.7 12-8.3 12.6 3.6-3.6 3.9-9 .3-11.8-4.5-3.5-11.2-.8-15.4 4.4-3.1 3.9-4.6 7.7-5.3 8Z" />
+      {/* band */}
+      <rect x="29" y="65" width="42" height="7" rx="1.2" />
+      {/* lower lobes */}
+      <path d="M45 72h10c0 11.5-2.2 22-5 32-2.8-10-5-20.5-5-32Z" />
+      <path d="M40.5 72c-3 7.6-9.4 13-17 13.6 4.6 3.2 13.2 2.4 18.4-3.6 2-2.4 3-5.8 3.1-10Z" />
+      <path d="M59.5 72c3 7.6 9.4 13 17 13.6-4.6 3.2-13.2 2.4-18.4-3.6-2-2.4-3-5.8-3.1-10Z" />
+    </svg>
+  );
+}

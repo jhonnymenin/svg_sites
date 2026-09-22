@@ -1,0 +1,96 @@
+import {
+  AirVent,
+  Armchair,
+  Bath,
+  BedDouble,
+  Briefcase,
+  Building2,
+  Car,
+  ConciergeBell,
+  CookingPot,
+  Dumbbell,
+  Flame,
+  Footprints,
+  HeartPulse,
+  Hospital,
+  KeyRound,
+  Landmark,
+  Laptop,
+  Leaf,
+  MapPin,
+  Package,
+  PenTool,
+  Presentation,
+  ShieldCheck,
+  Shirt,
+  ShoppingBag,
+  Sparkles,
+  Stethoscope,
+  Store,
+  TrainFront,
+  Trees,
+  Tv,
+  Utensils,
+  WashingMachine,
+  Waves,
+  Wifi,
+  Cross,
+  type LucideIcon,
+} from "lucide-react";
+import type { IconKey } from "@/content/site";
+
+const MAP: Record<IconKey, LucideIcon> = {
+  design: Armchair,
+  pin: MapPin,
+  shield: ShieldCheck,
+  parcel: Package,
+  pool: Waves,
+  cowork: Laptop,
+  dining: Utensils,
+  metro: TrainFront,
+  pen: PenTool,
+  warmth: Flame,
+  leaf: Leaf,
+  kitchen: CookingPot,
+  linen: BedDouble,
+  towel: Bath,
+  gym: Dumbbell,
+  meeting: Presentation,
+  shopping: ShoppingBag,
+  museum: Landmark,
+  park: Trees,
+  mall: Building2,
+  landmark: Building2,
+  market: Store,
+  concierge: ConciergeBell,
+  wifi: Wifi,
+  key: KeyRound,
+  air: AirVent,
+  tv: Tv,
+  washer: WashingMachine,
+  desk: Briefcase,
+  iron: Shirt,
+  toiletries: Sparkles,
+  walk: Footprints,
+  drive: Car,
+  hospital: Hospital,
+  heart: HeartPulse,
+  stethoscope: Stethoscope,
+  cross: Cross,
+};
+
+/** Thin terracotta line icon — the brand's only iconographic voice. */
+export function Icon({
+  name,
+  size = 22,
+  className,
+  strokeWidth = 1.1,
+}: {
+  name: IconKey;
+  size?: number;
+  className?: string;
+  strokeWidth?: number;
+}) {
+  const C = MAP[name];
+  return <C aria-hidden size={size} strokeWidth={strokeWidth} className={className} absoluteStrokeWidth />;
+}

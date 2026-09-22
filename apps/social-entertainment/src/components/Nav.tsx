@@ -2,10 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 import { clsx } from "clsx";
-import { Container } from "./Container";
-import { MasterLogo } from "./MasterLogo";
+import { SELogo } from "./marks";
 import { EASE } from "./Reveal";
 
 const NAV_LINKS = [
@@ -14,7 +13,7 @@ const NAV_LINKS = [
   { label: "Now + Next", href: "#now-next" },
   { label: "Our People", href: "#our-people" },
   { label: "SC Advising", href: "#sc-advising" },
-  { label: "Contact", href: "#" },
+  { label: "Contact", href: "#contact" },
 ];
 
 const menuList = {
@@ -22,31 +21,32 @@ const menuList = {
   show: { transition: { staggerChildren: 0.05, delayChildren: 0.12 } },
 };
 const menuItem = {
-  hidden: { opacity: 0, x: -12 },
+  hidden: { opacity: 0, x: -14 },
   show: { opacity: 1, x: 0, transition: { duration: 0.35, ease: EASE } },
 };
 
 export function Nav() {
-  const [solid, setSolid] = useState(false);
+  const [compact, setCompact] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("");
   const reduce = useReducedMotion();
 
   useEffect(() => {
-    const onScroll = () => setSolid(window.scrollY > 200);
+    const onScroll = () => {
+      setCompact(window.scrollY > 120);
+      if (window.scrollY < 200) setActive("");
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Scroll spy: whichever section crosses a band near the top of the viewport
-  // (just under the header) owns the underline, so a section you just
-  // navigated to is the one highlighted. Nothing is active while the hero is on screen.
+  // Scroll spy: whichever section crosses a band just under the header owns
+  // the underline. Nothing is active while the hero is on screen.
   useEffect(() => {
-    const els = NAV_LINKS.map((l) => l.href.slice(1))
-      .filter(Boolean)
-      .map((id) => document.getElementById(id))
-      .filter((el): el is HTMLElement => !!el);
+    const els = NAV_LINKS.map((l) => document.getElementById(l.href.slice(1))).filter(
+      (el): el is HTMLElement => !!el
+    );
     if (!els.length) return;
     const obs = new IntersectionObserver(
       (entries) => {
@@ -70,119 +70,147 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header
-      className={clsx(
-        "fixed inset-x-0 top-0 z-50 border-b transition-colors duration-200",
-        solid ? "border-mustard/40 bg-ink/95" : "border-transparent"
-      )}
-    >
-      <Container
+    <header className="fixed inset-x-0 top-0 z-50">
+      <div
         className={clsx(
-          "flex items-center justify-between transition-[height] duration-300",
-          solid ? "h-[58px]" : "h-[64px] lg:h-[68px]"
+          "dusty relative transition-[height,box-shadow] duration-300",
+          compact ? "h-[56px] shadow-[0_1px_0_rgba(239,230,212,0.08)] lg:h-[62px]" : "h-(--header-h)"
         )}
       >
-        <a href="#" className="shrink-0 transition-opacity hover:opacity-80">
-          <MasterLogo />
+        {/* Logo tab — hangs below the bar like a printed shop-sign tab, folds up on scroll */}
+        <a
+          href="#top"
+          aria-label="Social Entertainment — home"
+          className={clsx(
+            "dusty group absolute top-0 z-10 block rounded-b-[18px] transition-all duration-300 ease-out",
+            "left-[calc(var(--edge)-12px)] px-3",
+            compact ? "pt-[7px] pb-[7px]" : "pt-[7px] pb-[9px] lg:pt-[9px] lg:pb-[13px]"
+          )}
+        >
+          <SELogo
+            className={clsx(
+              "transition-[width] duration-300 ease-out group-hover:opacity-90",
+              compact ? "w-[60px] lg:w-[70px]" : "w-[92px] lg:w-[138px]"
+            )}
+          />
+          {/* concave fillet where the tab meets the bar */}
+          <span
+            aria-hidden
+            className={clsx(
+              "absolute left-full top-(--header-h) hidden h-[18px] w-[18px] transition-opacity duration-200 lg:block",
+              compact ? "opacity-0" : "opacity-100"
+            )}
+            style={{
+              background:
+                "radial-gradient(circle at 100% 100%, transparent 17.5px, var(--color-ink) 18px)",
+            }}
+          />
         </a>
 
-        <nav className="hidden items-center gap-x-5 xl:flex">
-          {NAV_LINKS.map(({ label, href }) => {
-            const isActive = href !== "#" && active === href.slice(1);
-            return (
-              <a
-                key={label}
-                href={href}
-                aria-current={isActive ? "true" : undefined}
-                className="group relative font-display text-[12.5px] font-bold uppercase tracking-[0.04em] text-white"
-              >
-                {label}
-                <span
+        <div className="flex h-full items-center justify-end gap-8 pr-(--edge) pl-[calc(var(--edge)+120px)] lg:pl-[calc(var(--edge)+170px)]">
+          <nav className="hidden items-center gap-x-7 xl:flex 2xl:gap-x-9" aria-label="Primary">
+            {NAV_LINKS.map(({ label, href }) => {
+              const isActive = active === href.slice(1);
+              return (
+                <a
+                  key={label}
+                  href={href}
+                  aria-current={isActive ? "true" : undefined}
                   className={clsx(
-                    "absolute -bottom-1 left-0 h-[2px] bg-mustard transition-[width] duration-200",
-                    isActive ? "w-full" : "w-0 group-hover:w-full"
+                    "group relative py-2 font-label text-[15.5px] font-medium uppercase tracking-[0.07em] transition-colors",
+                    isActive ? "text-mustard" : "text-cream/90 hover:text-cream"
                   )}
-                />
-              </a>
-            );
-          })}
-        </nav>
+                >
+                  {label}
+                  <span
+                    className={clsx(
+                      "absolute bottom-0 left-0 h-[2px] bg-mustard transition-[width] duration-200",
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    )}
+                  />
+                </a>
+              );
+            })}
+          </nav>
 
-        <div className="hidden shrink-0 items-center gap-5 xl:flex">
-          <span aria-hidden className="h-5 w-px bg-white/25" />
           <a
-            href="#"
-            className="flex items-center justify-center bg-rust px-5 py-[9px] font-display text-[13px] font-bold uppercase tracking-[0.06em] text-white transition-all duration-150 hover:-translate-y-[1px] hover:bg-rust-deep hover:shadow-[0_4px_0_-1px_rgba(0,0,0,0.35)] active:translate-y-0 active:shadow-none"
-            style={{ borderRadius: "2px" }}
+            href="#contact"
+            className="hidden items-center bg-rust px-5 py-[10px] font-label text-[15px] font-semibold uppercase tracking-[0.08em] text-cream shadow-[inset_0_0_0_1px_rgba(0,0,0,0.15)] transition-all duration-150 hover:-translate-y-px hover:bg-rust-hi active:translate-y-0 sm:inline-flex"
+            style={{ borderRadius: 2 }}
           >
             Partner With Us
           </a>
-        </div>
 
-        <button
-          type="button"
-          aria-label="Open menu"
-          aria-expanded={open}
-          onClick={() => setOpen(true)}
-          className="flex h-9 w-9 items-center justify-center text-white xl:hidden"
-        >
-          <Menu size={26} strokeWidth={1.75} />
-        </button>
-      </Container>
+          <button
+            type="button"
+            aria-label="Open menu"
+            aria-expanded={open}
+            onClick={() => setOpen(true)}
+            className="-mr-1.5 flex h-11 w-11 items-center justify-center text-cream xl:hidden"
+          >
+            <Menu size={26} strokeWidth={1.75} />
+          </button>
+        </div>
+      </div>
 
       <AnimatePresence>
         {open && (
           <motion.div
-            initial={reduce ? { opacity: 0 } : { y: "-100%" }}
-            animate={reduce ? { opacity: 1 } : { y: 0 }}
-            exit={reduce ? { opacity: 0 } : { y: "-100%" }}
-            transition={{ duration: reduce ? 0.15 : 0.32, ease: EASE }}
-            className="fixed inset-0 z-50 flex flex-col bg-ink px-(--gutter) pt-5 pb-8 xl:hidden"
+            initial={reduce ? { opacity: 0 } : { clipPath: "inset(0 0 100% 0)" }}
+            animate={reduce ? { opacity: 1 } : { clipPath: "inset(0 0 0% 0)" }}
+            exit={reduce ? { opacity: 0 } : { clipPath: "inset(0 0 100% 0)" }}
+            transition={{ duration: reduce ? 0.15 : 0.45, ease: EASE }}
+            className="dusty fixed inset-0 z-50 flex flex-col px-(--gutter) pb-8 xl:hidden"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Menu"
           >
-            <div className="flex h-[54px] items-center justify-between">
-              <MasterLogo />
+            <div className="flex h-(--header-h) items-center justify-between">
+              <SELogo className="w-[64px]" />
               <button
                 type="button"
                 aria-label="Close menu"
                 onClick={() => setOpen(false)}
-                className="flex h-9 w-9 items-center justify-center text-white"
+                className="-mr-1.5 flex h-11 w-11 items-center justify-center text-cream"
               >
                 <X size={26} strokeWidth={1.75} />
               </button>
             </div>
 
             <motion.nav
-              className="mt-8 flex flex-1 flex-col overflow-y-auto"
+              className="mt-6 flex flex-1 flex-col overflow-y-auto"
               variants={menuList}
               initial={reduce ? false : "hidden"}
               animate="show"
             >
-              {NAV_LINKS.map(({ label, href }) => (
+              {NAV_LINKS.map(({ label, href }, i) => (
                 <motion.a
                   key={label}
                   href={href}
                   variants={menuItem}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between border-t border-mustard/30 py-4 font-display text-[26px] font-semibold uppercase leading-none text-white last:border-b"
+                  className="group flex items-baseline justify-between border-t border-cream/15 py-3.5 last:border-b"
                 >
-                  {label}
-                  <span aria-hidden className="text-[16px] text-mustard">
-                    →
+                  <span className="font-display text-[38px] uppercase leading-none text-cream transition-colors group-active:text-mustard">
+                    {label}
+                  </span>
+                  <span className="font-label text-[13px] font-semibold tracking-[0.1em] text-mustard">
+                    {String(i + 1).padStart(2, "0")}
                   </span>
                 </motion.a>
               ))}
             </motion.nav>
 
             <motion.a
-              href="#"
+              href="#contact"
               onClick={() => setOpen(false)}
               initial={reduce ? false : { opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.45, duration: 0.35, ease: EASE }}
-              className="mt-6 flex w-full items-center justify-center bg-rust py-4 font-display text-[13px] font-bold uppercase tracking-[0.08em] text-white"
-              style={{ borderRadius: "var(--radius-control)" }}
+              className="mt-6 flex w-full items-center justify-between bg-rust px-5 py-4 font-label text-[16px] font-semibold uppercase tracking-[0.1em] text-cream"
+              style={{ borderRadius: 2 }}
             >
-              Partner With Us
+              Partner With Us <ArrowRight size={18} strokeWidth={2} />
             </motion.a>
           </motion.div>
         )}

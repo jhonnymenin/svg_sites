@@ -24,7 +24,7 @@ export function Reveal({
   return (
     <motion.div
       className={className}
-      initial={reduce ? false : { y: 20 }}
+      initial={{ y: reduce ? 0 : 20 }}
       whileInView={{ y: 0 }}
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: reduce ? 0 : 0.55, delay, ease: EASE }}
@@ -52,7 +52,7 @@ export function RevealItem({
   return (
     <motion.div
       className={className}
-      initial={reduce ? false : { y: 16, opacity: 0.4 }}
+      initial={{ y: reduce ? 0 : 16, opacity: reduce ? 1 : 0.4 }}
       whileInView={{ y: 0, opacity: 1 }}
       viewport={{ once: true, margin: "-40px" }}
       transition={{

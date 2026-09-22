@@ -1,11 +1,13 @@
-import { Container } from "./Container";
-import { MasterLogo } from "./MasterLogo";
-import { Reveal } from "./Reveal";
+import { Mail } from "lucide-react";
+import { SELogo } from "./marks";
 import { NewsletterForm } from "./NewsletterForm";
 
-const LINKS = ["Food + Drink", "Serving Good Vibes", "Now + Next", "Our People", "SC Advising", "Contact"];
+const COLUMNS = [
+  { title: "Company", links: ["About Us", "Our Brands", "Careers", "News"] },
+  { title: "Resources", links: ["Investors", "Vendors", "Press", "Contact"] },
+];
 
-/** lucide-react ships no brand glyphs in this version — minimal inline marks instead. */
+/** lucide-react ships no brand glyphs — minimal inline marks. Links are placeholders until profiles are confirmed. */
 const SOCIALS = [
   {
     name: "Instagram",
@@ -16,104 +18,111 @@ const SOCIALS = [
     path: "M13.5 22v-8.4h2.8l.4-3.3h-3.2V8.1c0-.96.27-1.6 1.65-1.6H17V3.5c-.3-.04-1.3-.13-2.46-.13-2.44 0-4.1 1.49-4.1 4.22v2.35H7.6v3.3h2.84V22h3.06Z",
   },
   {
-    name: "YouTube",
-    path: "M21.6 7.2s-.2-1.5-.85-2.15c-.8-.86-1.7-.86-2.12-.91C15.7 4 12 4 12 4h-.01s-3.7 0-6.63.14c-.4.05-1.3.05-2.12.91C2.6 5.7 2.4 7.2 2.4 7.2S2.2 9 2.2 10.75v1.5C2.2 14 2.4 15.8 2.4 15.8s.2 1.5.85 2.15c.82.86 1.9.83 2.38.92 1.73.17 7.37.22 7.37.22s3.7-.01 6.63-.15c.4-.05 1.3-.05 2.12-.91.65-.65.85-2.15.85-2.15s.2-1.8.2-3.55v-1.5c0-1.75-.2-3.55-.2-3.55ZM9.98 14.5v-5.4l5.2 2.71-5.2 2.69Z",
+    name: "LinkedIn",
+    path: "M4.98 3.5a2.48 2.48 0 1 1 0 4.96 2.48 2.48 0 0 1 0-4.96ZM3 9.75h3.96V21H3V9.75Zm6.44 0h3.8v1.54h.05c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.06V21h-3.95v-5.07c0-1.21-.02-2.77-1.69-2.77-1.69 0-1.95 1.32-1.95 2.68V21H9.44V9.75Z",
   },
 ];
 
+const heading = "font-label text-[16px] font-semibold uppercase tracking-[0.1em] text-cream";
+const link = "text-[14.5px] text-cream/65 transition-colors hover:text-cream";
+
 export function Footer() {
   return (
-    <footer className="bg-ink pt-12 md:pt-16">
-      <Container>
-        <Reveal>
-          <p className="max-w-3xl font-display text-[26px] font-bold uppercase leading-[1.05] text-cream [text-wrap:balance] sm:text-[34px] md:text-[42px]">
-            Building places. Creating experiences. Serving good vibes.
+    <footer id="contact" className="dusty text-cream">
+      <div className="mx-auto grid max-w-(--page-max) grid-cols-2 gap-x-6 gap-y-10 px-(--gutter) pt-14 pb-12 md:grid-cols-4 lg:grid-cols-[auto_1fr_0.8fr_0.8fr_1.1fr_minmax(300px,1.4fr)] lg:gap-x-10 lg:pt-12">
+        <a href="#top" aria-label="Back to top" className="col-span-2 block w-[128px] md:col-span-1 lg:w-[132px]">
+          <SELogo />
+        </a>
+
+        <div className="col-span-2 md:col-span-1">
+          <p className="font-label text-[17px] font-medium uppercase leading-[1.45] tracking-[0.06em] text-cream/85">
+            Building places.
+            <br />
+            Creating experiences.
+            <br />
+            Serving good vibes.
           </p>
-        </Reveal>
-      </Container>
-
-      <div className="mt-10 bg-mustard py-6 md:mt-12">
-        <Container className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h3 className="font-display text-[16px] font-bold uppercase tracking-[0.02em] text-ink">
-              Stay in the Loop
-            </h3>
-            <p className="mt-1 max-w-sm text-[13.5px] leading-[1.35] text-ink/80">
-              Updates on openings, events, and everything good.
-            </p>
-          </div>
-          <NewsletterForm />
-        </Container>
-      </div>
-
-      <Container className="grid grid-cols-2 gap-y-10 py-10 sm:grid-cols-4 md:py-12">
-        <div className="col-span-2 sm:col-span-1">
-          <MasterLogo />
-          <p className="mt-4 max-w-[16rem] text-[12px] leading-[1.5] text-cream/45">
-            Social Entertainment builds hospitality brands and real-world
-            experiences that bring people together.
-          </p>
-        </div>
-
-        <div>
-          <h4 className="font-display text-[11px] font-bold uppercase tracking-[0.12em] text-mustard">
-            Explore
-          </h4>
-          <ul className="mt-4 space-y-2.5">
-            {LINKS.map((l) => (
-              <li key={l}>
-                <a href="#" className="text-[13px] text-cream/60 transition-colors hover:text-cream">
-                  {l}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-display text-[11px] font-bold uppercase tracking-[0.12em] text-mustard">
-            Company
-          </h4>
-          <ul className="mt-4 space-y-2.5">
-            {["About Us", "Our Story", "Partner With Us", "Press"].map((l) => (
-              <li key={l}>
-                <a href="#" className="text-[13px] text-cream/60 transition-colors hover:text-cream">
-                  {l}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="font-display text-[11px] font-bold uppercase tracking-[0.12em] text-mustard">
-            Follow Us
-          </h4>
-          <div className="mt-4 flex gap-3">
+          <div className="mt-5 flex items-center gap-2">
             {SOCIALS.map(({ name, path }) => (
               <a
                 key={name}
                 href="#"
                 aria-label={name}
-                className="flex h-8 w-8 items-center justify-center rounded-full border border-cream/30 text-cream/70 transition-colors hover:border-cream hover:text-cream"
+                className="flex h-10 w-10 items-center justify-center text-cream/75 transition-colors hover:text-mustard"
               >
-                <svg viewBox="0 0 24 24" width={14} height={14} fill="currentColor" aria-hidden>
+                <svg viewBox="0 0 24 24" width={19} height={19} fill="currentColor" aria-hidden>
                   <path d={path} />
                 </svg>
               </a>
             ))}
+            <a
+              href="mailto:hello@socialentertainment.net"
+              aria-label="Email"
+              className="flex h-10 w-10 items-center justify-center text-cream/75 transition-colors hover:text-mustard"
+            >
+              <Mail size={20} strokeWidth={1.75} />
+            </a>
           </div>
         </div>
-      </Container>
 
-      <div className="border-t border-cream/10 py-5">
-        <Container className="flex flex-col gap-2 text-[11.5px] text-cream/40 sm:flex-row sm:items-center sm:justify-between">
+        {COLUMNS.map(({ title, links }) => (
+          <nav key={title} aria-label={title}>
+            <h3 className={heading}>{title}</h3>
+            <ul className="mt-4 space-y-2.5">
+              {links.map((l) => (
+                <li key={l}>
+                  <a href="#" className={link}>
+                    {l}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
+
+        <div className="col-span-2 lg:col-span-1">
+          <h3 className={heading}>Let&apos;s Connect</h3>
+          <address className="mt-4 space-y-2.5 text-[14.5px] not-italic leading-[1.45] text-cream/65">
+            <p>
+              201 Settlers Trace Blvd.
+              <br />
+              Lafayette, LA 70508
+            </p>
+            <p>
+              <a href="mailto:hello@socialentertainment.net" className="transition-colors hover:text-cream">
+                hello@socialentertainment.net
+              </a>
+            </p>
+            <p>
+              <a href="tel:+13371234567" className="font-label text-[18px] tracking-[0.04em] text-cream/90 transition-colors hover:text-cream">
+                337.123.4567
+              </a>
+            </p>
+          </address>
+        </div>
+
+        <div className="paper col-span-2 bg-rust! bg-blend-multiply p-6 lg:col-span-1 lg:-my-2 lg:p-7" style={{ borderRadius: 3 }}>
+          <h3 className="font-display text-[30px] uppercase leading-none tracking-[0.01em] text-cream">Stay in the Loop</h3>
+          <p className="mt-2 text-[15px] leading-[1.45] text-cream/85">Updates on openings, events, and everything good.</p>
+          <NewsletterForm />
+        </div>
+      </div>
+
+      <div className="border-t border-cream/10">
+        <div className="mx-auto flex max-w-(--page-max) flex-col gap-3 px-(--gutter) py-5 text-[13px] text-cream/50 sm:flex-row sm:items-center sm:justify-between">
           <span>© {new Date().getFullYear()} Social Entertainment. All rights reserved.</span>
-          <span className="flex gap-4">
-            <a href="#" className="hover:text-cream/70">Privacy</a>
-            <a href="#" className="hover:text-cream/70">Terms</a>
+          <span className="flex gap-6">
+            <a href="#" className="hover:text-cream/80">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-cream/80">
+              Terms of Use
+            </a>
+            <a href="#" className="hover:text-cream/80">
+              Site Map
+            </a>
           </span>
-        </Container>
+        </div>
       </div>
     </footer>
   );

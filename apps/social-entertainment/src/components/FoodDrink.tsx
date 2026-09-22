@@ -1,49 +1,70 @@
 import Image from "next/image";
-import { Rail, RailCard } from "./Rail";
+import { Rail, RailCard, RailIntro } from "./Rail";
+import { BrandMark, type BrandKey } from "./BrandMarks";
 
-const BRANDS = [
-  { name: "Central Pizza", img: "/food/pizza.jpg", pos: "50% 45%" },
-  { name: "Bayou Teche Brewery Downtown", img: "/food/brewery.jpg", pos: "50% 40%" },
-  { name: "Tropical Smoothie", img: "/food/smoothie.jpg", pos: "50% 40%" },
-  { name: "Reba Water", img: "/food/water.jpg", pos: "50% 45%" },
-  { name: "Saudades", img: "/food/cheesebread.jpg", pos: "20% 100%" },
-  { name: "Braziliana", img: "/food/sugarcane.jpg", pos: "50% 45%" },
-  { name: "Sala Braziliana", img: "/food/sala.jpg", pos: "50% 60%" },
+/* PLACEHOLDER PHOTOGRAPHY — /public/food/*.jpg are stock stand-ins until each brand supplies product shots. */
+const BRANDS: { brand: BrandKey; name: string; sub?: string; img: string; pos: string }[] = [
+  { brand: "central", name: "Central Pizza", img: "/food/pizza.jpg", pos: "58% 60%" },
+  { brand: "bayou", name: "Bayou Teche Brewery", sub: "Downtown", img: "/food/brewery.jpg", pos: "50% 30%" },
+  { brand: "tropical", name: "Tropical Smoothie", img: "/food/smoothie.jpg", pos: "50% 55%" },
+  { brand: "reba", name: "Reba Water", img: "/food/water.jpg", pos: "78% 50%" },
+  { brand: "saudades", name: "Saudades", sub: "cheese bread bites", img: "/food/cheesebread.jpg", pos: "30% 80%" },
+  { brand: "braziliana", name: "Braziliana", sub: "suco de cana", img: "/food/sugarcane.jpg", pos: "50% 55%" },
+  { brand: "sala", name: "Sala Braziliana", img: "/food/sala.jpg", pos: "50% 30%" },
 ];
 
 export function FoodDrink() {
   return (
-    <section id="food-drink" className="paper-grain bg-parchment py-10 md:py-14">
-      <Rail title="Food + Drink" index={1} cta={{ label: "View All Brands", href: "#" }} tone="light">
-        {BRANDS.map(({ name, img, pos }, i) => (
-          <RailCard key={name} href="#" index={i} className="w-[210px] sm:w-[230px] md:w-[250px]">
-            <div
-              className="relative aspect-[4/5] overflow-hidden transition-transform duration-300 ease-out group-hover:-translate-y-1"
-              style={{ borderRadius: "var(--radius-card)" }}
-            >
+    <section
+      id="food-drink"
+      className="dusty py-14 [--rail-media-h:250px] md:py-20 md:[--rail-media-h:265px]"
+    >
+      <Rail
+        label="Food + Drink brands"
+        intro={
+          <RailIntro
+            title={
+              <>
+                Food +<br className="hidden lg:block" /> Drink
+              </>
+            }
+            titleClass="text-[clamp(52px,6vw,84px)] text-rust-hi"
+            body="A portfolio of craveable concepts and experiences that feed our communities and fuel connection."
+            cta="View All Brands"
+            ctaClass="bg-mustard text-ink hover:bg-[#d8a24a]"
+          />
+        }
+      >
+        {BRANDS.map(({ brand, name, sub, img, pos }, i) => (
+          <RailCard key={brand} href="#" index={i} className="w-[200px] md:w-[212px]">
+            <div className="@container relative h-(--rail-media-h) overflow-hidden rounded-[6px] bg-ink-3 ring-1 ring-cream/10">
               <Image
                 src={img}
-                alt={name}
+                alt=""
                 fill
                 unoptimized
-                className="photo-grade object-cover transition-transform duration-500 ease-out group-hover:scale-[1.07]"
+                sizes="212px"
+                className="photo-grade object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
                 style={{ objectPosition: pos }}
               />
-              <span className="absolute left-0 top-0 flex h-8 w-8 items-center justify-center bg-cream font-display text-[12px] font-bold text-ink transition-colors duration-200 group-hover:bg-rust group-hover:text-cream">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-            </div>
-            <div className="mt-2.5 flex items-start justify-between gap-2 border-t border-ink/12 pt-2">
-              <h3 className="font-display text-[15px] font-bold uppercase leading-[1.15] text-ink">
-                {name}
-              </h3>
-              <span
+              <div
                 aria-hidden
-                className="mt-1 shrink-0 -translate-x-1 text-rust opacity-0 transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100"
-              >
-                →
-              </span>
+                className="absolute inset-0 transition-opacity duration-300 group-hover:opacity-80"
+                style={{
+                  background:
+                    "radial-gradient(ellipse 80% 55% at 50% 58%, rgba(15,13,11,0.62), rgba(15,13,11,0.12) 75%), linear-gradient(180deg, rgba(15,13,11,0) 55%, rgba(15,13,11,0.45))",
+                }}
+              />
+              <div className="absolute inset-x-0 top-[57%] flex -translate-y-1/2 justify-center transition-transform duration-500 ease-out group-hover:-translate-y-[56%]">
+                <BrandMark brand={brand} />
+              </div>
             </div>
+            <p className="mt-3 text-[15px] font-medium leading-[1.3] text-cream/90">
+              <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat transition-[background-size] duration-300 group-hover:bg-[length:100%_1px]">
+                {name}
+              </span>
+              {sub ? <span className="block text-cream/60">{sub}</span> : null}
+            </p>
           </RailCard>
         ))}
       </Rail>

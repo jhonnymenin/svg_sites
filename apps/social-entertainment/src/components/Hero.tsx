@@ -1,136 +1,84 @@
-"use client";
+import { Fragment } from "react";
+import { ArrowRight } from "lucide-react";
+import { HeroCollage } from "./HeroCollage";
 
-import { useRef } from "react";
-import Image from "next/image";
-import { motion, useReducedMotion, useScroll, useTransform } from "motion/react";
-import { EASE } from "./Reveal";
-
-const stack = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.09, delayChildren: 0.15 } },
-};
-const item = {
-  hidden: { opacity: 0, y: 18 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.6, ease: EASE } },
-};
+const KICKER = ["Businesses", "Investments", "Experiences", "Development", "Community"];
 
 export function Hero() {
-  const reduce = useReducedMotion();
-  const ref = useRef<HTMLElement | null>(null);
-
-  // Scroll-linked drift: the photograph settles a few percent as the page
-  // leaves the hero — felt, not seen. Wrapper is oversized so nothing uncovers.
-  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
-  const drift = useTransform(scrollYProgress, [0, 1], ["-4%", "4%"]);
-
   return (
-    <section
-      ref={ref}
-      className="relative w-full overflow-hidden aspect-[4/5] sm:aspect-[3/2] md:aspect-auto md:h-[clamp(420px,33.7vw,485px)]"
-    >
-      {/*
-        TEMPORARY PHOTOGRAPHY PLACEHOLDER — /public/hero/placeholder-dusk.jpg
-        Not the client's photograph. A freely-licensed (Unsplash license,
-        "Outdoor cafe with string lights at dusk") photo standing in for the
-        real "architectural/hospitality collage" asset per the LP spec —
-        string lights, warm architecture, a person, blue-hour sky. Swap the
-        file — and the object-position classes below if the crop changes —
-        for the real hero photograph when it's supplied.
-      */}
-      <motion.div
-        aria-hidden
-        className="absolute inset-x-0 -top-[8%] -bottom-[8%]"
-        style={{ y: reduce ? 0 : drift }}
-      >
-        <motion.div
-          className="absolute inset-0"
-          initial={reduce ? false : { scale: 1.06 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.4, ease: EASE }}
-        >
-          <Image
-            src="/hero/placeholder-dusk.jpg"
-            alt=""
-            fill
-            priority
-            unoptimized
-            className="object-cover object-[30%_30%] md:object-[50%_36%]"
-          />
-        </motion.div>
-      </motion.div>
+    <section id="top" className="paper relative overflow-hidden pt-(--header-h)">
+      <div className="relative mx-auto max-w-(--page-max) lg:min-h-[calc(var(--header-h)+470px)] xl:min-h-[calc(min(100vw,var(--page-max))*0.416)]">
+        <div className="relative z-10 px-(--gutter) pt-[46px] pb-4 sm:pt-16 lg:w-[46%] lg:pt-14 lg:pb-14 xl:w-[53%] xl:pt-[clamp(56px,5vw,84px)] xl:pb-16">
+          <h1 className="worn font-display uppercase leading-[0.93] tracking-[0.004em] text-ink">
+            <span className="sr-only">We build places people want to be</span>
+            {/*
+              One set of word groups, re-broken per breakpoint with <br>s:
+              mobile "We build / places people / want to be", ≥640 the two-line
+              poster setting. (No display-toggled duplicates: toggling display
+              would restart the CSS reveal.)
+            */}
+            <span aria-hidden className="block text-[clamp(50px,14.6vw,76px)] sm:text-[clamp(54px,10.4vw,96px)] lg:text-[70px] xl:text-[clamp(56px,6.3vw,100px)]">
+              {[
+                { t: "We build", br: "sm:hidden lg:block xl:hidden" },
+                { t: "places", br: "hidden sm:block lg:hidden xl:block" },
+                { t: "people", br: "sm:hidden lg:block xl:hidden" },
+                { t: "want to be", br: "" },
+              ].map(({ t, br }, i) => (
+                <Fragment key={t}>
+                  <span className="inline-block overflow-hidden pb-[0.04em] align-top">
+                    <span className="hero-line" style={{ animationDelay: `${120 + i * 90}ms` }}>
+                      {t}
+                    </span>
+                  </span>{" "}
+                  {br ? <br className={br} /> : null}
+                </Fragment>
+              ))}
+            </span>
+          </h1>
 
-      {/* short top scrim, full width — nav legibility only, the sky here runs pale */}
-      <div
-        aria-hidden
-        className="absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-ink/75 to-transparent md:h-24"
-      />
-      {/* left-side overlay — the only scrim carrying real weight, sized to the text column */}
-      <div
-        aria-hidden
-        className="absolute inset-0 hidden md:block"
-        style={{
-          background:
-            "linear-gradient(90deg, rgba(15,11,7,0.93) 0%, rgba(15,11,7,0.74) 18%, rgba(15,11,7,0.34) 34%, rgba(15,11,7,0) 52%)",
-        }}
-      />
-      {/* mobile: bottom-anchored text needs a bottom scrim instead of a left one */}
-      <div
-        aria-hidden
-        className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-ink via-ink/60 to-transparent md:hidden"
-      />
-
-      <div className="relative z-10 flex h-full items-end px-(--gutter) pb-9 md:pb-[18px]">
-        <motion.div
-          className="max-w-[26rem]"
-          variants={stack}
-          initial={reduce ? false : "hidden"}
-          animate="show"
-        >
-          <motion.h1
-            variants={item}
-            className="font-display text-[clamp(32px,3.4vw,50px)] leading-[0.98] font-bold uppercase tracking-[-0.005em] text-white [text-shadow:0_2px_14px_rgba(0,0,0,0.65)]"
+          <p
+            className="hero-fade mt-5 max-w-[34rem] font-label text-[17px] font-semibold uppercase leading-[1.35] tracking-[0.06em] text-ink sm:mt-6 xl:text-[18px]"
+            style={{ animationDelay: "480ms" }}
           >
-            We build places
-            <br />
-            people want to be
-          </motion.h1>
-
-          <motion.span variants={item} aria-hidden className="mt-3 block h-[3px] w-16 bg-rust" />
-
-          <motion.p
-            variants={item}
-            className="mt-3 font-display text-[11.5px] font-semibold uppercase tracking-[0.07em] text-mustard [text-wrap:balance] md:text-[12.5px]"
+            {KICKER.map((w, i) => (
+              <Fragment key={w}>
+                <span className="whitespace-nowrap">
+                  {w}
+                  <span className="text-rust">.</span>
+                </span>
+                {i < KICKER.length - 1 ? " " : null}
+              </Fragment>
+            ))}
+          </p>
+          <p
+            className="hero-fade mt-2.5 max-w-[30rem] text-[17px] leading-[1.5] text-ink/80 xl:text-[18px]"
+            style={{ animationDelay: "560ms" }}
           >
-            Businesses. Investments. Experiences. Development. Community.
-          </motion.p>
+            We create and grow hospitality brands and real-world experiences that bring people together and make a
+            lasting impact.
+          </p>
 
-          <motion.p variants={item} className="mt-2 max-w-[22rem] text-[14px] leading-[1.35] text-cream/90">
-            We create and grow hospitality brands and real-world experiences
-            that bring people together and make a lasting impact.
-          </motion.p>
-
-          <motion.div variants={item} className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-3">
+          <div className="hero-fade mt-7 flex flex-wrap gap-3 sm:mt-8" style={{ animationDelay: "680ms" }}>
             <a
               href="#food-drink"
-              className="inline-flex items-center justify-center bg-rust px-8 py-[10px] font-display text-[13px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-150 hover:-translate-y-[1px] hover:bg-rust-deep hover:shadow-[0_4px_0_-1px_rgba(0,0,0,0.35)] active:translate-y-0 active:shadow-none"
-              style={{ borderRadius: "var(--radius-control)" }}
+              className="group inline-flex w-full items-center justify-between gap-5 bg-rust sm:w-auto px-6 py-[15px] font-label text-[16px] font-semibold uppercase tracking-[0.09em] text-cream shadow-[3px_3px_0_var(--color-ink)] transition-all duration-150 hover:-translate-x-px hover:-translate-y-px hover:bg-rust-hi hover:shadow-[5px_5px_0_var(--color-ink)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-none"
+              style={{ borderRadius: 2 }}
             >
               Explore Portfolio
+              <ArrowRight size={19} strokeWidth={2} className="transition-transform duration-200 group-hover:translate-x-1" />
             </a>
             <a
-              href="#"
-              className="group inline-flex items-center gap-2 font-display text-[13px] font-semibold uppercase tracking-[0.08em] text-white"
+              href="#our-people"
+              className="group inline-flex w-full items-center justify-between gap-5 border-[1.5px] sm:w-auto border-ink px-6 py-[13.5px] font-label text-[16px] font-semibold uppercase tracking-[0.09em] text-ink transition-colors duration-150 hover:bg-ink hover:text-cream"
+              style={{ borderRadius: 2 }}
             >
-              <span className="relative">
-                Learn Our Story
-                <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-mustard transition-[width] duration-200 group-hover:w-full" />
-              </span>
-              <span aria-hidden className="transition-transform duration-150 group-hover:translate-x-1">
-                →
-              </span>
+              Learn Our Story
+              <ArrowRight size={19} strokeWidth={2} className="transition-transform duration-200 group-hover:translate-x-1" />
             </a>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
+
+        <HeroCollage className="mx-auto mt-4 aspect-[0.92] w-full max-w-[560px] sm:mt-6 sm:aspect-[1.37] sm:max-w-[900px] lg:absolute lg:right-0 lg:bottom-0 lg:mt-0 lg:w-[60%] lg:max-w-none xl:w-[57%]" />
       </div>
     </section>
   );
