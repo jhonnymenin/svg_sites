@@ -65,6 +65,17 @@ export function Amenities() {
             </li>
           ))}
         </ul>
+        <Reveal className="lg:col-span-9 lg:col-start-4">
+          <p className="flex flex-wrap items-baseline gap-x-5 gap-y-2 border-t hairline pt-5">
+            <span className="label text-ink-3">{a.building.alsoLabel}</span>
+            {a.building.also.map((x, i) => (
+              <span key={x} className="serif text-[17px] text-ink">
+                {i > 0 ? <span aria-hidden className="mr-5 text-terra">·</span> : null}
+                {x}
+              </span>
+            ))}
+          </p>
+        </Reveal>
       </div>
     </section>
   );

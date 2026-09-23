@@ -25,7 +25,22 @@ export function Practical() {
             ))}
           </ul>
 
+          {/* The three times a guest needs, set as the section's figures. */}
           <Reveal className="mt-14">
+            <dl className="grid grid-cols-3 border-y hairline">
+              {p.times.map((t, i) => (
+                <div key={t.label} className={`py-6 ${i > 0 ? "border-l hairline pl-4 sm:pl-6" : "pr-2"}`}>
+                  <dt className="label text-terra">{t.label}</dt>
+                  <dd>
+                    <span className="num mt-3 block text-[clamp(32px,3.6vw,50px)] leading-none text-ink">{t.value}</span>
+                    <span className="mt-2 block text-[12.5px] leading-[1.4] text-ink-3">{t.detail}</span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </Reveal>
+
+          <Reveal className="mt-12">
             <h3 className="label text-terra">{p.rules.label}</h3>
             <ol className="mt-5 space-y-4">
               {p.rules.items.map((r, i) => (

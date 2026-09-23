@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { RevealItem } from "@sgv/brand/motion";
+import { Reveal, RevealItem } from "@sgv/brand/motion";
 import { Car, Footprints } from "lucide-react";
 import { content } from "@/content/site";
 import { Icon } from "./Icon";
@@ -62,6 +62,38 @@ export function Location() {
             );
           })}
         </ol>
+
+        {/* Getting around — practical facts in the margin column. */}
+        <Reveal className="lg:col-span-4">
+          <p className="label text-terra-soft">{l.transport.label}</p>
+          <ul className="mt-6 space-y-5">
+            {l.transport.items.map((t) => (
+              <li key={t.name}>
+                <p className="serif text-[20px] leading-tight text-cream">{t.name}</p>
+                <p className="mt-1 text-[13.5px] leading-[1.5] text-cream/60">{t.detail}</p>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+
+        {/* A day in Jardins — the neighbourhood as an itinerary, read like a
+            timeline across the page. */}
+        <div className="lg:col-span-8">
+          <p className="label text-terra-soft">{l.day.label}</p>
+          <ol className="mt-6 grid gap-x-6 gap-y-8 border-t border-cream/15 pt-7 sm:grid-cols-2 xl:grid-cols-4">
+            {l.day.steps.map((st, i) => (
+              <li key={st.time}>
+                <RevealItem index={i}>
+                  <p className="flex items-center gap-3">
+                    <span className="num text-[15px] tracking-normal text-terra-soft">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="label text-cream/55">{st.time}</span>
+                  </p>
+                  <p className="pretty serif mt-3 text-[18px] leading-[1.4] text-cream/90">{st.text}</p>
+                </RevealItem>
+              </li>
+            ))}
+          </ol>
+        </div>
       </div>
     </section>
   );

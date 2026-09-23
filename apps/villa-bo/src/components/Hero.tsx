@@ -31,7 +31,7 @@ export function Hero() {
           <motion.div style={{ y: towerY }} className="absolute inset-[-2%_0_-14%_0]">
             <div className="hero-zoom absolute inset-0">
             <Image
-              src="/images/bo/hero-facade.jpg"
+              src="/images/villa/hero-facade.jpg"
               alt="The Villa BO tower in brick and glass, seen from the street against a clear sky"
               fill
               priority
@@ -90,8 +90,8 @@ export function Hero() {
           <motion.div style={{ y: facadeY }} className="absolute inset-[-2%_0_-8%_0]">
             <div className="hero-zoom absolute inset-0">
             <Image
-              src="/images/bo/hero-entrance.jpg"
-              alt="Villa BO’s glass entrance on Rua Gabriel Monteiro da Silva, framed by brick, palms and a planted garden"
+              src="/images/villa/hero-entrance.jpg"
+              alt="Villa BO’s glass entrance on Alameda Gabriel Monteiro da Silva, framed by brick, palms and a planted garden"
               fill
               priority
               sizes="40vw"
@@ -118,8 +118,8 @@ export function Hero() {
       <div className="frame grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] items-end gap-5 pt-5 lg:hidden">
         <div className="relative aspect-[4/5] overflow-hidden bg-night">
           <Image
-            src="/images/bo/hero-entrance.jpg"
-            alt="Villa BO’s glass entrance on Rua Gabriel Monteiro da Silva, framed by brick, palms and a planted garden"
+            src="/images/villa/hero-entrance.jpg"
+            alt="Villa BO’s glass entrance on Alameda Gabriel Monteiro da Silva, framed by brick, palms and a planted garden"
             fill
             sizes="45vw"
             className="grade object-cover object-[40%_50%]"

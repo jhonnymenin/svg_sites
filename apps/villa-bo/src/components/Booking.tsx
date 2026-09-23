@@ -212,9 +212,12 @@ export function Booking() {
           )}
         </AnimatePresence>
       </div>
-      <p aria-live="polite" className="label mt-3 min-h-[1.3em] text-terra">
-        {error}
-      </p>
+      <div className="mt-3 flex min-h-[1.3em] flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
+        <p aria-live="polite" className="label text-terra">
+          {error}
+        </p>
+        {state !== "done" ? <p className="label text-ink-3">{b.note}</p> : null}
+      </div>
     </section>
   );
 }

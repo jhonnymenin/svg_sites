@@ -22,8 +22,25 @@ export function Stays() {
       <div className="grid gap-y-14 lg:grid-cols-12 lg:gap-x-[clamp(24px,3vw,56px)]">
         <div className="lg:col-span-4 lg:sticky lg:top-[110px] lg:self-start">
           <SectionHead id="stay-title" eyebrow={s.eyebrow} chapter={s.chapter} title={s.title} intro={s.intro} />
+          <p className="pretty mt-5 max-w-[40ch] text-[14.5px] leading-[1.6] text-ink-2">{s.body}</p>
 
-          <ul className="mt-10 border-t hairline sm:grid sm:grid-cols-2 sm:gap-x-8 lg:block">
+          {/* The apartment in four figures, set like a floor-plan legend. */}
+          <dl className="mt-10 grid grid-cols-4 border-y hairline">
+            {s.specs.map((sp, i) => (
+              <div key={sp.label} className={`py-5 ${i > 0 ? "border-l hairline pl-3 sm:pl-5" : ""}`}>
+                <dt className="sr-only">{sp.label}</dt>
+                <dd>
+                  <span className="num block text-[clamp(34px,3.4vw,46px)] leading-none text-ink">
+                    {sp.value}
+                    {sp.unit ? <span className="ml-[2px] text-[0.42em] tracking-normal text-ink-3">{sp.unit}</span> : null}
+                  </span>
+                  <span className="label mt-3 block text-ink-3" aria-hidden>{sp.label}</span>
+                </dd>
+              </div>
+            ))}
+          </dl>
+
+          <ul className="mt-8 border-t hairline sm:grid sm:grid-cols-2 sm:gap-x-8 lg:block">
             {s.features.map((f, i) => (
               <li key={f.label} className="border-b hairline">
                 <RevealItem index={i} className="flex items-start gap-4 py-[13px]">

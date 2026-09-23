@@ -1,27 +1,27 @@
 # Photo credits
 
-Real Villa BO photography (building, studios, amenities) from the Villa BO / bstay listing shoot, supplied by the client on 2026-09-23 (`~/Downloads/Villa BO`). The source files are 768×512 and were upscaled 4× locally with Real-ESRGAN (`realesr-general-x4v3`, onnxruntime) and re-saved at 2000–2400px. Swap in the photographer's full-resolution originals when available.
+Real Villa BO photography (building, apartment, amenities) from the property's live booking listing — originals pulled from the listing's image server on 2026-09-23 (the client also supplied 768px copies in `~/Downloads/Villa BO`). Where the listing only holds a small original, it was upscaled 4× locally with Real-ESRGAN (`realesr-general-x4v3`, onnxruntime). Swap in the photographer's full-resolution files when available.
 
-| File | Source |
-|---|---|
-| `bo/hero-facade.jpg` | listing photo (20) |
-| `bo/hero-entrance.jpg` | listing photo (19) |
-| `bo/stay-studio.jpg` | listing photo (base) |
-| `bo/stay-bedroom.jpg` | listing photo (6) |
-| `bo/stay-kitchenette.jpg` | listing photo (24) |
-| `bo/stay-balcony.jpg` | listing photo (21) |
-| `bo/stay-dine.jpg` | listing photo (4) |
-| `bo/design-bedroom.jpg` | listing photo (3) |
-| `bo/design-kitchen.jpg` | listing photo (12) |
-| `bo/amenity-pool.jpg` | listing photo (23) |
-| `bo/amenity-gym.jpg` | listing photo (11) |
-| `bo/amenity-cowork.jpg` | listing photo (7) |
-| `bo/amenity-meeting.jpg` | listing photo (26) |
-| `bo/building-rooftop.jpg` | listing photo (22) |
-| `bo/building-lounge.jpg` | listing photo (25) |
-| `bo/building-kitchen.jpg` | listing photo (30) |
-| `bo/building-lobby.jpg` | listing photo (15) |
-| `bo/location-view.jpg` | listing photo (18) |
+| File | Listing image id | Original size |
+|---|---|---|
+| `villa/hero-facade.jpg` | `6a85c3310a203f218125681a` | 2560×1707 |
+| `villa/hero-entrance.jpg` | `6a7294493fe84d9b50550342` | 1024×683 → upscaled 4× (Real-ESRGAN, local) |
+| `villa/stay-studio.jpg` | `6a85bf215de5c47e46d2c3b6` | 2560×1707 |
+| `villa/stay-bedroom.jpg` | `6a85bf218369453750face50` | 2560×1707 |
+| `villa/stay-kitchenette.jpg` | `6a85bf1e54dea98d2d9a1ee1` | 2560×1707 |
+| `villa/stay-balcony.jpg` | `6a85bf1d55dfdf7fe28db69b` | 2560×1707 |
+| `villa/stay-dine.jpg` | `6a85bf2054dea98d2d9a1ee8` | 2560×1707 |
+| `villa/design-bedroom.jpg` | `6a85bf209713efd640b577fc` | 2560×1707 |
+| `villa/design-kitchen.jpg` | `6a85bf1d9713efd640b577e9` | 2560×1707 |
+| `villa/amenity-pool.jpg` | `68d87a6e15b9d991158ae7e3` | 1248×832 → upscaled 4× (Real-ESRGAN, local) |
+| `villa/amenity-gym.jpg` | `6a85c3315de5c47e46d2dbc4` | 2560×1707 |
+| `villa/amenity-cowork.jpg` | `6a85c331e8fe2439e75e4225` | 2560×1707 |
+| `villa/amenity-meeting.jpg` | `6a85c33099929a4d7738a869` | 2560×1707 |
+| `villa/building-rooftop.jpg` | `68d87a66474410bf87651df9` | 1200×800 → upscaled 4× (Real-ESRGAN, local) |
+| `villa/building-lounge.jpg` | `6a7295baa3567f2fff6fa471` | 1024×683 → upscaled 4× (Real-ESRGAN, local) |
+| `villa/building-kitchen.jpg` | `6a7295b63521d8a11c958dc3` | 1024×683 → upscaled 4× (Real-ESRGAN, local) |
+| `villa/building-lobby.jpg` | `6a85c331860f7f4aa48dbdc0` | 2560×1707 |
+| `villa/location-view.jpg` | `6a7294c96dd778231ce9b644` | 1024×768 → upscaled 4× (Real-ESRGAN, local) |
 
 ## Placeholder
 

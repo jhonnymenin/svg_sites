@@ -30,13 +30,14 @@ export function Design() {
                 key={a.label}
                 className={`border-b hairline ${i % 2 === 0 ? "border-r pr-4 sm:pr-8" : "pl-4 sm:pl-8"}`}
               >
-                <RevealItem index={i} className="group flex h-full flex-col gap-6 py-7 sm:flex-row sm:items-center sm:gap-6">
+                <RevealItem index={i} className="group flex h-full flex-col gap-6 py-7 sm:flex-row sm:items-start sm:gap-6">
                   <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full border border-terra/35 text-terra transition-colors duration-500 group-hover:bg-terra group-hover:text-cream">
                     <Icon name={a.icon} size={21} />
                   </span>
                   <span>
                     <span className="num block text-[13px] tracking-normal text-ink-3">{String(i + 1).padStart(2, "0")}</span>
                     <span className="serif mt-1 block text-[21px] leading-[1.15] text-ink sm:text-[23px]">{a.label}</span>
+                    <span className="pretty mt-2 block text-[13px] leading-[1.5] text-ink-3">{a.note}</span>
                   </span>
                 </RevealItem>
               </li>
