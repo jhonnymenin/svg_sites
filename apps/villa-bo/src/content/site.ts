@@ -112,11 +112,11 @@ export const en = {
       { icon: "metro", label: "Near Oscar Freire metro station" },
     ] as { icon: IconKey; label: string }[],
     gallery: [
-      { src: "/images/stay-living.jpg", alt: "Living room with exposed brick wall, leather sofa and armchair", caption: "Living" },
-      { src: "/images/stay-bedroom.jpg", alt: "Softly lit bedroom with linen bedding and closed blinds", caption: "Bedroom" },
-      { src: "/images/stay-chair.jpg", alt: "Cognac leather armchair beside a bookshelf", caption: "Details" },
-      { src: "/images/stay-balcony.jpg", alt: "Balcony with plants and a small bistro table", caption: "Balcony" },
-      { src: "/images/stay-dining.jpg", alt: "Dining table in front of a wide window over the city", caption: "Dining" },
+      { src: "/images/bo/stay-studio.jpg", alt: "Villa BO studio: bed against an exposed brick wall, round black table and a glass door to the balcony", caption: "The studio", pos: "50% 55%" },
+      { src: "/images/bo/stay-bedroom.jpg", alt: "Bed with white linen, colourful cushions and a cognac leather butterfly chair", caption: "Bedroom", pos: "62% 50%" },
+      { src: "/images/bo/stay-kitchenette.jpg", alt: "Kitchenette along the brick wall with black stone counter, wooden shelves and a cooktop", caption: "Kitchenette", pos: "40% 50%" },
+      { src: "/images/bo/stay-balcony.jpg", alt: "Brick-walled balcony looking over the rooftops and towers of Jardins", caption: "Balcony", pos: "60% 50%" },
+      { src: "/images/bo/stay-dine.jpg", alt: "Round black table with a leather pouf, smart TV and coffee corner on the brick wall", caption: "Dine & work", pos: "45% 60%" },
     ],
   },
 
@@ -132,8 +132,8 @@ export const en = {
       { icon: "linen", label: "Premium linens" },
       { icon: "towel", label: "Premium towels" },
     ] as { icon: IconKey; label: string }[],
-    imageMain: { src: "/images/design-linen.jpg", alt: "White towel hanging against dark stone tiles" },
-    imageSecondary: { src: "/images/design-kitchen.jpg", alt: "Kitchen worktop with cast iron pan, mortar and spices" },
+    imageMain: { src: "/images/bo/design-bedroom.jpg", alt: "Bedroom framed by white walls: brick headboard wall, warm reading lamps and a patterned rug" },
+    imageSecondary: { src: "/images/bo/design-kitchen.jpg", alt: "Kitchenette detail: oak shelves with glasses and cups against the brick wall above a black stone counter" },
   },
 
   amenities: {
@@ -141,17 +141,28 @@ export const en = {
     title: ["Exclusive", "amenities"],
     intro: "Everything you need. Right where you are.",
     items: [
-      { icon: "pool", label: "Swimming Pool", src: "/images/amenity-pool.jpg", alt: "Swimming pool edge with steel ladder and terracotta wall" },
-      { icon: "gym", label: "Gym & Fitness", src: "/images/amenity-gym.jpg", alt: "Fitness room with cardio machines under brick arches" },
-      { icon: "cowork", label: "Coworking & Meeting Rooms", src: "/images/amenity-cowork.jpg", alt: "Coworking desk along floor-to-ceiling windows with plants" },
-      { icon: "meeting", label: "Meeting Rooms for Professionals", src: "/images/amenity-meeting.jpg", alt: "Meeting room with long table, brick walls and tall windows" },
-    ] as { icon: IconKey; label: string; src: string; alt: string }[],
+      { icon: "pool", label: "Swimming Pool", src: "/images/bo/amenity-pool.jpg", alt: "Rooftop pool with sun loungers and the São Paulo skyline", pos: "38% 60%" },
+      { icon: "gym", label: "Gym & Fitness", src: "/images/bo/amenity-gym.jpg", alt: "Wood-panelled gym with cardio machines and windows onto the trees", pos: "40% 55%" },
+      { icon: "cowork", label: "Coworking & Meeting Rooms", src: "/images/bo/amenity-cowork.jpg", alt: "Coworking counter with lit shelves, leather stools and glass partitions", pos: "55% 55%" },
+      { icon: "meeting", label: "Meeting Rooms for Professionals", src: "/images/bo/amenity-meeting.jpg", alt: "Meeting room with a long oak table, brick wall and screen", pos: "60% 55%" },
+    ] as { icon: IconKey; label: string; src: string; alt: string; pos: string }[],
+    building: {
+      label: "Around the building",
+      items: [
+        { src: "/images/bo/building-rooftop.jpg", alt: "Rooftop deck with sun loungers on the lawn and a city view", caption: "Rooftop", pos: "55% 60%" },
+        { src: "/images/bo/building-lounge.jpg", alt: "Lounge with a linen sofa, oak tables and large art panels", caption: "Lounge", pos: "60% 50%" },
+        { src: "/images/bo/building-kitchen.jpg", alt: "Gourmet kitchen with a marble island, oven and cooktop", caption: "Gourmet kitchen", pos: "45% 55%" },
+        { src: "/images/bo/building-lobby.jpg", alt: "Double-height lobby with marble, oak slats and a garden behind the glass", caption: "Lobby", pos: "55% 50%" },
+      ],
+    },
   },
 
   location: {
     eyebrow: "Location",
     title: ["Perfectly", "located"],
     intro: "Live the Jardins lifestyle every day.",
+    view: { src: "/images/bo/location-view.jpg", alt: "View over the tree canopy of Jardins towards the São Paulo skyline" },
+    viewCaption: "Jardins, from above",
     places: [
       { icon: "shopping", name: "Oscar Freire", category: "Shopping & Fashion", minutes: 3, mode: "walk" },
       { icon: "museum", name: "Jardins Paulista", category: "Museums & Culture", minutes: 5, mode: "walk" },
@@ -173,20 +184,14 @@ export const en = {
       {
         label: "Restaurants",
         names: ["Fasano", "Paris 6", "Arturito", "Tiquim Brabazon"],
-        src: "/images/eat-restaurant.jpg",
-        alt: "Candle-dark dining room with window light on set tables",
       },
       {
         label: "Bars",
         names: ["Seen São Paulo", "Le Bar", "TonTon", "Jiquitaia"],
-        src: "/images/eat-bar.jpg",
-        alt: "Cocktails on a wooden bar table",
       },
       {
         label: "Cafés",
         names: ["Suplicy", "L’Etincelle", "Porto Café", "Santo Grão"],
-        src: "/images/eat-cafe.jpg",
-        alt: "Pour-over coffee brewing on a café counter",
       },
     ],
   },
@@ -233,6 +238,16 @@ export const en = {
       { icon: "iron", label: "Iron & Ironing Board" },
       { icon: "toiletries", label: "Basic Toiletries" },
     ] as { icon: IconKey; label: string }[],
+    rules: {
+      label: "Good to know",
+      items: [
+        "Villa BO is in a residential building, not a hotel — please respect the building’s rules.",
+        "Send a photo ID (CPF or passport) before arrival so your access can be released. Access desk: Mon–Fri 8am–11pm · weekends & holidays 10am–8pm.",
+        "Basic supplies are included and not replenished during the stay. Extra cleaning on request, with 24 hours’ notice.",
+        "No smoking in the apartment, on the balcony or in common areas.",
+        "Quiet hours from 10pm, out of respect for the residents.",
+      ],
+    },
     locationLabel: "Location",
     address: ["Rua Gabriel Monteiro da Silva, 35", "Jardins, São Paulo — SP", "01441-000"],
     directions: "Get directions",

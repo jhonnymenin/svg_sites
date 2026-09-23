@@ -135,16 +135,19 @@ body {
 }
 
 /* ── Photography ──────────────────────────────────────────────
-   One grade for every placeholder so the set reads as a single shoot:
-   slightly warmer, a touch less saturated, lifted blacks. */
+   The Villa BO listing shoot is bright, HDR real-estate photography. One
+   quiet grade pulls it toward the paper: a little warmer, a touch less
+   saturated, so brick and leather lead and the white walls sit back.
+   The hero grades take the blue out of the daytime sky so the cream type
+   reads against it. */
 .grade {
-  filter: sepia(0.14) saturate(0.86) contrast(1.02) brightness(0.98);
+  filter: sepia(0.08) saturate(0.9) contrast(1.03) brightness(0.99);
 }
 .grade-dusk {
-  filter: sepia(0.22) saturate(0.95) hue-rotate(-8deg) contrast(1.04) brightness(0.9);
+  filter: sepia(0.3) saturate(0.95) hue-rotate(-12deg) contrast(1.06) brightness(0.92);
 }
 .grade-facade {
-  filter: sepia(0.32) saturate(0.72) hue-rotate(-12deg) contrast(1.06) brightness(0.84);
+  filter: sepia(0.2) saturate(0.82) hue-rotate(-6deg) contrast(1.04) brightness(0.92);
 }
 .grade-night {
   filter: sepia(0.1) saturate(0.85) contrast(1.05) brightness(0.92);

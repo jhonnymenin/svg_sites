@@ -9,11 +9,11 @@ const s = content.stays;
 /* Mosaic placements (desktop): a tall anchor frame, a stacked pair, and a
    wide lower band — an apartment read as a sequence of rooms. */
 const PLACE = [
-  "lg:col-[1/8] lg:row-[1/3] aspect-[4/5] sm:aspect-[4/3] lg:aspect-auto", // living (anchor)
+  "lg:col-[1/8] lg:row-[1/3] aspect-[4/5] sm:aspect-[4/3] lg:aspect-auto", // studio (anchor)
   "lg:col-[8/13] lg:row-[1/2] aspect-[4/3] lg:aspect-auto", // bedroom
-  "lg:col-[8/13] lg:row-[2/3] aspect-[4/3] lg:aspect-auto", // chair
+  "lg:col-[8/13] lg:row-[2/3] aspect-[4/3] lg:aspect-auto", // kitchenette
   "lg:col-[1/6] lg:row-[3/4] aspect-[4/3] lg:aspect-auto", // balcony
-  "lg:col-[6/13] lg:row-[3/4] aspect-[4/3] lg:aspect-auto", // dining
+  "lg:col-[6/13] lg:row-[3/4] aspect-[4/3] lg:aspect-auto", // dine & work
 ];
 
 export function Stays() {
@@ -42,13 +42,13 @@ export function Stays() {
                 key={g.src}
                 className={`zoom group relative overflow-hidden bg-paper-3 ${PLACE[i]} ${i === 0 ? "col-span-2" : ""}`}
               >
-                {/* PLACEHOLDER — replace with real Villa BO apartment photography. */}
                 <Image
                   src={g.src}
                   alt={g.alt}
                   fill
                   sizes={i === 0 ? "(min-width:1024px) 38vw, 100vw" : "(min-width:1024px) 28vw, 50vw"}
                   className="grade object-cover"
+                  style={{ objectPosition: g.pos }}
                 />
                 <figcaption className="pointer-events-none absolute left-0 bottom-0 flex items-center gap-3 bg-paper px-3 py-2 label text-ink-2 sm:px-4 sm:py-[10px]">
                   <span className="num text-[13px] tracking-normal text-terra">{String(i + 1).padStart(2, "0")}</span>

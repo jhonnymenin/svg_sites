@@ -53,7 +53,7 @@ export function Footer() {
         <a href="#top" aria-label="Villa BO — back to top" className="group mt-12 block">
           <span
             aria-hidden
-            className="block whitespace-nowrap text-center font-display leading-[0.8] tracking-[0.04em] text-cream text-[clamp(64px,19.5vw,330px)]"
+            className="block whitespace-nowrap text-center font-display leading-[0.8] tracking-[0.04em] text-cream text-[clamp(56px,17.2vw,300px)]"
             style={{ fontVariationSettings: '"opsz" 72', fontWeight: 300 }}
           >
             VILLA BO

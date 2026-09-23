@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { RevealItem } from "@sgv/brand/motion";
 import { content } from "@/content/site";
 import { Icon } from "./Icon";
@@ -15,25 +14,24 @@ export function Experiences() {
       <section id="experiences" aria-labelledby="experiences-title" className="lg:col-span-7 lg:pr-[clamp(32px,4vw,72px)]">
         <SectionHead id="experiences-title" eyebrow={d.eyebrow} title={d.title} intro={d.intro} />
 
-        <ul className="mt-14 grid gap-10 sm:grid-cols-3 sm:gap-4 lg:gap-5">
+        {/* Set as a typographic menu, not photographs: we have no pictures of
+            these venues, and stock atmosphere would read as a promise. */}
+        <ul className="mt-14 grid gap-y-10 border-t hairline pt-8 sm:grid-cols-3 sm:gap-x-6 lg:gap-x-8">
           {d.groups.map((g, i) => (
             <li key={g.label}>
-              <RevealItem index={i} className="grid grid-cols-[minmax(0,0.85fr)_minmax(0,1fr)] gap-5 sm:block">
-                <figure className="zoom relative aspect-[4/5] overflow-hidden bg-paper-3">
-                  {/* PLACEHOLDER — atmosphere only; not photographs of the named venues. */}
-                  <Image src={g.src} alt={g.alt} fill sizes="(min-width:1024px) 18vw, (min-width:640px) 30vw, 40vw" className="grade object-cover" />
-                </figure>
-                <div className="sm:mt-6">
-                  <h3 className="label text-terra">{g.label}</h3>
-                  <ul className="mt-4 space-y-[6px]">
-                    {g.names.map((n) => (
-                      <li key={n} className="serif text-[19px] leading-[1.25] text-ink">
-                        {n}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="serif mt-3 text-[16px] italic text-ink-3">{d.more}</p>
-                </div>
+              <RevealItem index={i}>
+                <h3 className="label flex items-center gap-3 text-terra">
+                  <span className="num text-[13px] tracking-normal text-ink-3">{String(i + 1).padStart(2, "0")}</span>
+                  {g.label}
+                </h3>
+                <ul className="mt-5 space-y-[2px]">
+                  {g.names.map((n) => (
+                    <li key={n} className="serif text-[clamp(22px,2vw,27px)] leading-[1.28] text-ink">
+                      {n}
+                    </li>
+                  ))}
+                </ul>
+                <p className="serif mt-3 text-[16px] italic text-ink-3">{d.more}</p>
               </RevealItem>
             </li>
           ))}

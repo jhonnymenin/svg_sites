@@ -25,7 +25,19 @@ export function Practical() {
             ))}
           </ul>
 
-          <Reveal className="mt-12">
+          <Reveal className="mt-14">
+            <h3 className="label text-terra">{p.rules.label}</h3>
+            <ol className="mt-5 space-y-4">
+              {p.rules.items.map((r, i) => (
+                <li key={r} className="grid grid-cols-[28px_minmax(0,1fr)] gap-3">
+                  <span className="num pt-[3px] text-[14px] tracking-normal text-ink-3">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="pretty text-[14.5px] leading-[1.55] text-ink-2">{r}</span>
+                </li>
+              ))}
+            </ol>
+          </Reveal>
+
+          <Reveal className="mt-14">
             <address className="not-italic">
               <p className="label text-terra">{p.locationLabel}</p>
               <p className="serif mt-4 text-[26px] leading-[1.25] text-ink sm:text-[30px]">

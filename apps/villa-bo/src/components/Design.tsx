@@ -13,12 +13,10 @@ export function Design() {
         <div className="order-2 lg:order-1 lg:col-span-5">
           <Reveal className="relative pr-[18%] pb-[22%] lg:pr-[14%]">
             <div className="zoom relative aspect-[4/5] overflow-hidden bg-paper-3">
-              {/* PLACEHOLDER — replace with Villa BO bathroom / linen detail. */}
-              <Image src={d.imageMain.src} alt={d.imageMain.alt} fill sizes="(min-width:1024px) 34vw, 82vw" className="grade object-cover object-[78%_38%]" />
+              <Image src={d.imageMain.src} alt={d.imageMain.alt} fill sizes="(min-width:1024px) 34vw, 82vw" className="grade object-cover object-[50%_55%]" />
             </div>
             <div className="zoom absolute bottom-0 right-0 aspect-[4/3] w-[64%] overflow-hidden border-[8px] border-paper-2 bg-paper-3 lg:-right-[6%]">
-              {/* PLACEHOLDER — replace with Villa BO kitchen detail. */}
-              <Image src={d.imageSecondary.src} alt={d.imageSecondary.alt} fill sizes="(min-width:1024px) 22vw, 50vw" className="grade object-cover" />
+              <Image src={d.imageSecondary.src} alt={d.imageSecondary.alt} fill sizes="(min-width:1024px) 22vw, 50vw" className="grade object-cover object-[70%_50%]" />
             </div>
           </Reveal>
         </div>

@@ -9,10 +9,11 @@ import { content } from "@/content/site";
 const t = content.hero;
 
 /**
- * Arrival. Split composition like the approved mockup — the tower at dusk
- * carries the promise, the street façade carries the address — but the
- * headline is set as a quiet column of light serif, and each line rises on
- * load via CSS (so it is visible even if JS never hydrates).
+ * Arrival. Split composition like the approved mockup — the Villa BO tower
+ * (brick, looking up from the street) carries the promise, the garden
+ * entrance carries the address — but the headline is set as a quiet column of
+ * light serif, and each line rises on load via CSS (so it is visible even if
+ * JS never hydrates).
  */
 export function Hero() {
   const ref = useRef<HTMLElement>(null);
@@ -25,18 +26,17 @@ export function Hero() {
   return (
     <section ref={ref} id="top" aria-labelledby="hero-title" className="relative bg-paper">
       <div className="grid lg:h-[clamp(640px,calc(100svh-var(--nav-h)),960px)] lg:grid-cols-[1.42fr_1fr] lg:gap-[6px]">
-        {/* ── Tower at dusk ─────────────────────────────── */}
+        {/* ── The tower ────────────────────────────────── */}
         <div className="relative h-[min(88svh,760px)] min-h-[560px] overflow-hidden bg-night lg:h-auto lg:min-h-0">
           <motion.div style={{ y: towerY }} className="absolute inset-[-2%_0_-14%_0]">
             <div className="hero-zoom absolute inset-0">
-            {/* PLACEHOLDER — replace with Villa BO tower photographed at dusk. */}
             <Image
-              src="/images/hero-tower.jpg"
-              alt="A slender residential tower against a terracotta and violet dusk sky"
+              src="/images/bo/hero-facade.jpg"
+              alt="The Villa BO tower in brick and glass, seen from the street against a clear sky"
               fill
               priority
               sizes="(min-width: 1024px) 60vw, 100vw"
-              className="grade-dusk object-cover object-[30%_60%] lg:object-[20%_62%]"
+              className="grade-dusk object-cover object-[46%_40%] lg:object-[52%_42%]"
             />
             </div>
           </motion.div>
@@ -85,18 +85,17 @@ export function Hero() {
           </p>
         </div>
 
-        {/* ── Street façade ─────────────────────────────── */}
+        {/* ── Street entrance ──────────────────────────── */}
         <div className="relative hidden overflow-hidden bg-night lg:block">
           <motion.div style={{ y: facadeY }} className="absolute inset-[-2%_0_-8%_0]">
             <div className="hero-zoom absolute inset-0">
-            {/* PLACEHOLDER — replace with the Villa BO building photographed from Rua Gabriel Monteiro da Silva. */}
             <Image
-              src="/images/hero-building.jpg"
-              alt="Contemporary residential façade with dark frames and warm-lit balconies"
+              src="/images/bo/hero-entrance.jpg"
+              alt="Villa BO’s glass entrance on Rua Gabriel Monteiro da Silva, framed by brick, palms and a planted garden"
               fill
               priority
               sizes="40vw"
-              className="grade-facade object-cover object-[40%_50%]"
+              className="grade-facade object-cover object-[38%_50%]"
             />
             </div>
           </motion.div>
@@ -115,16 +114,15 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Mobile / tablet: the façade becomes an address plate under the tower. */}
+      {/* Mobile / tablet: the entrance becomes an address plate under the tower. */}
       <div className="frame grid grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] items-end gap-5 pt-5 lg:hidden">
         <div className="relative aspect-[4/5] overflow-hidden bg-night">
-          {/* PLACEHOLDER — Villa BO façade. */}
           <Image
-            src="/images/hero-building.jpg"
-            alt="Contemporary residential façade with dark frames and warm-lit balconies"
+            src="/images/bo/hero-entrance.jpg"
+            alt="Villa BO’s glass entrance on Rua Gabriel Monteiro da Silva, framed by brick, palms and a planted garden"
             fill
             sizes="45vw"
-            className="grade-facade object-cover object-[35%_50%]"
+            className="grade object-cover object-[40%_50%]"
           />
         </div>
         <div className="pb-1">

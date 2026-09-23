@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { RevealItem } from "@sgv/brand/motion";
+import { Reveal, RevealItem } from "@sgv/brand/motion";
 import { content } from "@/content/site";
 import { Icon } from "./Icon";
 import { SectionHead } from "./SectionHead";
@@ -25,8 +25,7 @@ export function Amenities() {
           <li key={item.label} className={`w-[78vw] shrink-0 sm:w-[44vw] lg:w-auto ${OFFSET[i]}`}>
             <RevealItem index={i}>
               <figure className="zoom relative aspect-[3/4] overflow-hidden bg-paper-3">
-                {/* PLACEHOLDER — replace with Villa BO amenity photography. */}
-                <Image src={item.src} alt={item.alt} fill sizes="(min-width:1024px) 24vw, 78vw" className={`grade object-cover ${i === 0 ? "object-[30%_50%]" : ""}`} />
+                <Image src={item.src} alt={item.alt} fill sizes="(min-width:1024px) 24vw, 78vw" className="grade object-cover" style={{ objectPosition: item.pos }} />
               </figure>
               <div className="mt-5 flex items-start gap-4 border-t hairline pt-5">
                 <Icon name={item.icon} size={22} className="mt-1 shrink-0 text-terra" />
@@ -39,6 +38,34 @@ export function Amenities() {
           </li>
         ))}
       </ul>
+
+      {/* The rest of the house, at a smaller scale: a contact-sheet strip of
+          the shared spaces, so the four amenities above stay the headline. */}
+      <div className="frame mt-[clamp(64px,8vw,120px)] grid gap-6 lg:grid-cols-12 lg:gap-x-[clamp(24px,3vw,56px)]">
+        <Reveal className="lg:col-span-3">
+          <p className="label flex items-center gap-4 text-ink-3">
+            <span aria-hidden className="h-px w-8 bg-terra" />
+            {a.building.label}
+          </p>
+        </Reveal>
+        <ul className="grid grid-cols-2 gap-x-3 gap-y-6 sm:grid-cols-4 lg:col-span-9">
+          {a.building.items.map((b, i) => (
+            <li key={b.src}>
+              <RevealItem index={i}>
+                <figure>
+                  <div className="zoom relative aspect-[4/3] overflow-hidden bg-paper-3">
+                    <Image src={b.src} alt={b.alt} fill sizes="(min-width:1024px) 17vw, (min-width:640px) 24vw, 46vw" className="grade object-cover" style={{ objectPosition: b.pos }} />
+                  </div>
+                  <figcaption className="mt-3 flex items-baseline gap-3">
+                    <span className="num text-[13px] tracking-normal text-terra">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="serif text-[17px] leading-tight text-ink">{b.caption}</span>
+                  </figcaption>
+                </figure>
+              </RevealItem>
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 }
