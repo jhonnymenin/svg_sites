@@ -1,10 +1,10 @@
 import { useId } from "react";
+import Image from "next/image";
 import { clsx } from "clsx";
 
 /*
-  Printed marks: the SE monogram, rubber stamps and badges.
-  All placeholder constructions built from our own type + geometry — swap the
-  SE monogram for the client's vector logo when it's supplied.
+  Printed marks: the official SE logo, plus our own rubber stamps and badges
+  (constructions built from our own type + geometry).
 */
 
 /** Soft ink-wear mask: speckles knocked out of solid ink, like a worn plate. */
@@ -26,61 +26,33 @@ function WearMask({ id, amount = 0.5, scale = 0.9 }: { id: string; amount?: numb
 }
 
 /* ---------------------------------------------------------------- */
-/* Social Entertainment monogram: a heavy S, the E as three bars.    */
+/* Social Entertainment logo — the client's official artwork.        */
+/* The source is 241×193px: keep it ≤ ~95px tall so it stays crisp   */
+/* on 2x screens. Never redraw or recolour it.                        */
 /* ---------------------------------------------------------------- */
 
 export function SELogo({
   className,
   tone = "light",
-  worn = true,
+  alt = "Social Entertainment",
+  priority = false,
 }: {
   className?: string;
   tone?: "light" | "dark";
-  worn?: boolean;
+  alt?: string;
+  priority?: boolean;
 }) {
-  const uid = useId().replace(/:/g, "");
-  const fill = tone === "light" ? "var(--color-cream)" : "var(--color-ink)";
   return (
-    <svg
-      viewBox="0 0 240 172"
-      className={clsx("block", className)}
-      role="img"
-      aria-label="Social Entertainment"
-    >
-      {worn ? (
-        <defs>
-          <WearMask id={`${uid}-w`} amount={0.2} scale={1.3} />
-        </defs>
-      ) : null}
-      <g fill={fill} mask={worn ? `url(#${uid}-w)` : undefined}>
-        <text
-          x="237"
-          y="25"
-          textAnchor="end"
-          fontFamily="var(--font-archivo-black)"
-          fontSize="25"
-          letterSpacing="0.5"
-        >
-          SOCIAL
-        </text>
-        <text x="-3" y="141" fontFamily="var(--font-archivo-black)" fontSize="172" letterSpacing="-4">
-          S
-        </text>
-        <rect x="124" y="34" width="113" height="28" />
-        <rect x="124" y="73" width="100" height="28" />
-        <rect x="124" y="112" width="113" height="28" />
-        <text
-          x="2"
-          y="169"
-          fontFamily="var(--font-archivo-black)"
-          fontSize="22.5"
-          textLength="235"
-          lengthAdjust="spacingAndGlyphs"
-        >
-          ENTERTAINMENT
-        </text>
-      </g>
-    </svg>
+    <Image
+      src={tone === "light" ? "/brand/logos/se-white.webp" : "/brand/logos/se-black.webp"}
+      alt={alt}
+      width={241}
+      height={193}
+      unoptimized
+      priority={priority}
+      draggable={false}
+      className={clsx("block h-auto max-w-none select-none", className)}
+    />
   );
 }
 

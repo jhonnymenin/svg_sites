@@ -73,7 +73,7 @@ export function ServingGoodVibes() {
           </div>
 
           <div className="mt-9 flex flex-col items-start gap-5 border-t border-ink/15 pt-7 sm:flex-row sm:items-center sm:justify-between lg:mt-0 lg:flex-col lg:items-stretch lg:justify-center lg:border-t-0 lg:border-l lg:pt-0 lg:pl-10">
-            <SgvMark tone="dark" height={50} eyebrow="A Social Entertainment platform" />
+            <SgvMark tone="dark" height={50} eyebrow="A Social Entertainment company" />
             <a
               href="#"
               className="group inline-flex w-full items-center justify-between gap-8 bg-teal px-6 py-4 font-label text-[17px] font-semibold uppercase leading-[1.15] tracking-[0.09em] text-cream shadow-[3px_3px_0_var(--color-ink)] transition-all duration-150 hover:-translate-x-px hover:-translate-y-px hover:bg-[#467571] hover:shadow-[5px_5px_0_var(--color-ink)] sm:w-auto lg:w-[250px]"

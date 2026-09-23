@@ -43,48 +43,45 @@ export function Stays() {
                 <figure>
                   <div className="arch relative aspect-[3/4.3] overflow-hidden bg-linen">
                     <Parallax>
-                      {/* PLACEHOLDER — stock canopy bedroom; replace with Chez La Fête's primary bedroom. */}
                       <Image
-                        src="/images/stay-bedroom.jpg"
-                        alt="A canopy bed dressed in white linen beneath tall French windows"
+                        src="/images/chez-bedroom-01.jpg"
+                        alt="The king suite: a green velvet headboard, blue toile pillows and white linen between brass sconces, abstract art above"
                         fill
                         sizes="(min-width:1024px) 34vw, 58vw"
-                        className="grade object-cover object-[50%_60%]"
+                        className="object-cover object-[44%_60%]"
                       />
                     </Parallax>
                   </div>
-                  <figcaption className="italic-serif mt-3 text-[15px] text-ink-mute">The bedrooms — four, each its own.</figcaption>
+                  <figcaption className="italic-serif mt-3 text-[15px] text-ink-mute">The king suite — one of four bedrooms, each its own.</figcaption>
                 </figure>
               </Reveal>
               <div className="col-span-5 flex flex-col gap-3 pt-20 sm:gap-5 sm:pt-32">
                 <Reveal delay={0.1}>
                   <figure>
                     <div className="relative aspect-[4/5] overflow-hidden bg-linen">
-                      {/* PLACEHOLDER — stock candlelit bar; replace with Bar Bijou. */}
                       <Image
-                        src="/images/stay-bar.jpg"
-                        alt="Candlelight glowing on a dark bar top"
+                        src="/images/chez-bar-bijou-01.jpg"
+                        alt="Bar Bijou: a carved wooden bar with teal velvet stools beneath a wall of framed festival posters"
                         fill
                         sizes="(min-width:1024px) 24vw, 40vw"
-                        className="grade object-cover transition-transform duration-[1.4s] ease-[var(--ease-salon)] hover:scale-[1.04]"
+                        className="object-cover object-[38%_60%] transition-transform duration-[1.4s] ease-[var(--ease-salon)] hover:scale-[1.04]"
                       />
                     </div>
-                    <figcaption className="italic-serif mt-3 text-[15px] text-ink-mute">Bar Bijou</figcaption>
+                    <figcaption className="italic-serif mt-3 text-[15px] text-ink-mute">Bar Bijou &amp; its teal velvet stools</figcaption>
                   </figure>
                 </Reveal>
                 <Reveal delay={0.2}>
                   <figure>
                     <div className="relative aspect-[4/3] overflow-hidden bg-linen">
-                      {/* PLACEHOLDER — stock string-lit terrace; replace with the backyard & pool at night. */}
                       <Image
-                        src="/images/stay-garden.jpg"
-                        alt="String lights over an outdoor lounge at dusk"
+                        src="/images/chez-backyard-tree-deck-01.jpg"
+                        alt="A live-oak limb arching over the backyard tree deck, with planters, picnic tables and the neon living wall"
                         fill
                         sizes="(min-width:1024px) 24vw, 40vw"
-                        className="grade-night object-cover transition-transform duration-[1.4s] ease-[var(--ease-salon)] hover:scale-[1.04]"
+                        className="object-cover object-[40%_55%] transition-transform duration-[1.4s] ease-[var(--ease-salon)] hover:scale-[1.04]"
                       />
                     </div>
-                    <figcaption className="italic-serif mt-3 text-[15px] text-ink-mute">The garden, after dark</figcaption>
+                    <figcaption className="italic-serif mt-3 text-[15px] text-ink-mute">The tree deck, under the live oak</figcaption>
                   </figure>
                 </Reveal>
               </div>

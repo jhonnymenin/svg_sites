@@ -2,9 +2,26 @@ import { Mail } from "lucide-react";
 import { SELogo } from "./marks";
 import { NewsletterForm } from "./NewsletterForm";
 
-const COLUMNS = [
-  { title: "Company", links: ["About Us", "Our Brands", "Careers", "News"] },
-  { title: "Resources", links: ["Investors", "Vendors", "Press", "Contact"] },
+const SE = "https://socialentertainment.net";
+const COLUMNS: { title: string; links: { label: string; href: string }[] }[] = [
+  {
+    title: "Company",
+    links: [
+      { label: "About Us", href: "#since-sep" },
+      { label: "Our Brands", href: "#food-drink" },
+      { label: "Careers", href: "#" },
+      { label: "News", href: "#" },
+    ],
+  },
+  {
+    title: "Resources",
+    links: [
+      { label: "Partners + Sponsors", href: `${SE}/partners-sponsors` },
+      { label: "Vendors", href: `${SE}/vendors` },
+      { label: "Investors", href: "#" },
+      { label: "Press", href: "#" },
+    ],
+  },
 ];
 
 /** lucide-react ships no brand glyphs — minimal inline marks. Links are placeholders until profiles are confirmed. */
@@ -30,8 +47,8 @@ export function Footer() {
   return (
     <footer id="contact" className="dusty text-cream">
       <div className="mx-auto grid max-w-(--page-max) grid-cols-2 gap-x-6 gap-y-10 px-(--gutter) pt-14 pb-12 md:grid-cols-4 lg:grid-cols-[auto_1fr_0.8fr_0.8fr_1.1fr_minmax(300px,1.4fr)] lg:gap-x-10 lg:pt-12">
-        <a href="#top" aria-label="Back to top" className="col-span-2 block w-[128px] md:col-span-1 lg:w-[132px]">
-          <SELogo />
+        <a href="#top" aria-label="Back to top" className="col-span-2 block w-[112px] md:col-span-1 lg:w-[118px]">
+          <SELogo alt="" className="w-full" />
         </a>
 
         <div className="col-span-2 md:col-span-1">
@@ -69,10 +86,14 @@ export function Footer() {
           <nav key={title} aria-label={title}>
             <h3 className={heading}>{title}</h3>
             <ul className="mt-4 space-y-2.5">
-              {links.map((l) => (
-                <li key={l}>
-                  <a href="#" className={link}>
-                    {l}
+              {links.map(({ label, href }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    className={link}
+                    {...(href.startsWith("http") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                  >
+                    {label}
                   </a>
                 </li>
               ))}

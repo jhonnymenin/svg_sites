@@ -3,17 +3,55 @@ import { Reveal, RevealItem } from "@sgv/brand/motion";
 import { SgvMark } from "@sgv/brand";
 import { ArrowRight } from "lucide-react";
 import { Chapter } from "./Chapter";
+import { HoverLoop } from "./HoverLoop";
 
-/* TODO(client): link each property to its page on the SGV portfolio. */
-const SGV_PORTFOLIO_URL = "#";
+/* TODO(client): link each property to its own page on the SGV portfolio. */
+const SGV_PORTFOLIO_URL = "https://servinggoodvibes.com";
 
-/* All four photographs are stock PLACEHOLDERS of similar regional houses,
-   not the actual properties. */
-const STAYS = [
-  { name: "Sunset Grove", place: "Broussard, Louisiana", img: "/images/sister-sunset-grove.jpg", pos: "50% 60%", alt: "A two-storey galleried Louisiana house with a white porch" },
-  { name: "Saint John Inn", place: "Lafayette, Louisiana", img: "/images/sister-saint-john.jpg", pos: "45% 55%", alt: "A raised Creole cottage with a deep white gallery" },
-  { name: "Camellia Cottage", place: "Lafayette, Louisiana", img: "/images/sister-camellia.jpg", pos: "58% 55%", alt: "A white Victorian cottage with a gingerbread-trimmed porch" },
-  { name: "Salty Air Retreat", place: "Pensacola Key, Florida", img: "/images/sister-salty-air.jpg", pos: "50% 18%", alt: "A beach house above the dunes with a wooden stair to the sand" },
+type Stay = {
+  name: string;
+  place: string;
+  img: string;
+  pos: string;
+  alt: string;
+  logo?: { src: string; w: number; h: number };
+  /** Optional silent loop revealed on hover */
+  loop?: string;
+};
+
+const STAYS: Stay[] = [
+  {
+    name: "Sunset Grove",
+    place: "Broussard, Louisiana",
+    img: "/images/sunset-grove-exterior-01.jpg",
+    pos: "42% 55%",
+    alt: "Sunset Grove: a gambrel farmhouse beneath a massive live oak with a porch swing on the lawn",
+    logo: { src: "/brand/logos/stay-sunset-grove.webp", w: 491, h: 444 },
+    loop: "/video/sunset-grove-loop",
+  },
+  {
+    name: "Saint John Inn",
+    place: "Lafayette, Louisiana",
+    img: "/images/saint-john-dining-01.jpg",
+    pos: "52% 50%",
+    alt: "Saint John Inn’s dining room with a giant painted heron mural and green velvet chairs",
+    logo: { src: "/brand/logos/stay-saint-john-inn.webp", w: 900, h: 751 },
+  },
+  {
+    name: "Camellia Cottage",
+    place: "Lafayette, Louisiana",
+    img: "/images/camellia-exterior-dusk-01.jpg",
+    pos: "30% 45%",
+    alt: "Camellia Cottage at dusk: a lit pass-through window and a teal umbrella strung with lights over the patio",
+  },
+  {
+    name: "Salty Air Retreat",
+    place: "Perdido Key, Florida",
+    img: "/images/salty-air-beach-sunset-01.jpg",
+    pos: "58% 55%",
+    alt: "The Perdido Key shoreline at sunset, towers reflected in the wet sand",
+    logo: { src: "/brand/logos/stay-salty-air-retreat.webp", w: 900, h: 865 },
+  },
 ];
 
 export function SisterStays() {
@@ -36,19 +74,32 @@ export function SisterStays() {
           {STAYS.map((s, i) => (
             <li key={s.name} className="w-[70%] shrink-0 sm:w-[42%] lg:w-auto">
               <RevealItem index={i}>
-                <a href={SGV_PORTFOLIO_URL} className="group block">
-                  <div className="arch relative aspect-[3/4] overflow-hidden bg-linen ring-1 ring-gold/50 ring-offset-4 ring-offset-ivory">
-                    <Image
-                      src={s.img}
-                      alt={s.alt}
-                      fill
-                      sizes="(min-width:1024px) 22vw, (min-width:640px) 42vw, 70vw"
-                      style={{ objectPosition: s.pos }}
-                      className="grade object-cover transition-transform duration-[1.2s] ease-[var(--ease-salon)] group-hover:scale-[1.05]"
-                    />
-                    {/* warm the pale skies so each arch reads against the ivory page */}
-                    <div aria-hidden className="absolute inset-0 bg-[linear-gradient(180deg,rgb(164_125_59/0.28),rgb(164_125_59/0.04)_45%,transparent)] mix-blend-multiply" />
-                    <div aria-hidden className="arch pointer-events-none absolute inset-[7px] border border-ivory/70" />
+                <a href={SGV_PORTFOLIO_URL} target="_blank" rel="noopener noreferrer" className="group block">
+                  <div className="relative">
+                    <div className="arch relative aspect-[3/4] overflow-hidden bg-linen ring-1 ring-gold/50 ring-offset-4 ring-offset-ivory">
+                      <Image
+                        src={s.img}
+                        alt={s.alt}
+                        fill
+                        sizes="(min-width:1024px) 22vw, (min-width:640px) 42vw, 70vw"
+                        style={{ objectPosition: s.pos }}
+                        className="object-cover transition-transform duration-[1.2s] ease-[var(--ease-salon)] group-hover:scale-[1.05]"
+                      />
+                      {s.loop ? <HoverLoop src={s.loop} /> : null}
+                      <div aria-hidden className="arch pointer-events-none absolute inset-[7px] border border-ivory/70" />
+                    </div>
+                    {/* The property's own seal, pinned at the foot of the arch */}
+                    {s.logo ? (
+                      <span className="absolute -bottom-7 right-3 flex h-[76px] w-[76px] items-center justify-center rounded-full bg-ivory p-2 ring-1 ring-gold/50 transition-transform duration-700 ease-[var(--ease-salon)] group-hover:-rotate-6">
+                        <Image
+                          src={s.logo.src}
+                          alt=""
+                          width={s.logo.w}
+                          height={s.logo.h}
+                          className="h-full w-full object-contain"
+                        />
+                      </span>
+                    ) : null}
                   </div>
                   <h3 className="display mt-6 text-[23px] tracking-[0.05em]">{s.name}</h3>
                   <p className="italic-serif mt-1.5 text-[17px] text-ink-mute">{s.place}</p>
@@ -67,7 +118,7 @@ export function SisterStays() {
         </ul>
 
         <div className="mt-16 flex items-center gap-6 border-t border-gold/35 pt-8 lg:mt-20">
-          <SgvMark height={30} />
+          <SgvMark height={34} />
           <p className="italic-serif text-[17px] text-ink-mute">A family of houses, each with its own character.</p>
         </div>
       </div>

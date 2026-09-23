@@ -1,14 +1,25 @@
-# Photo credits (placeholders)
+# Photo credits
 
-All images below are temporary, freely-licensed (Openverse commercial-use filter) placeholders until the client supplies real photography.
+## Client photography (Serving Good Vibes / Social Entertainment event archive)
 
-- `images/olinda-street.jpg` — "Bloco da Paz (CC BY)" — https://www.flickr.com/photo.gne?id=6892706031
-- `images/frevo-girl.jpg` — "Bloco da Paz (CC BY)" — https://www.flickr.com/photo.gne?id=6892356603
-- `images/passista.jpg` — "Passista da Portela (CC BY)" — https://www.flickr.com/photo.gne?id=6786843196
-- `images/frevo-yellow.jpg` — "O frevo rola até o último minuto (CC BY)" — https://www.flickr.com/photo.gne?id=3308917355
-- `images/capoeira.jpg` — "Capoeira roda" — https://www.flickr.com/photo.gne?id=32504685816
+Curated in `media/selections/*.json`; copied from `media/library/` and re-saved/cropped for web.
+
+- `hero-bossa-nova.jpg` — Bossa Nova @ The Collective 2025, the Good Vibes Room (`braziliana-bossa-nova-dance-01`)
+- `sala-good-vibes-room.jpg` — Bossa Nova @ The Collective 2025 (`braziliana-good-vibes-room-01`, left 6% cropped)
+- `band-bossa-nova-duo.jpg`, `podcast-mic.jpg` — Bossa Nova @ The Collective 2025 (`braziliana-house-band-01`; podcast-mic is a tight crop)
+- `event-bossa-nova-collective.jpg` — Bossa Nova @ The Collective 2025 (`braziliana-house-band-02`)
+- `event-dta-braziliana.jpg` — DTA! ft. Braziliana (`braziliana-dta-dance-01`)
+- `../video/braziliana-loop.{mp4,webm}` + poster — DTA! ft. Braziliana golden-hour loop (media/video, 720p)
+- `community-facepaint.jpg` — Carnaval Courtyard 2026 at Chez La Fête (`braziliana-carnaval-facepaint-02`)
+- `photobooth.jpg` — SGV Photobooth (`photobooth-action-01`)
+- `good-vibes-mobile.jpg` — SE Party Rentals (`party-laffy-taps-bus-01`, cropped to the bus body)
+
+Release check before launch: identifiable guests appear in every event photo (a toddler is visible mid-frame in `hero-bossa-nova.jpg`).
+
+## Placeholders (no client photography yet — food & drink)
+
+Temporary, freely-licensed placeholders until Braziliana's own product shots exist.
+
 - `images/pilsner.jpg` — "Pint" — https://www.flickr.com/photo.gne?id=3556485764
 - `images/coffee.jpg` — "Coffee" — https://www.flickr.com/photo.gne?id=7158978523
-- `images/crowd-stage.jpg` — "Concert crowd" — https://www.flickr.com/photo.gne?id=9391593778
-- `images/cheesebread.jpg`, `sugarcane.jpg`, `sala.jpg`, `sala-dusk.jpg`, `microphone.jpg`, `bus.jpg` — copied from apps/social-entertainment/public (see that app for original sources); placeholders.
-- Photos from Flickr "Bloco da Paz" / "O frevo rola" (Prefeitura de Olinda) had a photographer credit burned into the top edge; it was cropped for layout — the credit is kept here: Jan Ribeiro / Passarinho, Pref. Olinda.
+- `images/cheesebread.jpg`, `sugarcane.jpg` — copied from apps/social-entertainment/public (see that app for original sources); placeholders.

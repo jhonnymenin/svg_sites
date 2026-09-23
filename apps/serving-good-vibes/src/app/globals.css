@@ -2,88 +2,62 @@
 
 /*
  * Serving Good Vibes — masterbrand hub.
- * "A printed poster for a night that already happened, rebuilt as a website."
- * Palette per docs/DESIGN-serving-good-vibes.md §3. Every vertical owns a hue.
+ * "The house lights of Acadiana": real nights, real people, set like a 70s
+ * gig poster. Official palette (FINAL Brand Guide 2026); the logo's five
+ * stripes are the recurring device. Every band owns one brand colour.
  */
 :root {
-  /* Fields */
-  --parchment: #ebe4da;
-  --parchment-hi: #f4efe7;
-  --forest: #041c0c;
-  --forest-card: #0b3314;
-  --navy: #04101b;
-  --navy-card: #0b2b37;
-  --brick: #61110c;
-  --brick-deep: #58100a;
-  --ochre: #a8690f;
-  --ochre-card: #9b5d02;
-  --ink: #141411;
+  /* Official palette */
+  --red: #8c2a26;
+  --gold: #e0ad46;
+  --olive: #566f46;
+  --deep-teal: #044c58;
+  --cream: #e9d7a5;
+  --teal: #1a7081;
 
-  /* Marks */
-  --gold: #c9954a;
-  --gold-bright: #d9a94f;
-  --cream: #ebe4da;
-  --cream-dim: #c6bcac;
-  --slate-dim: #93a3b4;
+  /* Working shades derived from the palette */
+  --red-deep: #6f1f1c;
+  --gold-soft: #ebc57a;
+  --olive-deep: #3e5233;
+  --teal-ink: #02363f;
+  --night: #02191d;
+  --paper: #f4ead0;
+  --paper-hi: #faf4e4;
+  --ink: #1d1914;
 
-  /* Readable vertical hues on parchment (icons, micro links) */
-  --hue-events: #8a1d14;
-  --hue-stays: #1f4a2c;
-  --hue-hospitality: #a8690f;
-  --hue-media: #173a5c;
-  --hue-community: #7a1a12;
-
-  /* Stripe device — our own three bars: forest, ochre, brick */
-  --stripe-green: #1d6b35;
-  --stripe-gold: #d99a1e;
-  --stripe-red: #a3241a;
-
-  /* Festival colors, used only inside the Braziliana wordmark */
-  --fest-green: #2f9a4c;
-  --fest-yellow: #f1b62a;
-  --fest-blue: #2e62b3;
-  --fest-red: #d4432b;
-
-  /* Frame */
-  --gutter: clamp(20px, 3.55vw, 64px);
-  --page-max: 1520px;
-  --band-y: clamp(36px, 3.1vw, 48px);
-  --nav-h: 76px;
+  --gutter: clamp(20px, 4vw, 72px);
+  --page-max: 1560px;
+  --band-y: clamp(72px, 8vw, 136px);
+  --nav-h: 84px;
 }
 
 @theme inline {
-  --color-parchment: var(--parchment);
-  --color-parchment-hi: var(--parchment-hi);
-  --color-forest: var(--forest);
-  --color-forest-card: var(--forest-card);
-  --color-navy: var(--navy);
-  --color-navy-card: var(--navy-card);
-  --color-brick: var(--brick);
-  --color-brick-deep: var(--brick-deep);
-  --color-ochre: var(--ochre);
-  --color-ochre-card: var(--ochre-card);
-  --color-ink: var(--ink);
+  --color-red: var(--red);
+  --color-red-deep: var(--red-deep);
   --color-gold: var(--gold);
-  --color-gold-bright: var(--gold-bright);
+  --color-gold-soft: var(--gold-soft);
+  --color-olive: var(--olive);
+  --color-olive-deep: var(--olive-deep);
+  --color-deep-teal: var(--deep-teal);
+  --color-teal: var(--teal);
+  --color-teal-ink: var(--teal-ink);
+  --color-night: var(--night);
   --color-cream: var(--cream);
-  --color-cream-dim: var(--cream-dim);
-  --color-slate-dim: var(--slate-dim);
-  --color-hue-events: var(--hue-events);
-  --color-hue-stays: var(--hue-stays);
-  --color-hue-hospitality: var(--hue-hospitality);
-  --color-hue-media: var(--hue-media);
-  --color-hue-community: var(--hue-community);
+  --color-paper: var(--paper);
+  --color-paper-hi: var(--paper-hi);
+  --color-ink: var(--ink);
 
-  --font-display: var(--font-oswald);
-  --font-text: var(--font-barlow);
-  --font-wordmark: var(--font-sgv);
+  --font-display: var(--font-fraunces);
+  --font-text: var(--font-rubik);
+  --font-sgv-text: var(--font-rubik);
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
   -webkit-text-size-adjust: 100%;
+  --font-sgv-text: var(--font-rubik);
 }
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -91,14 +65,15 @@ html {
 }
 
 body {
-  background: var(--ink);
+  background: var(--night);
   color: var(--ink);
   font-family: var(--font-text), system-ui, sans-serif;
   text-rendering: optimizeLegibility;
+  overflow-x: clip;
 }
 
 section[id] {
-  scroll-margin-top: 64px;
+  scroll-margin-top: 60px;
 }
 
 ::selection {
@@ -107,138 +82,224 @@ section[id] {
 }
 
 :focus-visible {
-  outline: 2px solid var(--gold-bright);
+  outline: 2px solid var(--gold);
   outline-offset: 3px;
 }
 
-/* ——— Bands ——— */
+@layer components {
+/* ——— Type ——— */
 
-/* Parchment is near-flat; the grain sits under 2 % so it reads as paper, not texture. */
-.paper {
-  background-color: var(--parchment);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.3 0 0 0 0 0.24 0 0 0 0 0.16 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+/* The display voice: soft, fat, retro — cousin of the logo's "good vibes". */
+.display {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 900;
+  font-variation-settings: "SOFT" 100, "opsz" 144;
+  letter-spacing: -0.022em;
+  line-height: 0.92;
+}
+.display-italic {
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  font-weight: 800;
+  font-variation-settings: "SOFT" 100, "opsz" 144;
+  letter-spacing: -0.01em;
+}
+.eyebrow {
+  font-family: var(--font-text), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  line-height: 1.2;
 }
 
-/* A barely-there tooth on the dark fields so they read as ink on stock. */
-.ink-tooth {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.035 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+/* ——— The signature: the logo's five stripes ——— */
+.stripes-h {
+  background: linear-gradient(
+    180deg,
+    var(--deep-teal) 0 20%,
+    var(--olive) 20% 40%,
+    var(--cream) 40% 60%,
+    var(--gold) 60% 80%,
+    var(--red) 80% 100%
+  );
+}
+.stripes-v {
+  background: linear-gradient(
+    90deg,
+    var(--deep-teal) 0 20%,
+    var(--olive) 20% 40%,
+    var(--cream) 40% 60%,
+    var(--gold) 60% 80%,
+    var(--red) 80% 100%
+  );
+}
+/* Band edge: five hairline stripes with paper gaps, like the logo's run-out. */
+.stripe-edge {
+  height: 22px;
+  background:
+    linear-gradient(
+      180deg,
+      var(--deep-teal) 0 3px,
+      transparent 3px 5px,
+      var(--olive) 5px 8px,
+      transparent 8px 10px,
+      var(--cream) 10px 13px,
+      transparent 13px 15px,
+      var(--gold) 15px 18px,
+      transparent 18px 20px,
+      var(--red) 20px 22px
+    );
 }
 
-/* Card bodies carry ~8 % lift at the top: printed ink, not a CSS block. */
-.ink-fill {
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0) 70%);
+/* Hover line: the stripe draws in under a link. */
+.stripe-link {
+  background-image: linear-gradient(
+    90deg,
+    var(--deep-teal) 0 20%,
+    var(--olive) 20% 40%,
+    var(--cream) 40% 60%,
+    var(--gold) 60% 80%,
+    var(--red) 80% 100%
+  );
+  background-size: 0% 3px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  padding-bottom: 6px;
+  transition: background-size 320ms cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.group:hover .stripe-link,
+.stripe-link:hover,
+.group:focus-visible .stripe-link,
+.stripe-link:focus-visible {
+  background-size: 100% 3px;
 }
 
 /* ——— Photography ———
-   One shared grade so a row of placeholder photos from different shoots reads as one night. */
+   Most event photos are iPhone frames (~2016px). A shared warm grade + film grain
+   unify them and keep them from reading as soft at size. */
 .grade {
-  filter: contrast(1.07) saturate(0.9) sepia(0.12) brightness(0.94);
+  filter: contrast(1.06) saturate(1.04) sepia(0.08);
+}
+.grade-night {
+  filter: contrast(1.1) saturate(1.05) brightness(0.92);
+}
+.grain {
+  position: relative;
+  isolation: isolate;
+}
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.22;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 0 0.5 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-/* Pulls a daylit-leaning placeholder toward dusk so it sits in the row. */
-.grade-dusk {
-  filter: contrast(1.1) saturate(0.8) sepia(0.2) brightness(0.78) hue-rotate(-6deg);
+/* Paper tooth for the cream fields. */
+.paper {
+  background-color: var(--paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.25 0 0 0 0 0.1 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+.tooth {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
 /* ——— Rails ——— */
 .rail {
   scrollbar-width: none;
-  -ms-overflow-style: none;
   overscroll-behavior-x: contain;
 }
 .rail::-webkit-scrollbar {
   display: none;
 }
 
-/* ——— Signature hairlines ——— */
-.hairline {
-  background-color: color-mix(in srgb, var(--gold) 60%, transparent);
-}
-
-/* Micro link: arrow shifts +4px — the universal affordance on the page. */
-.micro-arrow {
+.arrow {
   display: inline-block;
-  transition: transform 160ms cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition: transform 180ms cubic-bezier(0.2, 0.7, 0.2, 1);
 }
-.group:hover .micro-arrow,
-.group:focus-visible .micro-arrow {
+.group:hover .arrow,
+.group:focus-visible .arrow {
   transform: translateX(4px);
 }
 
-/* Hero banner sways as if a breeze moves through the garden. */
-@keyframes sway {
-  0%,
-  100% {
-    transform: rotate(-0.7deg);
-  }
-  50% {
-    transform: rotate(0.9deg);
-  }
-}
-.sway {
-  transform-origin: 50% 0;
-  animation: sway 7s ease-in-out infinite;
-}
-@media (prefers-reduced-motion: reduce) {
-  .sway {
-    animation: none;
-  }
 }
 
-/* ——— Hero entrance ———
-   Pure CSS so it plays before hydration and never strands content if JS fails.
-   Lines wipe up from below, the stripe draws from the left, copy fades in. */
-@keyframes hero-line {
+/* ——— Hero entrance (CSS so it plays before hydration) ——— */
+@keyframes rise {
   from {
-    transform: translateY(105%);
+    transform: translateY(108%);
   }
 }
-@keyframes hero-stripe {
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+@keyframes draw-x {
   from {
     transform: scaleX(0);
   }
 }
-@keyframes hero-fade {
+@keyframes settle {
   from {
-    opacity: 0;
-    transform: translateY(10px);
+    transform: scale(1.08);
   }
 }
-@keyframes hero-zoom {
-  from {
-    transform: scale(1.06);
-  }
+.rise {
+  animation: rise 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
-@keyframes hero-drop {
-  from {
-    transform: translateY(-60px);
-    opacity: 0;
-  }
+.fade-up {
+  animation: fade-up 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
-.hero-line {
-  animation: hero-line 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-.hero-stripe {
+.draw-x {
   transform-origin: left;
-  animation: hero-stripe 600ms cubic-bezier(0.2, 0.7, 0.2, 1) 560ms both;
+  animation: draw-x 900ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
-.hero-fade {
-  animation: hero-fade 600ms cubic-bezier(0.2, 0.7, 0.2, 1) 400ms both;
+.settle {
+  animation: settle 2200ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
-.hero-zoom {
-  animation: hero-zoom 1400ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+
+/* Ticker */
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
 }
-.hero-drop {
-  animation: hero-drop 1100ms cubic-bezier(0.2, 0.7, 0.2, 1) 300ms both;
+.marquee {
+  animation: marquee 48s linear infinite;
 }
+.marquee-host:hover .marquee {
+  animation-play-state: paused;
+}
+
+/* Live dot */
+@keyframes pulse-dot {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--gold) 70%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, var(--gold) 0%, transparent);
+  }
+}
+.live-dot {
+  animation: pulse-dot 2.2s ease-in-out infinite;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  .hero-line,
-  .hero-stripe,
-  .hero-zoom,
-  .hero-drop {
+  .rise,
+  .draw-x,
+  .settle,
+  .marquee,
+  .live-dot {
     animation: none;
   }
-  .hero-fade {
-    animation: hero-fade 200ms linear both;
+  .fade-up {
+    animation: fade-up 200ms linear both;
   }
 }

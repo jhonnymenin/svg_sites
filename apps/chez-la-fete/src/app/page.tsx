@@ -1,6 +1,8 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Stays } from "@/components/Stays";
+import { SalonWall } from "@/components/SalonWall";
+import { HolidayBand } from "@/components/HolidayBand";
 import { PrivateEvents } from "@/components/PrivateEvents";
 import { PartyRentals } from "@/components/PartyRentals";
 import { CityEvents } from "@/components/CityEvents";
@@ -22,7 +24,9 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Stays />
+        <SalonWall />
         <PrivateEvents />
+        <HolidayBand />
         <PartyRentals />
         <CityEvents />
         <SisterStays />

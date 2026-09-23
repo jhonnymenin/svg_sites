@@ -1,0 +1,1382 @@
+{
+ "ae-beer-bus-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 4,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000009.jpg",
+  "w": 1512
+ },
+ "ae-food-booths-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 44,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000056.jpg",
+  "w": 1512
+ },
+ "ae-food-guest-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 5,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000010.jpg",
+  "w": 1512
+ },
+ "ae-food-plate-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 6,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000011.jpg",
+  "w": 1512
+ },
+ "ae-kids-bubbles-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 70,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000083.jpg",
+  "w": 1512
+ },
+ "ae-stage-crowd-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 58,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000070.jpg",
+  "w": 1512
+ },
+ "ae-vendor-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 51,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000063.jpg",
+  "w": 1512
+ },
+ "braziliana-bossa-nova-dance-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 75,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000006.jpg",
+  "w": 2048
+ },
+ "braziliana-carnaval-costume-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 239,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000071.jpg",
+  "w": 1512
+ },
+ "braziliana-carnaval-dancer-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 265,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000128.jpg",
+  "w": 1512
+ },
+ "braziliana-carnaval-facepaint-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 241,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000073.jpg",
+  "w": 1512
+ },
+ "braziliana-carnaval-facepaint-02": {
+  "crop": null,
+  "h": 2016,
+  "id": 262,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000120.jpg",
+  "w": 1512
+ },
+ "braziliana-carnaval-horse-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 267,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000130.jpg",
+  "w": 1512
+ },
+ "braziliana-dta-band-01": {
+  "crop": "0,0,1,0.82",
+  "h": 1239,
+  "id": 173,
+  "source": "SGV Event Photos/DTA! Ft. Braziliana/DTAFtBraziliana41026_415e12/000064.jpg",
+  "w": 2016
+ },
+ "braziliana-dta-dance-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 159,
+  "source": "SGV Event Photos/DTA! Ft. Braziliana/DTAFtBraziliana41026_415e12/000006.jpg",
+  "w": 2048
+ },
+ "braziliana-good-vibes-room-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 73,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000004.jpg",
+  "w": 2016
+ },
+ "braziliana-house-band-01": {
+  "crop": "0,0.14,1,1",
+  "h": 1734,
+  "id": 77,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000008.jpg",
+  "w": 1512
+ },
+ "braziliana-house-band-02": {
+  "crop": null,
+  "h": 1512,
+  "id": 82,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000013.jpg",
+  "w": 2016
+ },
+ "camellia-bedroom-01": {
+  "crop": null,
+  "h": 1350,
+  "id": 1797,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9760.jpeg",
+  "w": 2400
+ },
+ "camellia-exterior-dusk-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 1808,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9885.jpeg",
+  "w": 2049
+ },
+ "camellia-firepit-night-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 1810,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9920.jpeg",
+  "w": 2060
+ },
+ "camellia-kitchen-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 1788,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_1640.jpeg",
+  "w": 2048
+ },
+ "camellia-living-kitchen-01": {
+  "crop": null,
+  "h": 1350,
+  "id": 1802,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9794.jpeg",
+  "w": 2400
+ },
+ "camellia-pass-through-01": {
+  "crop": null,
+  "h": 1436,
+  "id": 1786,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_1636.jpeg",
+  "w": 1928
+ },
+ "chez-aerial-courtyard-01": {
+  "crop": null,
+  "h": 1599,
+  "id": 1902,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Aerial-2.jpg",
+  "w": 2400
+ },
+ "chez-aerial-downtown-01": {
+  "crop": null,
+  "h": 1599,
+  "id": 1903,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Aerial-4.jpg",
+  "w": 2400
+ },
+ "chez-backyard-bistro-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1947,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-5.jpg",
+  "w": 2400
+ },
+ "chez-backyard-courtyard-stage-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1941,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-1.jpg",
+  "w": 2400
+ },
+ "chez-backyard-lounge-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1949,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-7.jpg",
+  "w": 2400
+ },
+ "chez-backyard-night-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1814,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/Copy of unnamed (60).jpg",
+  "w": 1512
+ },
+ "chez-backyard-picnic-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1946,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-4.jpg",
+  "w": 2400
+ },
+ "chez-backyard-tree-deck-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1945,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-3.jpg",
+  "w": 2400
+ },
+ "chez-backyard-wide-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1943,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-13.jpg",
+  "w": 2400
+ },
+ "chez-bar-bijou-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1927,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-13.jpg",
+  "w": 2400
+ },
+ "chez-bar-bijou-02": {
+  "crop": null,
+  "h": 1600,
+  "id": 1928,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-14.jpg",
+  "w": 2400
+ },
+ "chez-bath-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1911,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-7.jpg",
+  "w": 2400
+ },
+ "chez-bedroom-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1909,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-5.jpg",
+  "w": 2400
+ },
+ "chez-bedroom-02": {
+  "crop": null,
+  "h": 1600,
+  "id": 1908,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-4.jpg",
+  "w": 2400
+ },
+ "chez-bedroom-03": {
+  "crop": null,
+  "h": 1600,
+  "id": 1913,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-9.jpg",
+  "w": 2400
+ },
+ "chez-carnaval-courtyard-day-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 247,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000079.jpg",
+  "w": 2016
+ },
+ "chez-comedy-night-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 608,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Jokes & Tokes/JOKESANDTOKES_3a08a0/000002.jpg",
+  "w": 1536
+ },
+ "chez-courtyard-day-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 335,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Celtic Bayou Festival 2026/CBF2026_223d82/000048.jpg",
+  "w": 2016
+ },
+ "chez-courtyard-golden-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 285,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000150.jpg",
+  "w": 2048
+ },
+ "chez-courtyard-night-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 274,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000137.jpg",
+  "w": 2016
+ },
+ "chez-courtyard-night-02": {
+  "crop": null,
+  "h": 1512,
+  "id": 277,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000140.jpg",
+  "w": 2016
+ },
+ "chez-dance-floor-bluehour-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 419,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 7.25.25/HighNotes725_55c734/000025.jpg",
+  "w": 1536
+ },
+ "chez-detail-bienvenue-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1922,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-8.jpg",
+  "w": 2400
+ },
+ "chez-detail-neon-01": {
+  "crop": "0,0.02,1,0.425",
+  "h": 1458,
+  "id": 1885,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1061.jpg",
+  "w": 2400
+ },
+ "chez-detail-pink-door-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1921,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-7.jpg",
+  "w": 2400
+ },
+ "chez-detail-sign-01": {
+  "crop": "0,0,1,0.8",
+  "h": 1280,
+  "id": 1919,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-5.jpg",
+  "w": 2400
+ },
+ "chez-dining-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1934,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-5.jpg",
+  "w": 2400
+ },
+ "chez-event-cocktail-01": {
+  "crop": "0,0,0.62,1",
+  "h": 2400,
+  "id": 1857,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC0896.jpg",
+  "w": 2232
+ },
+ "chez-event-courtyard-stage-01": {
+  "crop": "0,0,0.66,1",
+  "h": 2400,
+  "id": 1855,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC0874.jpg",
+  "w": 2376
+ },
+ "chez-event-grazing-01": {
+  "crop": "0,0,0.66,1",
+  "h": 2400,
+  "id": 1884,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1053.jpg",
+  "w": 2375
+ },
+ "chez-event-group-01": {
+  "crop": null,
+  "h": 1077,
+  "id": 1811,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/Copy of ParbhooPartyPicture.jpg",
+  "w": 1599
+ },
+ "chez-event-guests-lights-01": {
+  "crop": "0,0,0.78,0.8",
+  "h": 1641,
+  "id": 1887,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1095.jpg",
+  "w": 2400
+ },
+ "chez-event-reception-01": {
+  "crop": "0,0,0.9,0.72",
+  "h": 1280,
+  "id": 1878,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1022.jpg",
+  "w": 2400
+ },
+ "chez-exterior-street-01": {
+  "crop": "0,0.06,1,0.72",
+  "h": 1056,
+  "id": 1916,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-11.jpg",
+  "w": 2400
+ },
+ "chez-exterior-street-02": {
+  "crop": "0,0.05,1,0.78",
+  "h": 1168,
+  "id": 1920,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-6.jpg",
+  "w": 2400
+ },
+ "chez-fest-house-lounge-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1937,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-10.jpg",
+  "w": 2400
+ },
+ "chez-fest-house-sign-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1939,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-3.jpg",
+  "w": 2400
+ },
+ "chez-festhouse-crowd-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 373,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Fest House 2026/FESTHOUSE2026_1893d5/000036.jpg",
+  "w": 2016
+ },
+ "chez-festhouse-dining-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 365,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Fest House 2026/FESTHOUSE2026_1893d5/000028.jpg",
+  "w": 2016
+ },
+ "chez-festhouse-dining-02": {
+  "crop": null,
+  "h": 1512,
+  "id": 362,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Fest House 2026/FESTHOUSE2026_1893d5/000025.jpg",
+  "w": 2016
+ },
+ "chez-food-board-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 538,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000063.jpg",
+  "w": 1512
+ },
+ "chez-guest-string-lights-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 517,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000011.jpg",
+  "w": 1536
+ },
+ "chez-high-notes-band-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 412,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 3.6.26/HighNotes3626_996a18/000023.jpg",
+  "w": 2048
+ },
+ "chez-high-notes-band-02": {
+  "crop": null,
+  "h": 2016,
+  "id": 411,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 3.6.26/HighNotes3626_996a18/000022.jpg",
+  "w": 1512
+ },
+ "chez-high-notes-band-03": {
+  "crop": null,
+  "h": 2016,
+  "id": 571,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes/HighNotes_a07a43/000030.jpg",
+  "w": 1512
+ },
+ "chez-high-notes-band-04": {
+  "crop": null,
+  "h": 2016,
+  "id": 590,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes/HighNotes_a07a43/000065.jpg",
+  "w": 1512
+ },
+ "chez-high-notes-crowd-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 541,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000066.jpg",
+  "w": 2016
+ },
+ "chez-high-notes-crowd-02": {
+  "crop": null,
+  "h": 2016,
+  "id": 580,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes/HighNotes_a07a43/000041.jpg",
+  "w": 1512
+ },
+ "chez-high-notes-stage-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 385,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 10.3.25/Highnotes103_147167/000020.jpg",
+  "w": 1536
+ },
+ "chez-high-notes-stage-02": {
+  "crop": null,
+  "h": 2048,
+  "id": 391,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 11.14.25/HighNotes111425_d637ec/000012.jpg",
+  "w": 1536
+ },
+ "chez-high-notes-stage-03": {
+  "crop": null,
+  "h": 2016,
+  "id": 534,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000050.jpg",
+  "w": 1512
+ },
+ "chez-holiday-firepit-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 639,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000044.jpg",
+  "w": 2016
+ },
+ "chez-holiday-guests-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 633,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000038.jpg",
+  "w": 1512
+ },
+ "chez-holiday-interior-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 641,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000046.jpg",
+  "w": 2016
+ },
+ "chez-interior-hallway-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1931,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-19.jpg",
+  "w": 2400
+ },
+ "chez-interior-living-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1924,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-1.jpg",
+  "w": 2400
+ },
+ "chez-interior-living-02": {
+  "crop": null,
+  "h": 1600,
+  "id": 1932,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-2.jpg",
+  "w": 2400
+ },
+ "chez-interior-lounge-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1930,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-17.jpg",
+  "w": 2400
+ },
+ "chez-kitchen-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1936,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-9.jpg",
+  "w": 2400
+ },
+ "chez-neon-sign-01": {
+  "crop": "0.02,0.03,0.98,0.34",
+  "flip": "horizontal (source is a mirrored front-camera selfie)",
+  "h": 625,
+  "id": 418,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 7.25.25/HighNotes725_55c734/000020.jpg",
+  "w": 1451
+ },
+ "chez-outdoor-games-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1938,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-2.jpg",
+  "w": 2400
+ },
+ "chez-outdoor-pavilion-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1948,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-6.jpg",
+  "w": 2400
+ },
+ "chez-porch-lounge-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1918,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-3.jpg",
+  "w": 2400
+ },
+ "chez-property-night-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 656,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000064.jpg",
+  "w": 1536
+ },
+ "chez-vinyl-lounge-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1929,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-16.jpg",
+  "w": 2400
+ },
+ "chez-wet-bar-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 1940,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-6.jpg",
+  "w": 2400
+ },
+ "dtr-artists-backstage-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 132,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000054.jpg",
+  "w": 2016
+ },
+ "dtr-crowd-joy-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 156,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000101.jpg",
+  "w": 2016
+ },
+ "dtr-crowd-joy-02": {
+  "crop": null,
+  "h": 1512,
+  "id": 158,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000106.jpg",
+  "w": 2016
+ },
+ "dtr-crowd-night-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 150,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000081.jpg",
+  "w": 2016
+ },
+ "dtr-crowd-night-02": {
+  "crop": null,
+  "h": 2016,
+  "id": 152,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000085.jpg",
+  "w": 1512
+ },
+ "dtr-crowd-sunset-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 157,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000102.jpg",
+  "w": 1512
+ },
+ "dtr-staff-bar-01": {
+  "crop": null,
+  "h": 1357,
+  "id": 92,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000003.jpg",
+  "w": 2048
+ },
+ "dtr-stage-crowd-01": {
+  "crop": "0,0,1,0.9",
+  "h": 1125,
+  "id": 90,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000001.jpg",
+  "w": 1875
+ },
+ "dtr-stage-day-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 134,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000056.jpg",
+  "w": 2016
+ },
+ "egancup-action-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 950,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000044.jpg",
+  "w": 1512
+ },
+ "egancup-group-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 968,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000067.jpg",
+  "w": 2048
+ },
+ "egancup-venue-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 938,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000032.jpg",
+  "w": 1512
+ },
+ "egancup-winner-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 967,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000066.jpg",
+  "w": 1536
+ },
+ "egancup-winner-02": {
+  "crop": null,
+  "h": 2048,
+  "id": 970,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000069.jpg",
+  "w": 1536
+ },
+ "fi-band-tent-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 701,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000066.jpg",
+  "w": 2016
+ },
+ "fi-bartender-01": {
+  "crop": null,
+  "h": 1184,
+  "id": 732,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000102.jpg",
+  "w": 1776
+ },
+ "fi-can-01": {
+  "crop": null,
+  "h": 1628,
+  "id": 682,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000030.jpg",
+  "w": 1290
+ },
+ "fi-crowd-stage-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 710,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000077.jpg",
+  "w": 1512
+ },
+ "fi-guests-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 702,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000067.jpg",
+  "w": 2016
+ },
+ "fi-guests-02": {
+  "crop": null,
+  "h": 1184,
+  "id": 727,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000097.jpg",
+  "w": 1776
+ },
+ "fi-hospitality-tent-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 706,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000072.jpg",
+  "w": 2016
+ },
+ "fi-joy-portrait-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 723,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000093.jpg",
+  "w": 1536
+ },
+ "fi-pizza-01": {
+  "crop": null,
+  "h": 1000,
+  "id": 681,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000029.jpg",
+  "w": 1500
+ },
+ "fi-pizza-cocktail-01": {
+  "crop": null,
+  "h": 1080,
+  "id": 663,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000007.jpg",
+  "w": 1080
+ },
+ "fi-sax-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 700,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000065.jpg",
+  "w": 1512
+ },
+ "party-laffy-taps-bus-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 1697,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000020.jpg",
+  "w": 2048
+ },
+ "party-laffy-taps-event-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1755,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000093.jpg",
+  "w": 1512
+ },
+ "party-skedaddle-van-01": {
+  "crop": null,
+  "h": 1267,
+  "id": 1717,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000050.jpg",
+  "w": 1286
+ },
+ "photobooth-action-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1735,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000073.jpg",
+  "w": 1512
+ },
+ "photobooth-glow-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1747,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000085.jpg",
+  "w": 1512
+ },
+ "photobooth-logo-01": {
+  "crop": null,
+  "h": 1024,
+  "id": 1771,
+  "source": "SGV Photobooth/SGV Photobooth Logo_Rectangle.png",
+  "w": 1536
+ },
+ "photobooth-pose-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1729,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000067.jpg",
+  "w": 1512
+ },
+ "photobooth-screen-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1748,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000086.jpg",
+  "w": 1512
+ },
+ "photobooth-standalone-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1749,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000087.jpg",
+  "w": 1512
+ },
+ "photobooth-touch-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1739,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000077.jpg",
+  "w": 1512
+ },
+ "plp-bartender-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 798,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000066.jpg",
+  "w": 1512
+ },
+ "plp-chef-plates-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 741,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000004.jpg",
+  "w": 1152
+ },
+ "plp-cook-kitchen-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 889,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PlateLunchapalozza_a0cf73/000072.jpg",
+  "w": 1512
+ },
+ "plp-crew-02": {
+  "crop": null,
+  "h": 2048,
+  "id": 781,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000045.jpg",
+  "w": 1152
+ },
+ "plp-crew-03": {
+  "crop": null,
+  "h": 2048,
+  "id": 780,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000044.jpg",
+  "w": 1152
+ },
+ "plp-crew-portrait-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 799,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000067.jpg",
+  "w": 1152
+ },
+ "plp-family-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 787,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000055.jpg",
+  "w": 1512
+ },
+ "plp-gumbo-pot-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 796,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000064.jpg",
+  "w": 1152
+ },
+ "plp-plate-fish-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 838,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000110.jpg",
+  "w": 1512
+ },
+ "plp-plate-pasta-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 841,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000113.jpg",
+  "w": 1512
+ },
+ "plp-plate-plantains-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 840,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000112.jpg",
+  "w": 1512
+ },
+ "plp-plates-row-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 844,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000116.jpg",
+  "w": 1512
+ },
+ "saint-john-bath-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1960,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.014.JPG",
+  "w": 2400
+ },
+ "saint-john-bedroom-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1958,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.012.JPG",
+  "w": 2400
+ },
+ "saint-john-dining-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1954,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.007.JPG",
+  "w": 2400
+ },
+ "saint-john-dining-02": {
+  "crop": null,
+  "h": 1602,
+  "id": 1956,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.009.JPG",
+  "w": 2400
+ },
+ "saint-john-exterior-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1978,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.036.JPG",
+  "w": 2400
+ },
+ "saint-john-living-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1952,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.005.JPG",
+  "w": 2400
+ },
+ "saint-john-patio-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1975,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.032.JPG",
+  "w": 2400
+ },
+ "saint-john-porch-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1951,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.003.JPG",
+  "w": 2400
+ },
+ "saint-john-study-01": {
+  "crop": null,
+  "h": 1602,
+  "id": 1962,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.017.JPG",
+  "w": 2400
+ },
+ "salty-air-balcony-view-01": {
+  "crop": null,
+  "h": 1800,
+  "id": 2013,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220422_195408624.jpg",
+  "w": 2400
+ },
+ "salty-air-beach-sunset-01": {
+  "crop": null,
+  "h": 1800,
+  "id": 2019,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220424_001147377~2.jpg",
+  "w": 2400
+ },
+ "salty-air-bedroom-01": {
+  "crop": null,
+  "h": 511,
+  "id": 2059,
+  "source": "Vacations Properties/Salty Air Retreat/Photo - Video/e3796262-855d-4304-b4d7-dba446d67243.avif",
+  "w": 720
+ },
+ "salty-air-boardwalk-01": {
+  "crop": null,
+  "h": 1800,
+  "id": 2014,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220422_195522288.jpg",
+  "w": 2400
+ },
+ "salty-air-kitchen-01": {
+  "crop": null,
+  "h": 996,
+  "id": 2051,
+  "source": "Vacations Properties/Salty Air Retreat/Photo - Video/9feed651-4670-4d9f-b60a-9afc8aa1e41c.jpeg",
+  "w": 1440
+ },
+ "salty-air-living-01": {
+  "crop": null,
+  "h": 1069,
+  "id": 2060,
+  "source": "Vacations Properties/Salty Air Retreat/Photo - Video/e77513ef-169c-45a5-aa4b-12069280d8fa.jpeg",
+  "w": 1440
+ },
+ "salty-air-night-pool-01": {
+  "crop": null,
+  "h": 2400,
+  "id": 2006,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220422_065033009.NIGHT~3.jpg",
+  "w": 1948
+ },
+ "sugarjam-crowd-dusk-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 1096,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000145.jpg",
+  "w": 2048
+ },
+ "sugarjam-crowd-joy-01": {
+  "crop": null,
+  "h": 1365,
+  "id": 1001,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000035.jpg",
+  "w": 2048
+ },
+ "sugarjam-dancing-01": {
+  "crop": null,
+  "h": 1278,
+  "id": 1000,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000034.jpg",
+  "w": 1985
+ },
+ "sugarjam-dancing-02": {
+  "crop": null,
+  "h": 1512,
+  "id": 1421,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000098.jpg",
+  "w": 2016
+ },
+ "sugarjam-family-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1082,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000131.jpg",
+  "w": 2016
+ },
+ "sugarjam-family-02": {
+  "crop": null,
+  "h": 2016,
+  "id": 1377,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000019.jpg",
+  "w": 1512
+ },
+ "sugarjam-gazebo-golden-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1405,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000080.jpg",
+  "w": 2016
+ },
+ "sugarjam-golden-walk-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1464,
+  "source": "SGV Event Photos/Sugar Jam 5.26/SUGARJAMMAY2026_394bac/000005.jpg",
+  "w": 1512
+ },
+ "sugarjam-holiday-elf-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 1348,
+  "source": "SGV Event Photos/Sugar Jam 12.25/122025SugarJam_2fbe91/000131.jpg",
+  "w": 2048
+ },
+ "sugarjam-kid-cornhole-01": {
+  "crop": null,
+  "h": 1365,
+  "id": 1002,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000036.jpg",
+  "w": 2048
+ },
+ "sugarjam-kid-facepaint-01": {
+  "crop": null,
+  "h": 960,
+  "id": 1007,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000041.jpg",
+  "w": 640
+ },
+ "sugarjam-kids-facepaint-02": {
+  "crop": null,
+  "h": 2016,
+  "id": 1462,
+  "source": "SGV Event Photos/Sugar Jam 5.26/SUGARJAMMAY2026_394bac/000003.jpg",
+  "w": 1512
+ },
+ "sugarjam-pond-sunset-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1034,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000076.jpg",
+  "w": 2016
+ },
+ "sugarjam-portrait-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1468,
+  "source": "SGV Event Photos/Sugar Jam 5.26/SUGARJAMMAY2026_394bac/000009.jpg",
+  "w": 1512
+ },
+ "sugarjam-signage-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 1392,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000061.jpg",
+  "w": 2048
+ },
+ "sugarjam-stage-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1087,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000136.jpg",
+  "w": 2016
+ },
+ "sugarjam-stringlights-night-01": {
+  "crop": null,
+  "h": 720,
+  "id": 1004,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000038.jpg",
+  "w": 960
+ },
+ "sugarjam-sunset-crowd-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1361,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000002.jpg",
+  "w": 2016
+ },
+ "sugarjam-sunset-crowd-02": {
+  "crop": null,
+  "h": 1536,
+  "id": 1390,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000059.jpg",
+  "w": 2048
+ },
+ "sugarjam-vendors-01": {
+  "crop": null,
+  "h": 1443,
+  "id": 1005,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000039.jpg",
+  "w": 2048
+ },
+ "sunset-grove-azalea-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2187,
+  "source": "Vacations Properties/Sunset Grove/OUTDOORS - PROPERTY/Copy of Ext.2-6.jpg",
+  "w": 2400
+ },
+ "sunset-grove-bedroom-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2138,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of B&B-14.jpg",
+  "w": 2400
+ },
+ "sunset-grove-deck-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2159,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-14.jpg",
+  "w": 2400
+ },
+ "sunset-grove-exterior-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2155,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-10.jpg",
+  "w": 2400
+ },
+ "sunset-grove-exterior-02": {
+  "crop": null,
+  "h": 1600,
+  "id": 2163,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-9.jpg",
+  "w": 2400
+ },
+ "sunset-grove-kitchen-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2165,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Kitchen-2.jpg",
+  "w": 2400
+ },
+ "sunset-grove-living-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2170,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Living-5.jpg",
+  "w": 2400
+ },
+ "sunset-grove-living-02": {
+  "crop": null,
+  "h": 1600,
+  "id": 2169,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Living-4.jpg",
+  "w": 2400
+ },
+ "sunset-grove-meditation-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2175,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Suite-3.jpg",
+  "w": 2400
+ },
+ "sunset-grove-oaks-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2182,
+  "source": "Vacations Properties/Sunset Grove/OUTDOORS - PROPERTY/Copy of Ext.2-16.jpg",
+  "w": 2400
+ },
+ "sunset-grove-pond-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2161,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-7.jpg",
+  "w": 2400
+ },
+ "sunset-grove-porch-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2157,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-12.jpg",
+  "w": 2400
+ },
+ "sunset-grove-sign-01": {
+  "crop": null,
+  "h": 1600,
+  "id": 2152,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext-3.jpg",
+  "w": 2400
+ },
+ "vb-band-night-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1603,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000042.jpg",
+  "w": 2016
+ },
+ "vb-bartender-01": {
+  "crop": null,
+  "h": 2048,
+  "id": 1657,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000142.jpg",
+  "w": 1536
+ },
+ "vb-crowd-sunset-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1611,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000065.jpg",
+  "w": 2016
+ },
+ "vb-dancing-night-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1600,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000039.jpg",
+  "w": 2016
+ },
+ "vb-dancing-night-02": {
+  "crop": null,
+  "h": 1512,
+  "id": 1664,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000152.jpg",
+  "w": 2016
+ },
+ "vb-kids-dancing-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1619,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000075.jpg",
+  "w": 2016
+ },
+ "vb-signage-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1500,
+  "source": "SGV Event Photos/Village Beats 10.23.25/VillageBeats102325_8ef328/000007.jpg",
+  "w": 1512
+ },
+ "vb-stage-branding-01": {
+  "crop": null,
+  "h": 1512,
+  "id": 1653,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000127.jpg",
+  "w": 2016
+ },
+ "vb-stringlights-night-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1583,
+  "source": "SGV Event Photos/Village Beats 10.23.25/VillageBeats102325_8ef328/000107.jpg",
+  "w": 1512
+ },
+ "vb-sunset-lawn-01": {
+  "crop": null,
+  "h": 2016,
+  "id": 1562,
+  "source": "SGV Event Photos/Village Beats 10.23.25/VillageBeats102325_8ef328/000072.jpg",
+  "w": 1512
+ },
+ "vb-tent-dusk-01": {
+  "crop": null,
+  "h": 1536,
+  "id": 1673,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000161.jpg",
+  "w": 2048
+ }
+}

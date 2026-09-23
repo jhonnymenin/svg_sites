@@ -19,3 +19,9 @@ export const EVENT_TYPES = [
   "Milestone Celebrations",
   "Private Dinners & Gatherings",
 ];
+
+/** Extra occasions offered in the inquiry form (holiday season). */
+export const HOLIDAY_TYPES = ["Holiday Party at Chez La Fête", "Good Vibes Room — smaller gathering"] as const;
+
+/** Window event used to pre-select an occasion in the inquiry form. */
+export const PREFILL_EVENT = "chez:prefill-inquiry";

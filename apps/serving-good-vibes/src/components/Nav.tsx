@@ -2,11 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { ArrowRight, Menu, X } from "lucide-react";
-import { clsx } from "clsx";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { SgvMark } from "@sgv/brand";
 import { EASE } from "@sgv/brand/motion";
-import { StripeRule } from "./StripeRule";
+import { cn } from "./cn";
 
 export const NAV_LINKS = [
   { label: "Events", href: "#events" },
@@ -14,45 +13,14 @@ export const NAV_LINKS = [
   { label: "Braziliana", href: "#braziliana" },
   { label: "Hospitality", href: "#hospitality" },
   { label: "Production & Media", href: "#production-media" },
-  { label: "Community & Development", href: "#community" },
-  { label: "About Us", href: "#about" },
+  { label: "Community", href: "#community" },
+  { label: "Partners", href: "#partners" },
 ];
 
-/** Logo + the parent-company relationship, set as a small stacked descriptor (§7.2). */
-function Lockup({ compact = false }: { compact?: boolean }) {
-  return (
-    <span className="flex items-center gap-3.5 lg:gap-4">
-      <SgvMark
-        tone="light"
-        height={compact ? 38 : 46}
-        style={{ transition: "all 300ms" }}
-      />
-      <span
-        className={clsx(
-          "flex items-center gap-2.5 transition-opacity duration-300",
-          compact && "lg:opacity-0"
-        )}
-      >
-        <span aria-hidden className="block h-[26px] w-px bg-white/25" />
-        <span className="font-display text-[9px] font-medium uppercase leading-[1.3] tracking-[0.16em] text-white/60 lg:text-[9.5px]">
-          A Social
-          <br />
-          Entertainment
-          <br />
-          Company
-        </span>
-      </span>
-    </span>
-  );
-}
-
-const menuList = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.045, delayChildren: 0.15 } },
-};
+const menuList = { hidden: {}, show: { transition: { staggerChildren: 0.05, delayChildren: 0.12 } } };
 const menuItem = {
-  hidden: { opacity: 0, y: 14 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.4, ease: EASE } },
+  hidden: { opacity: 0, y: 18 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: EASE } },
 };
 
 export function Nav() {
@@ -61,11 +29,10 @@ export function Nav() {
   const [active, setActive] = useState("");
   const reduce = useReducedMotion();
 
-  // Transparent over the hero; solidifies to forest once the hero has passed.
   useEffect(() => {
     const onScroll = () => {
       const hero = document.getElementById("top");
-      const limit = hero ? hero.offsetHeight - 80 : 500;
+      const limit = hero ? hero.offsetHeight - 90 : 500;
       setSolid(window.scrollY > limit);
       if (window.scrollY < limit) setActive("");
     };
@@ -78,18 +45,13 @@ export function Nav() {
     };
   }, []);
 
-  // Scroll spy — the section under the header owns the gold underline.
   useEffect(() => {
     const els = NAV_LINKS.map((l) => document.getElementById(l.href.slice(1))).filter(
       (el): el is HTMLElement => !!el
     );
     const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) setActive(e.target.id);
-        });
-      },
-      { rootMargin: "-20% 0px -75% 0px" }
+      (entries) => entries.forEach((e) => e.isIntersecting && setActive(e.target.id)),
+      { rootMargin: "-25% 0px -70% 0px" }
     );
     els.forEach((el) => obs.observe(el));
     return () => obs.disconnect();
@@ -108,21 +70,19 @@ export function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div
-        className={clsx(
-          "relative transition-[background-color,height,box-shadow] duration-[220ms]",
-          solid
-            ? "h-[62px] bg-forest/[0.96] shadow-[0_1px_0_color-mix(in_srgb,var(--gold)_55%,transparent)] backdrop-blur-[2px]"
-            : "h-[72px] bg-transparent lg:h-(--nav-h)"
+        className={cn(
+          "relative transition-[background-color,height] duration-300",
+          solid ? "h-[64px] bg-night/[0.94] backdrop-blur-md" : "h-[76px] bg-transparent lg:h-(--nav-h)"
         )}
       >
         <div className="mx-auto flex h-full max-w-(--page-max) items-center justify-between gap-6 px-(--gutter)">
           <a href="#top" aria-label="Serving Good Vibes — back to top" className="shrink-0">
-            <Lockup compact={solid} />
+            <SgvMark tone="light" height={solid ? 30 : 38} />
           </a>
 
-          <div className="flex items-center gap-7 2xl:gap-9">
+          <div className="flex items-center gap-6 2xl:gap-9">
             <nav aria-label="Primary" className="hidden xl:block">
-              <ul className="flex items-center gap-x-[26px] 2xl:gap-x-9">
+              <ul className="flex items-center gap-x-6 2xl:gap-x-8">
                 {NAV_LINKS.map(({ label, href }) => {
                   const isActive = active === href.slice(1);
                   return (
@@ -130,13 +90,13 @@ export function Nav() {
                       <a
                         href={href}
                         aria-current={isActive ? "location" : undefined}
-                        className="group relative block py-2 font-display text-[13.5px] font-medium uppercase tracking-[0.06em] text-white"
+                        className="group relative block py-2 text-[14px] font-medium text-white/85 transition-colors hover:text-white"
                       >
                         {label}
                         <span
                           aria-hidden
-                          className={clsx(
-                            "absolute bottom-0 left-0 h-[2px] w-full origin-left bg-gold transition-transform duration-[160ms]",
+                          className={cn(
+                            "stripes-h absolute -bottom-0.5 left-0 h-[5px] w-full origin-left transition-transform duration-300",
                             isActive ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
                           )}
                         />
@@ -149,10 +109,9 @@ export function Nav() {
 
             <a
               href="#contact"
-              className="hidden h-[40px] items-center border border-white/55 px-5 font-display text-[13px] font-medium uppercase tracking-[0.07em] text-white transition-colors duration-200 hover:border-gold hover:bg-gold hover:text-ink sm:inline-flex"
-              style={{ borderRadius: 2 }}
+              className="hidden h-[42px] items-center rounded-full bg-gold px-5 text-[14px] font-semibold text-ink transition-colors duration-200 hover:bg-cream sm:inline-flex"
             >
-              Get in Touch
+              Get in touch
             </a>
 
             <button
@@ -167,6 +126,13 @@ export function Nav() {
             </button>
           </div>
         </div>
+        <span
+          aria-hidden
+          className={cn(
+            "stripes-v absolute inset-x-0 bottom-0 h-[3px] origin-left transition-transform duration-500",
+            solid ? "scale-x-100" : "scale-x-0"
+          )}
+        />
       </div>
 
       <AnimatePresence>
@@ -176,14 +142,14 @@ export function Nav() {
             role="dialog"
             aria-modal="true"
             aria-label="Site menu"
-            initial={reduce ? { opacity: 0 } : { y: "-100%" }}
-            animate={reduce ? { opacity: 1 } : { y: 0 }}
-            exit={reduce ? { opacity: 0 } : { y: "-100%" }}
-            transition={{ duration: reduce ? 0.15 : 0.3, ease: EASE }}
-            className="ink-tooth fixed inset-0 z-50 flex flex-col overflow-y-auto bg-forest px-(--gutter) pb-8 xl:hidden"
+            initial={reduce ? { opacity: 0 } : { clipPath: "inset(0 0 100% 0)" }}
+            animate={reduce ? { opacity: 1 } : { clipPath: "inset(0 0 0% 0)" }}
+            exit={reduce ? { opacity: 0 } : { clipPath: "inset(0 0 100% 0)" }}
+            transition={{ duration: reduce ? 0.15 : 0.45, ease: EASE }}
+            className="tooth fixed inset-0 z-50 flex flex-col overflow-y-auto bg-deep-teal px-(--gutter) pb-8 xl:hidden"
           >
-            <div className="flex h-[72px] shrink-0 items-center justify-between">
-              <Lockup />
+            <div className="flex h-[76px] shrink-0 items-center justify-between">
+              <SgvMark tone="light" height={34} />
               <button
                 type="button"
                 aria-label="Close menu"
@@ -194,23 +160,16 @@ export function Nav() {
               </button>
             </div>
 
-            <motion.ul
-              className="mt-8 flex flex-col"
-              variants={menuList}
-              initial={reduce ? false : "hidden"}
-              animate="show"
-            >
-              {NAV_LINKS.map(({ label, href }) => (
-                <motion.li key={href} variants={menuItem} className="border-t border-gold/40 last:border-b">
+            <motion.ul className="mt-6 flex flex-col" variants={menuList} initial={reduce ? false : "hidden"} animate="show">
+              {NAV_LINKS.map(({ label, href }, i) => (
+                <motion.li key={href} variants={menuItem}>
                   <a
                     href={href}
                     onClick={() => setOpen(false)}
-                    className="group flex items-center justify-between py-[13px] font-display text-[26px] font-semibold uppercase leading-[1.05] text-cream sm:text-[30px]"
+                    className="group flex items-baseline gap-4 border-b border-white/15 py-3.5"
                   >
-                    {label}
-                    <span aria-hidden className="micro-arrow text-[18px] text-gold">
-                      →
-                    </span>
+                    <span className="w-6 text-[12px] font-medium tabular-nums text-gold">0{i + 1}</span>
+                    <span className="display text-[34px] text-cream sm:text-[44px]">{label}</span>
                   </a>
                 </motion.li>
               ))}
@@ -220,17 +179,16 @@ export function Nav() {
               className="mt-auto pt-10"
               initial={reduce ? false : { opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.45, duration: 0.35, ease: EASE }}
+              transition={{ delay: 0.5, duration: 0.35, ease: EASE }}
             >
               <a
                 href="#contact"
                 onClick={() => setOpen(false)}
-                className="flex w-full items-center justify-between bg-ochre px-5 py-4 font-display text-[15px] font-medium uppercase tracking-[0.1em] text-white"
-                style={{ borderRadius: 3 }}
+                className="flex w-full items-center justify-between rounded-full bg-gold px-6 py-4 text-[16px] font-semibold text-ink"
               >
-                Get in Touch <ArrowRight size={18} strokeWidth={2} />
+                Get in touch <ArrowUpRight size={20} strokeWidth={2} />
               </a>
-              <StripeRule className="mt-5 w-full" />
+              <p className="mt-5 text-center text-[13px] text-cream/60">Pardon our progress. Come join the vibes.</p>
             </motion.div>
           </motion.div>
         )}

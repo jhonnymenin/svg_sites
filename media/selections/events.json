@@ -1,0 +1,1157 @@
+[
+ {
+  "slug": "dtr-crowd-night-01",
+  "id": 150,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000081.jpg",
+  "event": "downtown-rising",
+  "orientation": "landscape",
+  "subject": "Stage-side view over sea of phone lights, Parc International, downtown skyline",
+  "use": [
+   "sgv:hero",
+   "sgv:event-card:downtown-rising"
+  ],
+  "score": 9,
+  "focal": "55% 62%",
+  "negative_space": "top",
+  "notes": "Best night-energy frame in the drop. Dark sky top 35% for headline. Phone-camera noise at 100% \u2014 use with dark overlay, max ~1600px wide display."
+ },
+ {
+  "slug": "dtr-stage-crowd-01",
+  "id": 90,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000001.jpg",
+  "event": "downtown-rising",
+  "orientation": "landscape",
+  "subject": "Parc International stage with branded Downtown Rising banners, packed crowd, overcast",
+  "use": [
+   "sgv:event-card:downtown-rising",
+   "sgv:gallery"
+  ],
+  "score": 8,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": "Pro photo; strongest daytime DTR frame with branded screen + sponsor banners. Cropped bottom 10% to remove 'AdamBurke' photographer watermark \u2014 confirm usage rights/credit."
+ },
+ {
+  "slug": "dtr-crowd-night-02",
+  "id": 152,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000085.jpg",
+  "event": "downtown-rising",
+  "orientation": "portrait",
+  "subject": "Crowd arms up under lit Parc International canopy with flags",
+  "use": [
+   "sgv:event-detail:downtown-rising",
+   "mobile-hero"
+  ],
+  "score": 7,
+  "focal": "55% 55%",
+  "negative_space": "top",
+  "notes": "Portrait; strong mobile hero alternative to #150."
+ },
+ {
+  "slug": "dtr-stage-day-01",
+  "id": 134,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000056.jpg",
+  "event": "downtown-rising",
+  "orientation": "landscape",
+  "subject": "Daytime stage under flag-lined canopy, band in yellow",
+  "use": [
+   "sgv:event-detail:downtown-rising"
+  ],
+  "score": 6,
+  "focal": "50% 70%",
+  "negative_space": "top",
+  "notes": "Blue sky; stage is small in frame."
+ },
+ {
+  "slug": "dtr-staff-bar-01",
+  "id": 92,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000003.jpg",
+  "event": "downtown-rising",
+  "orientation": "landscape",
+  "subject": "Two bar staff in Downtown Rising tees smiling behind drink station",
+  "use": [
+   "se:people",
+   "sgv:hospitality"
+  ],
+  "score": 8,
+  "focal": "45% 45%",
+  "negative_space": "none",
+  "notes": "Best branded staff moment; tip jar/cans visible foreground."
+ },
+ {
+  "slug": "dtr-crowd-joy-01",
+  "id": 156,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000101.jpg",
+  "event": "downtown-rising",
+  "orientation": "landscape",
+  "subject": "Ecstatic festival-goers selfie with lanyards",
+  "use": [
+   "sgv:event-detail:downtown-rising",
+   "se:community"
+  ],
+  "score": 7,
+  "focal": "45% 50%",
+  "negative_space": "none",
+  "notes": "Pure joy, selfie framing."
+ },
+ {
+  "slug": "dtr-crowd-joy-02",
+  "id": 158,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000106.jpg",
+  "event": "downtown-rising",
+  "orientation": "landscape",
+  "subject": "Two women laughing, lanyards, sunglasses",
+  "use": [
+   "se:community"
+  ],
+  "score": 6,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": "Selfie; background clutter (cars/fence)."
+ },
+ {
+  "slug": "dtr-crowd-sunset-01",
+  "id": 157,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000102.jpg",
+  "event": "downtown-rising",
+  "orientation": "portrait",
+  "subject": "Dancing couple in front of stage at dusk",
+  "use": [
+   "sgv:event-detail:downtown-rising"
+  ],
+  "score": 6,
+  "focal": "45% 60%",
+  "negative_space": "top",
+  "notes": "Portrait; dusk sky top."
+ },
+ {
+  "slug": "dtr-artists-backstage-01",
+  "id": 132,
+  "source": "SGV Event Photos/DOWNTOWN RISING 2025/DOWNTOWNRISING_7fd8b4/000054.jpg",
+  "event": "downtown-rising",
+  "orientation": "landscape",
+  "subject": "SE crew with performers backstage, lanyards",
+  "use": [
+   "se:people"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": "Crew + artists; bus background."
+ },
+ {
+  "slug": "vb-crowd-sunset-01",
+  "id": 1611,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000065.jpg",
+  "event": "village-beats",
+  "orientation": "landscape",
+  "subject": "West Village lawn crowd under string lights, pink sunset",
+  "use": [
+   "sgv:event-card:village-beats",
+   "sgv:hero-alt"
+  ],
+  "score": 8,
+  "focal": "50% 65%",
+  "negative_space": "top",
+  "notes": "Cover. Sunset sky top ~35% for type; empty dance slab bottom could be cropped for a wider banner."
+ },
+ {
+  "slug": "vb-sunset-lawn-01",
+  "id": 1562,
+  "source": "SGV Event Photos/Village Beats 10.23.25/VillageBeats102325_8ef328/000072.jpg",
+  "event": "village-beats",
+  "orientation": "portrait",
+  "subject": "Sunset over West Village lawn with chairs and crowd",
+  "use": [
+   "sgv:event-detail:village-beats",
+   "mobile-hero"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": "Portrait; dramatic sky."
+ },
+ {
+  "slug": "vb-band-night-01",
+  "id": 1603,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000042.jpg",
+  "event": "village-beats",
+  "orientation": "landscape",
+  "subject": "Singer/guitarist + sax under blue stage light",
+  "use": [
+   "sgv:event-detail:village-beats",
+   "sgv:performers"
+  ],
+  "score": 7,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": "Moody blue; good performer close-up."
+ },
+ {
+  "slug": "vb-dancing-night-01",
+  "id": 1600,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000039.jpg",
+  "event": "village-beats",
+  "orientation": "landscape",
+  "subject": "Couple slow-dancing in front of stage at night",
+  "use": [
+   "sgv:event-detail:village-beats"
+  ],
+  "score": 7,
+  "focal": "45% 60%",
+  "negative_space": "top",
+  "notes": "Tender moment."
+ },
+ {
+  "slug": "vb-kids-dancing-01",
+  "id": 1619,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000075.jpg",
+  "event": "village-beats",
+  "orientation": "landscape",
+  "subject": "Kids running/dancing on the dance slab, crowd behind",
+  "use": [
+   "sgv:event-detail:village-beats",
+   "sgv:family"
+  ],
+  "score": 7,
+  "focal": "40% 70%",
+  "negative_space": "top",
+  "notes": "Family energy."
+ },
+ {
+  "slug": "vb-dancing-night-02",
+  "id": 1664,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000152.jpg",
+  "event": "village-beats",
+  "orientation": "landscape",
+  "subject": "Crowd dancing in front of lit West Village stage",
+  "use": [
+   "sgv:event-detail:village-beats"
+  ],
+  "score": 6,
+  "focal": "50% 60%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "vb-stage-branding-01",
+  "id": 1653,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000127.jpg",
+  "event": "village-beats",
+  "orientation": "landscape",
+  "subject": "Band with Village Beats LED screen and welcome banner",
+  "use": [
+   "sgv:event-detail:village-beats",
+   "texture"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": "Shows branding clearly."
+ },
+ {
+  "slug": "vb-tent-dusk-01",
+  "id": 1673,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000161.jpg",
+  "event": "village-beats",
+  "orientation": "landscape",
+  "subject": "Glowing hospitality tent at dusk",
+  "use": [
+   "sgv:hospitality"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "vb-bartender-01",
+  "id": 1657,
+  "source": "SGV Event Photos/Village Beats 4.2.26/VillageBeats4226_24858a/000142.jpg",
+  "event": "village-beats",
+  "orientation": "portrait",
+  "subject": "Smiling bartender giving thumbs up at bar tent",
+  "use": [
+   "se:people",
+   "sgv:hospitality"
+  ],
+  "score": 7,
+  "focal": "55% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "vb-stringlights-night-01",
+  "id": 1583,
+  "source": "SGV Event Photos/Village Beats 10.23.25/VillageBeats102325_8ef328/000107.jpg",
+  "event": "village-beats",
+  "orientation": "portrait",
+  "subject": "Crowd under string lights at night",
+  "use": [
+   "texture",
+   "sgv:event-detail:village-beats"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "vb-signage-01",
+  "id": 1500,
+  "source": "SGV Event Photos/Village Beats 10.23.25/VillageBeats102325_8ef328/000007.jpg",
+  "event": "village-beats",
+  "orientation": "portrait",
+  "subject": "Village Beats Socialight photobooth sign",
+  "use": [
+   "texture"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": "Signage/brand detail."
+ },
+ {
+  "slug": "sugarjam-dancing-01",
+  "id": 1000,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000034.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Crowd two-stepping under string lights, Sugar Mill Pond",
+  "use": [
+   "sgv:hero",
+   "sgv:event-card:sugar-jam"
+  ],
+  "score": 9,
+  "focal": "45% 65%",
+  "negative_space": "top",
+  "notes": "Pro-quality, shallow DOF. String lights/houses in top third for headline. Only 1985px wide."
+ },
+ {
+  "slug": "sugarjam-sunset-crowd-01",
+  "id": 1361,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000002.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Golden-hour sunburst through oak over lawn crowd and gazebo",
+  "use": [
+   "sgv:hero",
+   "sgv:event-card:sugar-jam"
+  ],
+  "score": 9,
+  "focal": "55% 55%",
+  "negative_space": "left",
+  "notes": "Cinematic golden hour; sky upper-left for type."
+ },
+ {
+  "slug": "sugarjam-gazebo-golden-01",
+  "id": 1405,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000080.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Band in gazebo, crowd on hillside, warm light",
+  "use": [
+   "sgv:event-card:sugar-jam",
+   "sgv:event-detail:sugar-jam"
+  ],
+  "score": 8,
+  "focal": "65% 55%",
+  "negative_space": "left",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-stage-01",
+  "id": 1087,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000136.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Band under magenta-lit gazebo at dusk",
+  "use": [
+   "sgv:event-detail:sugar-jam",
+   "sgv:performers"
+  ],
+  "score": 8,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": "Signature pink gazebo look."
+ },
+ {
+  "slug": "sugarjam-crowd-joy-01",
+  "id": 1001,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000035.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Couple laughing in lawn chairs among crowd",
+  "use": [
+   "sgv:event-detail:sugar-jam",
+   "se:community"
+  ],
+  "score": 8,
+  "focal": "40% 50%",
+  "negative_space": "none",
+  "notes": "Pro photo, genuine laughter."
+ },
+ {
+  "slug": "sugarjam-vendors-01",
+  "id": 1005,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000039.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Couple strolling vendor tents, kid on curb",
+  "use": [
+   "sgv:event-detail:sugar-jam"
+  ],
+  "score": 7,
+  "focal": "30% 55%",
+  "negative_space": "none",
+  "notes": "Pro photo."
+ },
+ {
+  "slug": "sugarjam-sunset-crowd-02",
+  "id": 1390,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000059.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Crowd along path at orange sunset with lamp posts",
+  "use": [
+   "sgv:event-detail:sugar-jam"
+  ],
+  "score": 7,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-pond-sunset-01",
+  "id": 1034,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000076.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Sugar Mill Pond sunset, fountains, dock lanterns",
+  "use": [
+   "sgv:section-break",
+   "texture"
+  ],
+  "score": 7,
+  "focal": "50% 45%",
+  "negative_space": "top",
+  "notes": "Atmospheric location shot; great section divider."
+ },
+ {
+  "slug": "sugarjam-dancing-02",
+  "id": 1421,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000098.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Couples dancing on grassy slope, golden light",
+  "use": [
+   "sgv:event-detail:sugar-jam"
+  ],
+  "score": 7,
+  "focal": "45% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-signage-01",
+  "id": 1392,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000061.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "'Welcome to Sugar Jam' yard sign",
+  "use": [
+   "texture"
+  ],
+  "score": 7,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": "Brand detail."
+ },
+ {
+  "slug": "sugarjam-crowd-dusk-01",
+  "id": 1096,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000145.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Full lawn at dusk facing pink gazebo",
+  "use": [
+   "sgv:event-detail:sugar-jam"
+  ],
+  "score": 6,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-kid-facepaint-01",
+  "id": 1007,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000041.jpg",
+  "event": "sugar-jam",
+  "orientation": "portrait",
+  "subject": "Kid with face paint in lawn chair",
+  "use": [
+   "sgv:family"
+  ],
+  "score": 6,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": "Small (640x960)."
+ },
+ {
+  "slug": "sugarjam-kid-cornhole-01",
+  "id": 1002,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000036.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Girl playing cornhole on lawn",
+  "use": [
+   "sgv:family"
+  ],
+  "score": 6,
+  "focal": "65% 55%",
+  "negative_space": "none",
+  "notes": "Sponsor cars in background."
+ },
+ {
+  "slug": "sugarjam-stringlights-night-01",
+  "id": 1004,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000038.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Crowded street under string lights at night",
+  "use": [
+   "texture"
+  ],
+  "score": 6,
+  "focal": "50% 40%",
+  "negative_space": "none",
+  "notes": "Small (960x720)."
+ },
+ {
+  "slug": "sugarjam-family-01",
+  "id": 1082,
+  "source": "SGV Event Photos/SUGAR JAM/SUGARJAM_6ea572/000131.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "Family with baby in lawn chairs under tent",
+  "use": [
+   "sgv:family"
+  ],
+  "score": 6,
+  "focal": "45% 60%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-family-02",
+  "id": 1377,
+  "source": "SGV Event Photos/Sugar Jam 3.21.26/SugarJam32126_695e3d/000019.jpg",
+  "event": "sugar-jam",
+  "orientation": "portrait",
+  "subject": "Mom with two kids on grass, golden backlight",
+  "use": [
+   "sgv:family"
+  ],
+  "score": 6,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-kids-facepaint-02",
+  "id": 1462,
+  "source": "SGV Event Photos/Sugar Jam 5.26/SUGARJAMMAY2026_394bac/000003.jpg",
+  "event": "sugar-jam",
+  "orientation": "portrait",
+  "subject": "Two girls with face paint smiling",
+  "use": [
+   "sgv:family"
+  ],
+  "score": 6,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-portrait-01",
+  "id": 1468,
+  "source": "SGV Event Photos/Sugar Jam 5.26/SUGARJAMMAY2026_394bac/000009.jpg",
+  "event": "sugar-jam",
+  "orientation": "portrait",
+  "subject": "Smiling guy in bucket hat and mirrored shades",
+  "use": [
+   "se:community"
+  ],
+  "score": 7,
+  "focal": "50% 35%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-golden-walk-01",
+  "id": 1464,
+  "source": "SGV Event Photos/Sugar Jam 5.26/SUGARJAMMAY2026_394bac/000005.jpg",
+  "event": "sugar-jam",
+  "orientation": "portrait",
+  "subject": "Long shadows on boardwalk, backlit walkers",
+  "use": [
+   "texture"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "sugarjam-holiday-elf-01",
+  "id": 1348,
+  "source": "SGV Event Photos/Sugar Jam 12.25/122025SugarJam_2fbe91/000131.jpg",
+  "event": "sugar-jam",
+  "orientation": "landscape",
+  "subject": "SGV staffer in elf costume selfie with vendors (Holiday Sugar Jam)",
+  "use": [
+   "se:people"
+  ],
+  "score": 6,
+  "focal": "25% 45%",
+  "negative_space": "none",
+  "notes": "Fun holiday energy; selfie."
+ },
+ {
+  "slug": "ae-food-plate-01",
+  "id": 6,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000011.jpg",
+  "event": "acadiana-eats",
+  "orientation": "portrait",
+  "subject": "Guest holding loaded Thai plate",
+  "use": [
+   "sgv:event-card:acadiana-eats",
+   "sgv:hospitality"
+  ],
+  "score": 7,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": "Portrait only \u2014 no strong landscape in set; crop to 4:3 around plate."
+ },
+ {
+  "slug": "ae-food-guest-01",
+  "id": 5,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000010.jpg",
+  "event": "acadiana-eats",
+  "orientation": "portrait",
+  "subject": "Girl showing plate by Mimi's Thai booth",
+  "use": [
+   "sgv:event-detail:acadiana-eats"
+  ],
+  "score": 6,
+  "focal": "30% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "ae-vendor-01",
+  "id": 51,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000063.jpg",
+  "event": "acadiana-eats",
+  "orientation": "portrait",
+  "subject": "Vendor smiling with food behind booth",
+  "use": [
+   "sgv:event-detail:acadiana-eats"
+  ],
+  "score": 6,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "ae-kids-bubbles-01",
+  "id": 70,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000083.jpg",
+  "event": "acadiana-eats",
+  "orientation": "portrait",
+  "subject": "Kids chasing bubbles, tents behind",
+  "use": [
+   "sgv:family"
+  ],
+  "score": 6,
+  "focal": "55% 70%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "ae-beer-bus-01",
+  "id": 4,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000009.jpg",
+  "event": "acadiana-eats",
+  "orientation": "portrait",
+  "subject": "Laffy Taps Beer Bus",
+  "use": [
+   "texture",
+   "sgv:hospitality"
+  ],
+  "score": 6,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "ae-stage-crowd-01",
+  "id": 58,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000070.jpg",
+  "event": "acadiana-eats",
+  "orientation": "portrait",
+  "subject": "Crowd in chairs facing West Village stage",
+  "use": [
+   "sgv:event-detail:acadiana-eats"
+  ],
+  "score": 5,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "ae-food-booths-01",
+  "id": 44,
+  "source": "SGV Event Photos/Acadiana Eats Festival IV 2025/AcadianaEatsFestivalIV_dfc7a2/000056.jpg",
+  "event": "acadiana-eats",
+  "orientation": "portrait",
+  "subject": "Guests at food booths",
+  "use": [
+   "sgv:event-detail:acadiana-eats"
+  ],
+  "score": 5,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "plp-crew-portrait-01",
+  "id": 799,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000067.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Smiling man in straw hat and 'Serving Good Vibes' tee",
+  "use": [
+   "se:people",
+   "sgv:people"
+  ],
+  "score": 9,
+  "focal": "50% 40%",
+  "negative_space": "top",
+  "notes": "Best brand-shirt portrait in the entire drop."
+ },
+ {
+  "slug": "plp-bartender-01",
+  "id": 798,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000066.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Staffer in Good Vibes tee pouring drinks",
+  "use": [
+   "se:people",
+   "sgv:hospitality"
+  ],
+  "score": 7,
+  "focal": "55% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-chef-plates-01",
+  "id": 741,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000004.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Smiling vendor holding two plate lunches",
+  "use": [
+   "sgv:hospitality",
+   "sgv:event-card:platelunchapalooza"
+  ],
+  "score": 7,
+  "focal": "50% 45%",
+  "negative_space": "top",
+  "notes": ""
+ },
+ {
+  "slug": "plp-family-01",
+  "id": 787,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000055.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Mom with toddlers in sun hats",
+  "use": [
+   "sgv:family"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-plate-plantains-01",
+  "id": 840,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000112.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Plate lunch with plantain chips, beans and rice",
+  "use": [
+   "sgv:hospitality",
+   "texture"
+  ],
+  "score": 7,
+  "focal": "45% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-plate-pasta-01",
+  "id": 841,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000113.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Shrimp pasta with corn",
+  "use": [
+   "sgv:hospitality"
+  ],
+  "score": 6,
+  "focal": "45% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-plate-fish-01",
+  "id": 838,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000110.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Fried fish with greens",
+  "use": [
+   "sgv:hospitality"
+  ],
+  "score": 6,
+  "focal": "55% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-plates-row-01",
+  "id": 844,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000116.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Rows of plate lunches on judging table",
+  "use": [
+   "sgv:hospitality",
+   "texture"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-cook-kitchen-01",
+  "id": 889,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PlateLunchapalozza_a0cf73/000072.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Smiling cook serving in Laura's II kitchen",
+  "use": [
+   "sgv:hospitality",
+   "se:community"
+  ],
+  "score": 6,
+  "focal": "50% 40%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-crew-02",
+  "id": 781,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000045.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Two vendors in green tees at booth",
+  "use": [
+   "se:community"
+  ],
+  "score": 6,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-crew-03",
+  "id": 780,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000044.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Couple, one in Good Vibes tee",
+  "use": [
+   "se:people"
+  ],
+  "score": 5,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "plp-gumbo-pot-01",
+  "id": 796,
+  "source": "SGV Event Photos/PlateLunchapalooza 2025/PLP2025_18d8e4/000064.jpg",
+  "event": "platelunchapalooza",
+  "orientation": "portrait",
+  "subject": "Pot of gravy/stew being stirred",
+  "use": [
+   "texture"
+  ],
+  "score": 5,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "egancup-group-01",
+  "id": 968,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000067.jpg",
+  "event": "egan-cup",
+  "orientation": "landscape",
+  "subject": "Invitational players group shot with trophies at SE Collective",
+  "use": [
+   "sgv:event-card:egan-cup"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": "Landscape cover; SE Collective sign visible."
+ },
+ {
+  "slug": "egancup-action-01",
+  "id": 950,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000044.jpg",
+  "event": "egan-cup",
+  "orientation": "portrait",
+  "subject": "Player mid-rally",
+  "use": [
+   "sgv:event-detail:egan-cup"
+  ],
+  "score": 7,
+  "focal": "45% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "egancup-winner-01",
+  "id": 967,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000066.jpg",
+  "event": "egan-cup",
+  "orientation": "portrait",
+  "subject": "Winner holding trophy and paddle",
+  "use": [
+   "sgv:event-detail:egan-cup",
+   "se:community"
+  ],
+  "score": 7,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "egancup-winner-02",
+  "id": 970,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000069.jpg",
+  "event": "egan-cup",
+  "orientation": "portrait",
+  "subject": "Player with trophy, headband",
+  "use": [
+   "sgv:event-detail:egan-cup"
+  ],
+  "score": 6,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "egancup-venue-01",
+  "id": 938,
+  "source": "SGV Event Photos/SE Table Tennis Invitational 2025/SETabletennisinvitational_307981/000032.jpg",
+  "event": "egan-cup",
+  "orientation": "portrait",
+  "subject": "Tables in play under SE Collective sign",
+  "use": [
+   "texture",
+   "sgv:event-detail:egan-cup"
+  ],
+  "score": 6,
+  "focal": "50% 40%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-joy-portrait-01",
+  "id": 723,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000093.jpg",
+  "event": "festival-international",
+  "orientation": "portrait",
+  "subject": "Joyful woman in tie-dye with Fest Vibes cup",
+  "use": [
+   "se:community",
+   "sgv:gallery"
+  ],
+  "score": 8,
+  "focal": "50% 40%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-bartender-01",
+  "id": 732,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000102.jpg",
+  "event": "festival-international",
+  "orientation": "landscape",
+  "subject": "SE bartender handing drink to guest",
+  "use": [
+   "se:people",
+   "sgv:hospitality"
+  ],
+  "score": 8,
+  "focal": "40% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-pizza-01",
+  "id": 681,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000029.jpg",
+  "event": "festival-international",
+  "orientation": "landscape",
+  "subject": "Pepperoni pizza (Central Pizza)",
+  "use": [
+   "sgv:hospitality"
+  ],
+  "score": 7,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": "Professional product shot \u2014 partner venue."
+ },
+ {
+  "slug": "fi-pizza-cocktail-01",
+  "id": 663,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000007.jpg",
+  "event": "festival-international",
+  "orientation": "square",
+  "subject": "Cocktail and pizza slice in hand",
+  "use": [
+   "sgv:hospitality"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-can-01",
+  "id": 682,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000030.jpg",
+  "event": "festival-international",
+  "orientation": "portrait",
+  "subject": "Reba Water can on black",
+  "use": [
+   "texture"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": "Partner product."
+ },
+ {
+  "slug": "fi-band-tent-01",
+  "id": 701,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000066.jpg",
+  "event": "festival-international",
+  "orientation": "landscape",
+  "subject": "Band playing in hospitality tent",
+  "use": [
+   "sgv:performers"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-sax-01",
+  "id": 700,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000065.jpg",
+  "event": "festival-international",
+  "orientation": "portrait",
+  "subject": "Saxophonist in tent",
+  "use": [
+   "sgv:performers"
+  ],
+  "score": 6,
+  "focal": "35% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-guests-01",
+  "id": 702,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000067.jpg",
+  "event": "festival-international",
+  "orientation": "landscape",
+  "subject": "Guests in colorful outfits at table",
+  "use": [
+   "sgv:hospitality"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-hospitality-tent-01",
+  "id": 706,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000072.jpg",
+  "event": "festival-international",
+  "orientation": "landscape",
+  "subject": "Full hospitality tent",
+  "use": [
+   "sgv:hospitality"
+  ],
+  "score": 6,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-guests-02",
+  "id": 727,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000097.jpg",
+  "event": "festival-international",
+  "orientation": "landscape",
+  "subject": "Three guests posing in tent",
+  "use": [
+   "se:community"
+  ],
+  "score": 6,
+  "focal": "50% 45%",
+  "negative_space": "none",
+  "notes": ""
+ },
+ {
+  "slug": "fi-crowd-stage-01",
+  "id": 710,
+  "source": "SGV Event Photos/Festival International 2025/FESTIVALINTERNATIONAL_531292/000077.jpg",
+  "event": "festival-international",
+  "orientation": "portrait",
+  "subject": "Crowd facing main stage",
+  "use": [
+   "sgv:gallery"
+  ],
+  "score": 6,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": ""
+ }
+]

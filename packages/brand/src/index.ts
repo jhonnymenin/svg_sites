@@ -1,2 +1,2 @@
-export { SgvMark, SGV_STRIPES } from "./SgvMark";
+export { SgvMark, SGV_STRIPES, SGV_COLORS } from "./SgvMark";
 export type { SgvMarkProps } from "./SgvMark";

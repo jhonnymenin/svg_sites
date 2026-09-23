@@ -65,12 +65,12 @@ export function Nav() {
                 <a
                   href={`#${n.id}`}
                   aria-current={active === n.id ? "location" : undefined}
-                  className="group relative block py-2 font-sans text-[11.5px] font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:text-gold"
+                  className="group relative block py-2 font-sans text-[11.5px] font-medium uppercase tracking-[0.2em] text-ink transition-colors hover:text-pink-deep"
                 >
                   {n.label}
                   <span
                     aria-hidden
-                    className={`absolute inset-x-0 -bottom-0.5 mx-auto h-px bg-gold transition-all duration-500 ${
+                    className={`absolute inset-x-0 -bottom-0.5 mx-auto h-px bg-pink transition-all duration-500 ${
                       active === n.id ? "w-full opacity-100" : "w-0 opacity-0 group-hover:w-full group-hover:opacity-100"
                     }`}
                   />

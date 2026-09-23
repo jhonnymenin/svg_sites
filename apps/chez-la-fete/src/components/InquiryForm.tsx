@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { EASE } from "@sgv/brand/motion";
 import { Fleur } from "./Fleur";
-import { EVENT_TYPES } from "./navData";
+import { EVENT_TYPES, HOLIDAY_TYPES, PREFILL_EVENT } from "./navData";
 
 
 const GUESTS = ["Up to 20", "20 – 50", "50 – 100", "100 – 150", "150+"];
@@ -16,6 +16,20 @@ export function InquiryForm() {
   const [sent, setSent] = useState<string | null>(null);
   const [errors, setErrors] = useState<Errors>({});
   const today = new Date().toISOString().slice(0, 10);
+  const typeRef = useRef<HTMLSelectElement>(null);
+
+  // The holiday band pre-selects its occasion before scrolling here.
+  useEffect(() => {
+    const onPrefill = (e: Event) => {
+      const type = (e as CustomEvent<string>).detail;
+      setSent(null);
+      requestAnimationFrame(() => {
+        if (typeRef.current) typeRef.current.value = type;
+      });
+    };
+    window.addEventListener(PREFILL_EVENT, onPrefill);
+    return () => window.removeEventListener(PREFILL_EVENT, onPrefill);
+  }, []);
 
   function submit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -67,11 +81,14 @@ export function InquiryForm() {
             className="grid gap-x-8 gap-y-8 sm:grid-cols-2"
           >
             <Field label="Event type" error={errors.type}>
-              <select name="type" className="field" defaultValue="" aria-invalid={!!errors.type}>
+              <select ref={typeRef} name="type" className="field" defaultValue="" aria-invalid={!!errors.type}>
                 <option value="" disabled>
                   Select an option
                 </option>
                 {EVENT_TYPES.map((t) => (
+                  <option key={t}>{t}</option>
+                ))}
+                {HOLIDAY_TYPES.map((t) => (
                   <option key={t}>{t}</option>
                 ))}
                 <option>Something else</option>
@@ -118,7 +135,7 @@ export function InquiryForm() {
               <p className="max-w-[40ch] text-[13px] leading-relaxed text-ivory/55">
                 We reply personally, usually within one business day.
               </p>
-              <button type="submit" className="btn btn-gold w-full sm:w-auto">
+              <button type="submit" className="btn btn-pink w-full sm:w-auto">
                 Send Inquiry
               </button>
             </div>
@@ -145,7 +162,7 @@ function Field({
       <span className="label text-[10px] text-ivory/65">{label}</span>
       <span className="mt-1 block">{children}</span>
       {error ? (
-        <span role="alert" className="mt-2 block text-[12.5px] text-gold-pale">
+        <span role="alert" className="mt-2 block text-[12.5px] text-pink-glow">
           {error}
         </span>
       ) : null}

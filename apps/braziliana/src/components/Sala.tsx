@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Reveal, RevealItem } from "@sgv/brand/motion";
-import { Wordmark } from "./Wordmark";
+import { Logo } from "./Logo";
 import { LineBranch } from "./Botanicals";
 
 /* Hand-drawn line pictograms, one stroke weight, drawn for Sala's four uses. */
@@ -76,17 +76,16 @@ export function Sala() {
       <div className="grid lg:grid-cols-2">
         {/* photo — bleeds to the left edge */}
         <div className="group relative h-[78vw] max-h-[560px] overflow-hidden sm:h-[520px] lg:h-auto lg:max-h-none lg:min-h-[680px]">
-          {/* PLACEHOLDER photo — replace with Sala Braziliana, 425 Jefferson Street */}
           <Image
-            src="/images/sala-dusk.jpg"
-            alt="A covered patio at dusk strung with warm festoon lights, tables set for an evening gathering."
+            src="/images/sala-good-vibes-room.jpg"
+            alt="The Good Vibes Room on a Bossa Nova night — wood ceiling, a rattan lamp and red lampshades, guests dancing on patterned rugs while the band plays by the window."
             fill
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="grade object-cover object-[60%_50%] transition-transform duration-[1.6s] ease-out group-hover:scale-[1.03]"
+            className="grade-night object-cover object-[62%_60%] transition-transform duration-[1.6s] ease-out group-hover:scale-[1.03]"
           />
-          <div aria-hidden className="absolute inset-0 bg-[linear-gradient(0deg,rgba(10,42,25,.55),transparent_45%)]" />
+          <div aria-hidden className="absolute inset-0 bg-[linear-gradient(0deg,rgba(10,42,25,.6),transparent_42%)]" />
           <p className="absolute bottom-5 left-[var(--gutter)] font-body text-[11px] font-bold uppercase tracking-[0.24em] text-paper/90">
-            Lafayette, Louisiana
+            The Good Vibes Room &middot; Downtown Lafayette
           </p>
         </div>
 
@@ -96,7 +95,7 @@ export function Sala() {
           <Reveal className="relative max-w-[560px]">
             <h2 id="sala-title">
               <span className="kicker block text-[13px] tracking-[0.5em] text-ink">Sala</span>{" "}
-              <Wordmark size="clamp(44px, 5.6vw, 80px)" className="mt-1" />
+              <Logo height="clamp(50px, 5vw, 76px)" sizes="(min-width: 1024px) 350px, 240px" className="mt-3" />
             </h2>
             <p className="kicker mt-4 flex items-center gap-3 text-[12px] tracking-[0.38em] text-ink sm:text-[13px]">
               A cultural living room
@@ -105,8 +104,11 @@ export function Sala() {
 
             <p className="display mt-9 text-[clamp(28px,2.6vw,38px)] text-urucum">425 Jefferson Street</p>
             <p className="mt-4 max-w-[30rem] text-[17px] leading-[1.55] text-ink-soft sm:text-[18px]">
-              A cultural destination in the heart of Lafayette. A space for art, music, community, and unforgettable
-              experiences.
+              Our home is the Good Vibes Room downtown &mdash; a cultural living room: intimate, vibrant, and perfect for
+              smaller gatherings. A space for art, music, community, and unforgettable experiences.
+            </p>
+            <p className="mt-3 max-w-[30rem] text-[15px] italic leading-[1.5] text-ink-soft/90">
+              Bossa nova nights happen right here &mdash; the band by the window, dancing on the rugs.
             </p>
           </Reveal>
 

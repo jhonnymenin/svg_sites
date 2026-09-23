@@ -32,7 +32,7 @@ export function BookingBar() {
   }
 
   return (
-    <div id="book" className="on-dark relative scroll-mt-28 bg-night text-ivory">
+    <div id="book" className="on-dark relative scroll-mt-28 bg-teal-deep text-ivory">
       <div className="grid gap-8 px-6 py-9 sm:px-10 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,2.6fr)] lg:items-end lg:gap-12 lg:px-12 lg:py-11">
         <div>
           <p className="label text-[10.5px] text-gold-bright">Reserve the house</p>
@@ -113,11 +113,11 @@ export function BookingBar() {
                   ))}
                 </select>
               </label>
-              <button type="submit" className="btn btn-gold w-full sm:col-span-2 lg:col-span-1 lg:w-auto">
+              <button type="submit" className="btn btn-pink w-full sm:col-span-2 lg:col-span-1 lg:w-auto">
                 Check Availability
               </button>
               {error ? (
-                <p id={`${uid}-err`} role="alert" className="text-[13.5px] text-gold-pale sm:col-span-2 lg:col-span-4">
+                <p id={`${uid}-err`} role="alert" className="text-[13.5px] text-pink-glow sm:col-span-2 lg:col-span-4">
                   {error}
                 </p>
               ) : null}

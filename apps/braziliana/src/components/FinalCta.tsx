@@ -2,7 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { SgvMark } from "@sgv/brand";
 import { Reveal } from "@sgv/brand/motion";
 import { JoinCta } from "./JoinCta";
-import { Wordmark } from "./Wordmark";
+import { Logo } from "./Logo";
 import { NAV } from "./nav";
 import { FlagRule } from "./FlagRule";
 
@@ -66,10 +66,10 @@ export function FinalCta() {
         <FlagRule />
         <div className="shell grid gap-12 py-14 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
-            <Wordmark size={44} onDark shadow="rgba(0,0,0,.6)" />
-            <p className="kicker mt-3 text-[10px] tracking-[0.28em] text-paper/70">Culture. Community. Good Vibes.</p>
+            <Logo plate height={50} className="-rotate-[1.5deg]" />
+            <p className="kicker mt-4 text-[10px] tracking-[0.28em] text-paper/70">Culture. Community. Good Vibes.</p>
             <address className="mt-6 not-italic text-[15px] leading-[1.6] text-paper/80">
-              Sala Braziliana
+              Sala Braziliana &middot; the Good Vibes Room
               <br />
               425 Jefferson Street
               <br />
@@ -88,12 +88,15 @@ export function FinalCta() {
             </ul>
           </nav>
           <div className="flex flex-col items-start gap-6 lg:col-span-3 lg:items-end">
-            <SgvMark tone="light" height={52} eyebrow="The philanthropic arm of" />
+            <SgvMark tone="light" height={52} eyebrow="Part of" />
+            <p className="max-w-[16rem] text-[13px] leading-snug text-paper/60 lg:text-right">
+              The philanthropic and community arm of Serving Good Vibes.
+            </p>
           </div>
         </div>
         <div className="shell flex flex-col gap-2 border-t border-paper/10 py-6 text-[12px] text-paper/50 sm:flex-row sm:justify-between">
           <p>© {new Date().getFullYear()} Braziliana · Serving Good Vibes. All rights reserved.</p>
-          <p>Photography shown is placeholder imagery.</p>
+          <p>Event photography from Braziliana nights. Food &amp; drink images are illustrative.</p>
         </div>
       </footer>
     </>

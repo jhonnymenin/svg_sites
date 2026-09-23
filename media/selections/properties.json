@@ -1,0 +1,1493 @@
+[
+ {
+  "slug": "chez-exterior-street-01",
+  "id": 1916,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-11.jpg",
+  "orientation": "landscape",
+  "subject": "Street-front of the white Creole cottage with pink gate door, magnolia mural fence and Bienvenue sign under live oaks",
+  "use": [
+   "chez:hero",
+   "sgv:stays-card",
+   "chez:sister-stays"
+  ],
+  "score": 8,
+  "focal": "40% 60%",
+  "notes": "Best full-facade exterior; daylight only (no dusk/night pro exterior exists). Cropped out the empty pavement foreground for a wide ~2.2:1 hero.",
+  "crop": "0,0.06,1,0.72",
+  "file": "media/library/chez-exterior-street-01.jpg",
+  "w": 2400,
+  "h": 1056
+ },
+ {
+  "slug": "chez-exterior-street-02",
+  "id": 1920,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-6.jpg",
+  "orientation": "landscape",
+  "subject": "Alternate street facade, tighter on porch and pink gate",
+  "use": [
+   "chez:hero-alt",
+   "chez:contact"
+  ],
+  "score": 7,
+  "focal": "45% 60%",
+  "notes": "Near-duplicate angle of #1916; use as alternate crop/mobile.",
+  "crop": "0,0.05,1,0.78",
+  "file": "media/library/chez-exterior-street-02.jpg",
+  "w": 2400,
+  "h": 1168
+ },
+ {
+  "slug": "chez-aerial-courtyard-01",
+  "id": 1902,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Aerial-2.jpg",
+  "orientation": "landscape",
+  "subject": "Drone view over the backyard: yellow umbrellas, pavilion, cottage and live oak",
+  "use": [
+   "chez:hero-alt",
+   "chez:backyard",
+   "chez:events"
+  ],
+  "score": 8,
+  "focal": "50% 65%",
+  "notes": "Shows the whole compound; great establishing shot for events/backyard.",
+  "crop": null,
+  "file": "media/library/chez-aerial-courtyard-01.jpg",
+  "w": 2400,
+  "h": 1599
+ },
+ {
+  "slug": "chez-aerial-downtown-01",
+  "id": 1903,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Aerial-4.jpg",
+  "orientation": "landscape",
+  "subject": "Higher aerial placing Chez La Fete in downtown Lafayette next to the courthouse",
+  "use": [
+   "chez:location"
+  ],
+  "score": 7,
+  "focal": "45% 75%",
+  "notes": "Use for 'location / downtown' section.",
+  "crop": null,
+  "file": "media/library/chez-aerial-downtown-01.jpg",
+  "w": 2400,
+  "h": 1599
+ },
+ {
+  "slug": "chez-porch-lounge-01",
+  "id": 1918,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-3.jpg",
+  "orientation": "landscape",
+  "subject": "Front porch lounge: teak sofa, aloe, hanging ferns, view to the street",
+  "use": [
+   "chez:stays",
+   "chez:details"
+  ],
+  "score": 7,
+  "focal": "55% 70%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-porch-lounge-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-detail-pink-door-01",
+  "id": 1921,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-7.jpg",
+  "orientation": "landscape",
+  "subject": "Hand-painted magnolia fence with the hot-pink gate door and fleur-de-lis ironwork",
+  "use": [
+   "chez:details",
+   "chez:hero-alt-mobile"
+  ],
+  "score": 8,
+  "focal": "35% 55%",
+  "notes": "Signature brand moment; crop square for mobile tiles.",
+  "crop": null,
+  "file": "media/library/chez-detail-pink-door-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-detail-bienvenue-01",
+  "id": 1922,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-8.jpg",
+  "orientation": "landscape",
+  "subject": "'Bienvenue' hand-lettered fence panel and fleur-de-lis gate at the front walk",
+  "use": [
+   "chez:details"
+  ],
+  "score": 7,
+  "focal": "65% 65%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-detail-bienvenue-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-detail-sign-01",
+  "id": 1919,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Front-5.jpg",
+  "orientation": "landscape",
+  "subject": "'Welcome to Chez La Fete - Guesthouse & Backyard' street sign",
+  "use": [
+   "chez:details",
+   "chez:contact"
+  ],
+  "score": 6,
+  "focal": "40% 55%",
+  "notes": "Cropped off third-party alarm-company sticker at bottom.",
+  "crop": "0,0,1,0.8",
+  "file": "media/library/chez-detail-sign-01.jpg",
+  "w": 2400,
+  "h": 1280
+ },
+ {
+  "slug": "chez-detail-neon-01",
+  "id": 1885,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1061.jpg",
+  "orientation": "landscape",
+  "subject": "Pink 'Chez La Fete' neon on a living-greenery wall",
+  "use": [
+   "chez:details",
+   "chez:events"
+  ],
+  "score": 8,
+  "focal": "50% 45%",
+  "notes": "From anniversary shoot; cropped above guests and the logo/swoosh watermark.",
+  "crop": "0,0.02,1,0.425",
+  "file": "media/library/chez-detail-neon-01.jpg",
+  "w": 2400,
+  "h": 1458
+ },
+ {
+  "slug": "chez-interior-living-01",
+  "id": 1924,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-1.jpg",
+  "orientation": "landscape",
+  "subject": "Grand living room: green velvet sofa, cushion daybed, dining beyond, Bar Bijou through the arch",
+  "use": [
+   "chez:stays",
+   "chez:interiors"
+  ],
+  "score": 9,
+  "focal": "55% 60%",
+  "notes": "Best single interior; reads the whole house.",
+  "crop": null,
+  "file": "media/library/chez-interior-living-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-interior-living-02",
+  "id": 1932,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-2.jpg",
+  "orientation": "landscape",
+  "subject": "Living/dining bay with rainbow velvet bolster daybed under brass chandelier",
+  "use": [
+   "chez:interiors"
+  ],
+  "score": 8,
+  "focal": "50% 65%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-interior-living-02.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-bar-bijou-01",
+  "id": 1927,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-13.jpg",
+  "orientation": "landscape",
+  "subject": "Bar Bijou: carved wood bar, teal velvet stools, festival-poster gallery wall and vinyl console",
+  "use": [
+   "chez:interiors",
+   "chez:feature-wet-bar",
+   "chez:details"
+  ],
+  "score": 9,
+  "focal": "40% 60%",
+  "notes": "Hero-quality interior; the Bar Bijou mirror is visible.",
+  "crop": null,
+  "file": "media/library/chez-bar-bijou-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-bar-bijou-02",
+  "id": 1928,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-14.jpg",
+  "orientation": "landscape",
+  "subject": "Bar Bijou front-on with green walls, amber shell pendants and Audubon prints",
+  "use": [
+   "chez:interiors"
+  ],
+  "score": 8,
+  "focal": "50% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-bar-bijou-02.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-vinyl-lounge-01",
+  "id": 1929,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-16.jpg",
+  "orientation": "landscape",
+  "subject": "Record player and red chinoiserie lamp against Festival International poster wall",
+  "use": [
+   "chez:details",
+   "chez:interiors"
+  ],
+  "score": 8,
+  "focal": "65% 70%",
+  "notes": "Vinyl detail.",
+  "crop": null,
+  "file": "media/library/chez-vinyl-lounge-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-interior-lounge-01",
+  "id": 1930,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-17.jpg",
+  "orientation": "landscape",
+  "subject": "Looking from the bar lounge into the living room, bar cart in foreground",
+  "use": [
+   "chez:interiors"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-interior-lounge-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-interior-hallway-01",
+  "id": 1931,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-19.jpg",
+  "orientation": "landscape",
+  "subject": "Long heart-pine hallway lined with festival art, bedroom peeking in",
+  "use": [
+   "chez:interiors"
+  ],
+  "score": 7,
+  "focal": "45% 55%",
+  "notes": "Nice depth; good for tall/mobile crop.",
+  "crop": null,
+  "file": "media/library/chez-interior-hallway-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-dining-01",
+  "id": 1934,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-5.jpg",
+  "orientation": "landscape",
+  "subject": "Farmhouse dining table for 10 under brass candle chandelier and tall windows",
+  "use": [
+   "chez:interiors",
+   "chez:events"
+  ],
+  "score": 8,
+  "focal": "50% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-dining-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-kitchen-01",
+  "id": 1936,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Living.Kitchen.Bar-9.jpg",
+  "orientation": "landscape",
+  "subject": "Magenta-cabinet kitchen with butcher block, saloon doors, yellow walls",
+  "use": [
+   "chez:interiors"
+  ],
+  "score": 7,
+  "focal": "55% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-kitchen-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-bedroom-01",
+  "id": 1909,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-5.jpg",
+  "orientation": "landscape",
+  "subject": "King suite: green velvet headboard, blue toile pillows, abstract art, sconces",
+  "use": [
+   "chez:stays",
+   "chez:interiors"
+  ],
+  "score": 9,
+  "focal": "50% 60%",
+  "notes": "Best bedroom.",
+  "crop": null,
+  "file": "media/library/chez-bedroom-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-bedroom-02",
+  "id": 1908,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-4.jpg",
+  "orientation": "landscape",
+  "subject": "Wide view of the green-velvet king suite with seating and rug",
+  "use": [
+   "chez:stays",
+   "chez:interiors"
+  ],
+  "score": 7,
+  "focal": "40% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-bedroom-02.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-bedroom-03",
+  "id": 1913,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-9.jpg",
+  "orientation": "landscape",
+  "subject": "Cozy queen room: spindle bed, orange pillows, unicorn tapestry print",
+  "use": [
+   "chez:stays"
+  ],
+  "score": 7,
+  "focal": "35% 65%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-bedroom-03.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-bath-01",
+  "id": 1911,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Bed&Baths-7.jpg",
+  "orientation": "landscape",
+  "subject": "Deep-green bath with arched black mirrors, shell sconces, gilt art",
+  "use": [
+   "chez:interiors",
+   "chez:details"
+  ],
+  "score": 7,
+  "focal": "40% 50%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-bath-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-fest-house-lounge-01",
+  "id": 1937,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-10.jpg",
+  "orientation": "landscape",
+  "subject": "Fest House Lounge: poster-gallery wall, mustard velvet sofa, piano edge, rustic wet bar",
+  "use": [
+   "chez:feature-fete-house-lounge",
+   "chez:feature-piano-lounge",
+   "chez:interiors"
+  ],
+  "score": 8,
+  "focal": "45% 60%",
+  "notes": "Upright piano only visible at left edge - no dedicated piano-lounge photo exists.",
+  "crop": null,
+  "file": "media/library/chez-fest-house-lounge-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-wet-bar-01",
+  "id": 1940,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-6.jpg",
+  "orientation": "landscape",
+  "subject": "Rustic pallet wet bar with pink door, wine rack, 'Welcome to Chez La Fete!' chalkboard",
+  "use": [
+   "chez:feature-wet-bar"
+  ],
+  "score": 8,
+  "focal": "50% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-wet-bar-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-fest-house-sign-01",
+  "id": 1939,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-3.jpg",
+  "orientation": "landscape",
+  "subject": "'Welcome to Fest House Lounge' plaque on shiplap with blue-trim window",
+  "use": [
+   "chez:details",
+   "chez:feature-fete-house-lounge"
+  ],
+  "score": 6,
+  "focal": "45% 45%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-fest-house-sign-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-outdoor-pavilion-01",
+  "id": 1948,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-6.jpg",
+  "orientation": "landscape",
+  "subject": "Backyard pavilion with curtains, planters and the yellow-door outdoor restrooms",
+  "use": [
+   "chez:feature-outdoor-restrooms",
+   "chez:backyard"
+  ],
+  "score": 7,
+  "focal": "55% 55%",
+  "notes": "Only view where the outdoor restroom doors (yellow) read clearly.",
+  "crop": null,
+  "file": "media/library/chez-outdoor-pavilion-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-outdoor-games-01",
+  "id": 1938,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Lounge-2.jpg",
+  "orientation": "landscape",
+  "subject": "Covered patio game zone: ping-pong/dining table, shelves, string of photos",
+  "use": [
+   "chez:backyard"
+  ],
+  "score": 6,
+  "focal": "55% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-outdoor-games-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-backyard-tree-deck-01",
+  "id": 1945,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-3.jpg",
+  "orientation": "landscape",
+  "subject": "Live-oak limb arching over the tree deck with planters, picnic tables and neon greenery wall",
+  "use": [
+   "chez:backyard",
+   "chez:hero-alt"
+  ],
+  "score": 9,
+  "focal": "45% 60%",
+  "notes": "Most atmospheric backyard frame.",
+  "crop": null,
+  "file": "media/library/chez-backyard-tree-deck-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-backyard-courtyard-stage-01",
+  "id": 1941,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-1.jpg",
+  "orientation": "landscape",
+  "subject": "The Courtyard Stage: raised deck wrapped around the ancient live oak",
+  "use": [
+   "chez:backyard",
+   "chez:events"
+  ],
+  "score": 8,
+  "focal": "40% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-backyard-courtyard-stage-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-backyard-picnic-01",
+  "id": 1946,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-4.jpg",
+  "orientation": "landscape",
+  "subject": "Striped umbrellas and picnic tables before the Courtyard Stage",
+  "use": [
+   "chez:backyard"
+  ],
+  "score": 7,
+  "focal": "45% 65%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-backyard-picnic-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-backyard-bistro-01",
+  "id": 1947,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-5.jpg",
+  "orientation": "landscape",
+  "subject": "Yellow umbrellas over aqua bistro sets, pink door and trellis planters",
+  "use": [
+   "chez:backyard"
+  ],
+  "score": 8,
+  "focal": "45% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-backyard-bistro-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-backyard-lounge-01",
+  "id": 1949,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-7.jpg",
+  "orientation": "landscape",
+  "subject": "Outdoor lounge nook under a yellow sail shade with navy cushions",
+  "use": [
+   "chez:backyard"
+  ],
+  "score": 8,
+  "focal": "50% 70%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-backyard-lounge-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-backyard-wide-01",
+  "id": 1943,
+  "source": "Vacations Properties/Chez La Fete/Property Photo_Video/Copy of Yard-13.jpg",
+  "orientation": "landscape",
+  "subject": "Wide backyard toward the cottage, umbrellas and live oak",
+  "use": [
+   "chez:backyard"
+  ],
+  "score": 7,
+  "focal": "50% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/chez-backyard-wide-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "chez-backyard-night-01",
+  "id": 1814,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/Copy of unnamed (60).jpg",
+  "orientation": "portrait",
+  "subject": "Live oak wrapped in fairy lights over the tree deck at night",
+  "use": [
+   "chez:backyard",
+   "chez:hero-mobile-night"
+  ],
+  "score": 6,
+  "focal": "50% 45%",
+  "notes": "Phone shot (1512x2016) but the only real night atmosphere of the property in scope. Fine up to ~1000px wide.",
+  "crop": null,
+  "file": "media/library/chez-backyard-night-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "chez-event-courtyard-stage-01",
+  "id": 1855,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC0874.jpg",
+  "orientation": "square",
+  "subject": "Courtyard Stage at golden hour with gold ribbon-cutting scissors",
+  "use": [
+   "chez:events"
+  ],
+  "score": 7,
+  "focal": "55% 55%",
+  "notes": "Cropped to remove Chez watermark/swoosh bottom-right.",
+  "crop": "0,0,0.66,1",
+  "file": "media/library/chez-event-courtyard-stage-01.jpg",
+  "w": 2376,
+  "h": 2400
+ },
+ {
+  "slug": "chez-event-reception-01",
+  "id": 1878,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1022.jpg",
+  "orientation": "landscape",
+  "subject": "Dusk reception in the courtyard: guests at bistro tables, pavilion, green VW bus",
+  "use": [
+   "chez:events"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "notes": "Watermark cropped; feet slightly trimmed.",
+  "crop": "0,0,0.9,0.72",
+  "file": "media/library/chez-event-reception-01.jpg",
+  "w": 2400,
+  "h": 1280
+ },
+ {
+  "slug": "chez-event-cocktail-01",
+  "id": 1857,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC0896.jpg",
+  "orientation": "square",
+  "subject": "Cocktail-hour guests around draped high-tops, downtown skyline behind",
+  "use": [
+   "chez:events"
+  ],
+  "score": 7,
+  "focal": "60% 60%",
+  "notes": "Watermark cropped.",
+  "crop": "0,0,0.62,1",
+  "file": "media/library/chez-event-cocktail-01.jpg",
+  "w": 2232,
+  "h": 2400
+ },
+ {
+  "slug": "chez-event-grazing-01",
+  "id": 1884,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1053.jpg",
+  "orientation": "square",
+  "subject": "Long grazing table: breads, cheeses, fruit on white linens",
+  "use": [
+   "chez:events",
+   "chez:details"
+  ],
+  "score": 8,
+  "focal": "55% 60%",
+  "notes": "Watermark cropped.",
+  "crop": "0,0,0.66,1",
+  "file": "media/library/chez-event-grazing-01.jpg",
+  "w": 2375,
+  "h": 2400
+ },
+ {
+  "slug": "chez-event-guests-lights-01",
+  "id": 1887,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/anniversary photos & videos /photos /_DSC1095.jpg",
+  "orientation": "landscape",
+  "subject": "Three guests smiling before the fairy-lit live oak at dusk",
+  "use": [
+   "chez:events"
+  ],
+  "score": 7,
+  "focal": "45% 45%",
+  "notes": "Watermark cropped (knees-up).",
+  "crop": "0,0,0.78,0.8",
+  "file": "media/library/chez-event-guests-lights-01.jpg",
+  "w": 2400,
+  "h": 1641
+ },
+ {
+  "slug": "chez-event-group-01",
+  "id": 1811,
+  "source": "Vacations Properties/Chez La Fete/Event Photo_Video/Copy of ParbhooPartyPicture.jpg",
+  "orientation": "landscape",
+  "subject": "Big joyful group portrait on the cottage steps",
+  "use": [
+   "chez:events",
+   "chez:community"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "notes": "1599px wide - ok for mid-size use, not full-bleed.",
+  "crop": null,
+  "file": "media/library/chez-event-group-01.jpg",
+  "w": 1599,
+  "h": 1077
+ },
+ {
+  "slug": "sunset-grove-exterior-01",
+  "id": 2155,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-10.jpg",
+  "orientation": "landscape",
+  "subject": "Gambrel farmhouse under a massive live oak with porch swing",
+  "use": [
+   "sunset:hero",
+   "chez:sister-stays",
+   "sgv:stays-card"
+  ],
+  "score": 9,
+  "focal": "40% 55%",
+  "notes": "Cover.",
+  "crop": null,
+  "file": "media/library/sunset-grove-exterior-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-exterior-02",
+  "id": 2163,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-9.jpg",
+  "orientation": "landscape",
+  "subject": "Front of the gambrel house with screened porch, flags and oak shadows",
+  "use": [
+   "sunset:gallery"
+  ],
+  "score": 7,
+  "focal": "50% 45%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-exterior-02.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-oaks-01",
+  "id": 2182,
+  "source": "Vacations Properties/Sunset Grove/OUTDOORS - PROPERTY/Copy of Ext.2-16.jpg",
+  "orientation": "landscape",
+  "subject": "Oak allee framing the house on the grounds",
+  "use": [
+   "sunset:gallery",
+   "sunset:grounds"
+  ],
+  "score": 7,
+  "focal": "45% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-oaks-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-living-01",
+  "id": 2170,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Living-5.jpg",
+  "orientation": "landscape",
+  "subject": "Cedar-beamed living room: cognac sectional, jewel-tone pillows, ferns",
+  "use": [
+   "sunset:gallery"
+  ],
+  "score": 9,
+  "focal": "45% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-living-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-living-02",
+  "id": 2169,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Living-4.jpg",
+  "orientation": "landscape",
+  "subject": "Open great room with papasan, rug and kitchen beyond",
+  "use": [
+   "sunset:gallery"
+  ],
+  "score": 8,
+  "focal": "45% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-living-02.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-kitchen-01",
+  "id": 2165,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Kitchen-2.jpg",
+  "orientation": "landscape",
+  "subject": "White kitchen with butcher-block island under timber ceiling",
+  "use": [
+   "sunset:gallery"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-kitchen-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-porch-01",
+  "id": 2157,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-12.jpg",
+  "orientation": "landscape",
+  "subject": "Long screened brick porch with swing bench and firewood",
+  "use": [
+   "sunset:gallery",
+   "sunset:amenities"
+  ],
+  "score": 8,
+  "focal": "45% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-porch-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-deck-01",
+  "id": 2159,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-14.jpg",
+  "orientation": "landscape",
+  "subject": "Deck with fire pit, Adirondack chairs and world flags under the oaks",
+  "use": [
+   "sunset:amenities"
+  ],
+  "score": 7,
+  "focal": "40% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-deck-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-bedroom-01",
+  "id": 2138,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of B&B-14.jpg",
+  "orientation": "landscape",
+  "subject": "Airy king bedroom with tall windows and floor mirror",
+  "use": [
+   "sunset:gallery"
+  ],
+  "score": 7,
+  "focal": "65% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-bedroom-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-meditation-01",
+  "id": 2175,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Suite-3.jpg",
+  "orientation": "landscape",
+  "subject": "Meditation nook: low table with Buddha and floor cushions at a picture window",
+  "use": [
+   "sunset:gallery",
+   "sunset:details"
+  ],
+  "score": 8,
+  "focal": "50% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-meditation-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-sign-01",
+  "id": 2152,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext-3.jpg",
+  "orientation": "landscape",
+  "subject": "'Sunset Grove Est 2022' iron emblem on brick outdoor oven",
+  "use": [
+   "sunset:details"
+  ],
+  "score": 7,
+  "focal": "55% 70%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/sunset-grove-sign-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-azalea-01",
+  "id": 2187,
+  "source": "Vacations Properties/Sunset Grove/OUTDOORS - PROPERTY/Copy of Ext.2-6.jpg",
+  "orientation": "landscape",
+  "subject": "Magenta azaleas in bloom, shallow depth of field",
+  "use": [
+   "sunset:details"
+  ],
+  "score": 7,
+  "focal": "35% 55%",
+  "notes": "Texture/atmosphere.",
+  "crop": null,
+  "file": "media/library/sunset-grove-azalea-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "sunset-grove-pond-01",
+  "id": 2161,
+  "source": "Vacations Properties/Sunset Grove/INDOORS - EXTERIOR PORCHES/Copy of Ext.2-7.jpg",
+  "orientation": "landscape",
+  "subject": "Cypress pond with the house on the bank",
+  "use": [
+   "sunset:grounds"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "notes": "Pond is green with duckweed; use small.",
+  "crop": null,
+  "file": "media/library/sunset-grove-pond-01.jpg",
+  "w": 2400,
+  "h": 1600
+ },
+ {
+  "slug": "saint-john-exterior-01",
+  "id": 1978,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.036.JPG",
+  "orientation": "landscape",
+  "subject": "Two-story white house with yellow door, flags and oaks, brick-edged front walk",
+  "use": [
+   "saintjohn:hero",
+   "chez:sister-stays",
+   "sgv:stays-card"
+  ],
+  "score": 7,
+  "focal": "50% 60%",
+  "notes": "Best facade, but sky is blown white - crop tight or overlay.",
+  "crop": null,
+  "file": "media/library/saint-john-exterior-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-dining-01",
+  "id": 1954,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.007.JPG",
+  "orientation": "landscape",
+  "subject": "Dining room with giant Audubon heron mural, green velvet chairs, rattan stools",
+  "use": [
+   "saintjohn:gallery",
+   "saintjohn:hero-alt"
+  ],
+  "score": 9,
+  "focal": "55% 50%",
+  "notes": "Most distinctive image of the property.",
+  "crop": null,
+  "file": "media/library/saint-john-dining-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-dining-02",
+  "id": 1956,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.009.JPG",
+  "orientation": "landscape",
+  "subject": "Heron mural dining room opening to white kitchen",
+  "use": [
+   "saintjohn:gallery"
+  ],
+  "score": 8,
+  "focal": "40% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/saint-john-dining-02.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-living-01",
+  "id": 1952,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.005.JPG",
+  "orientation": "landscape",
+  "subject": "Bright living room with twin cream sofas and mirror wall",
+  "use": [
+   "saintjohn:gallery"
+  ],
+  "score": 7,
+  "focal": "50% 65%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/saint-john-living-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-bedroom-01",
+  "id": 1958,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.012.JPG",
+  "orientation": "landscape",
+  "subject": "Boho king bedroom: macrame, rattan mirror, evil-eye pillow",
+  "use": [
+   "saintjohn:gallery"
+  ],
+  "score": 8,
+  "focal": "50% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/saint-john-bedroom-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-study-01",
+  "id": 1962,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.017.JPG",
+  "orientation": "landscape",
+  "subject": "Study with vintage Louisiana map, record player and Connect Four",
+  "use": [
+   "saintjohn:gallery"
+  ],
+  "score": 8,
+  "focal": "55% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/saint-john-study-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-patio-01",
+  "id": 1975,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.032.JPG",
+  "orientation": "landscape",
+  "subject": "Back patio with string lights, retro chairs, pink rug; cathedral spire beyond",
+  "use": [
+   "saintjohn:gallery",
+   "saintjohn:amenities"
+  ],
+  "score": 8,
+  "focal": "50% 60%",
+  "notes": "Cathedral spire = Saint John's Cathedral context.",
+  "crop": null,
+  "file": "media/library/saint-john-patio-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-bath-01",
+  "id": 1960,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.014.JPG",
+  "orientation": "landscape",
+  "subject": "Clawfoot tub with colorful rug and gold shelf",
+  "use": [
+   "saintjohn:gallery"
+  ],
+  "score": 7,
+  "focal": "30% 70%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/saint-john-bath-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "saint-john-porch-01",
+  "id": 1951,
+  "source": "Vacations Properties/Saint John Inn/Copy of StJohnHouse.003.JPG",
+  "orientation": "landscape",
+  "subject": "Front porch with white rockers and potted palms",
+  "use": [
+   "saintjohn:gallery"
+  ],
+  "score": 6,
+  "focal": "60% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/saint-john-porch-01.jpg",
+  "w": 2400,
+  "h": 1602
+ },
+ {
+  "slug": "camellia-exterior-dusk-01",
+  "id": 1808,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9885.jpeg",
+  "orientation": "landscape",
+  "subject": "Dusk patio: lit pass-through window, teal umbrella with lights, picnic table",
+  "use": [
+   "camellia:hero",
+   "chez:sister-stays",
+   "sgv:stays-card"
+  ],
+  "score": 7,
+  "focal": "35% 45%",
+  "notes": "Phone/HDR photography (2049px). Best cover available.",
+  "crop": null,
+  "file": "media/library/camellia-exterior-dusk-01.jpg",
+  "w": 2049,
+  "h": 1536
+ },
+ {
+  "slug": "camellia-firepit-night-01",
+  "id": 1810,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9920.jpeg",
+  "orientation": "landscape",
+  "subject": "Fire table and sling chair on the night deck",
+  "use": [
+   "camellia:gallery",
+   "camellia:amenities"
+  ],
+  "score": 7,
+  "focal": "35% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/camellia-firepit-night-01.jpg",
+  "w": 2060,
+  "h": 1536
+ },
+ {
+  "slug": "camellia-living-kitchen-01",
+  "id": 1802,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9794.jpeg",
+  "orientation": "landscape",
+  "subject": "Open living/kitchen with butcher-block island, pendant lights",
+  "use": [
+   "camellia:gallery"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/camellia-living-kitchen-01.jpg",
+  "w": 2400,
+  "h": 1350
+ },
+ {
+  "slug": "camellia-kitchen-01",
+  "id": 1788,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_1640.jpeg",
+  "orientation": "landscape",
+  "subject": "Kitchen with red retro fridge, open shelves, subway tile",
+  "use": [
+   "camellia:gallery"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/camellia-kitchen-01.jpg",
+  "w": 2048,
+  "h": 1536
+ },
+ {
+  "slug": "camellia-bedroom-01",
+  "id": 1797,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_9760.jpeg",
+  "orientation": "landscape",
+  "subject": "Bedroom with bar cart foreground, lamps and framed prints",
+  "use": [
+   "camellia:gallery"
+  ],
+  "score": 6,
+  "focal": "35% 55%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/camellia-bedroom-01.jpg",
+  "w": 2400,
+  "h": 1350
+ },
+ {
+  "slug": "camellia-pass-through-01",
+  "id": 1786,
+  "source": "Vacations Properties/Camellia Cottage/Copy of IMG_1636.jpeg",
+  "orientation": "landscape",
+  "subject": "Glass garage-style pass-through window set for dinner",
+  "use": [
+   "camellia:gallery",
+   "camellia:details"
+  ],
+  "score": 7,
+  "focal": "45% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/camellia-pass-through-01.jpg",
+  "w": 1928,
+  "h": 1436
+ },
+ {
+  "slug": "salty-air-beach-sunset-01",
+  "id": 2019,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220424_001147377~2.jpg",
+  "orientation": "landscape",
+  "subject": "Perdido Key shoreline at sunset with towers and reflections",
+  "use": [
+   "saltyair:hero",
+   "chez:sister-stays",
+   "sgv:stays-card"
+  ],
+  "score": 7,
+  "focal": "55% 55%",
+  "notes": "Heavy phone HDR; strong mood. Keep <=1600px.",
+  "crop": null,
+  "file": "media/library/salty-air-beach-sunset-01.jpg",
+  "w": 2400,
+  "h": 1800
+ },
+ {
+  "slug": "salty-air-balcony-view-01",
+  "id": 2013,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220422_195408624.jpg",
+  "orientation": "landscape",
+  "subject": "Gulf view from the balcony: white sand, dune fences, surf",
+  "use": [
+   "saltyair:hero-alt",
+   "saltyair:gallery"
+  ],
+  "score": 7,
+  "focal": "50% 50%",
+  "notes": "Clean daytime view.",
+  "crop": null,
+  "file": "media/library/salty-air-balcony-view-01.jpg",
+  "w": 2400,
+  "h": 1800
+ },
+ {
+  "slug": "salty-air-boardwalk-01",
+  "id": 2014,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220422_195522288.jpg",
+  "orientation": "landscape",
+  "subject": "Boardwalk to the beach from above",
+  "use": [
+   "saltyair:gallery"
+  ],
+  "score": 6,
+  "focal": "50% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/salty-air-boardwalk-01.jpg",
+  "w": 2400,
+  "h": 1800
+ },
+ {
+  "slug": "salty-air-living-01",
+  "id": 2060,
+  "source": "Vacations Properties/Salty Air Retreat/Photo - Video/e77513ef-169c-45a5-aa4b-12069280d8fa.jpeg",
+  "orientation": "landscape",
+  "subject": "Living room: navy slipcovered sofa, surfboard coffee table, coastal rug",
+  "use": [
+   "saltyair:gallery"
+  ],
+  "score": 6,
+  "focal": "45% 55%",
+  "notes": "Only 1440px; interiors are low-res listing photos.",
+  "crop": null,
+  "file": "media/library/salty-air-living-01.jpg",
+  "w": 1440,
+  "h": 1069
+ },
+ {
+  "slug": "salty-air-kitchen-01",
+  "id": 2051,
+  "source": "Vacations Properties/Salty Air Retreat/Photo - Video/9feed651-4670-4d9f-b60a-9afc8aa1e41c.jpeg",
+  "orientation": "landscape",
+  "subject": "Open kitchen and dining nook with 'Salty Air Retreat' sign",
+  "use": [
+   "saltyair:gallery"
+  ],
+  "score": 6,
+  "focal": "55% 50%",
+  "notes": "1440px.",
+  "crop": null,
+  "file": "media/library/salty-air-kitchen-01.jpg",
+  "w": 1440,
+  "h": 996
+ },
+ {
+  "slug": "salty-air-bedroom-01",
+  "id": 2059,
+  "source": "Vacations Properties/Salty Air Retreat/Photo - Video/e3796262-855d-4304-b4d7-dba446d67243.avif",
+  "orientation": "landscape",
+  "subject": "Bedroom with mustard pillows and desert-landscape art",
+  "use": [
+   "saltyair:gallery"
+  ],
+  "score": 5,
+  "focal": "60% 60%",
+  "notes": "720px - thumbnail use only.",
+  "crop": null,
+  "file": "media/library/salty-air-bedroom-01.jpg",
+  "w": 720,
+  "h": 511
+ },
+ {
+  "slug": "salty-air-night-pool-01",
+  "id": 2006,
+  "source": "Vacations Properties/Salty Air Retreat/Copy of PXL_20220422_065033009.NIGHT~3.jpg",
+  "orientation": "portrait",
+  "subject": "Moonlit gulf over the lit pool deck at night",
+  "use": [
+   "saltyair:gallery"
+  ],
+  "score": 5,
+  "focal": "50% 60%",
+  "notes": "Noisy phone night shot; small only.",
+  "crop": null,
+  "file": "media/library/salty-air-night-pool-01.jpg",
+  "w": 1948,
+  "h": 2400
+ },
+ {
+  "slug": "photobooth-action-01",
+  "id": 1735,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000073.jpg",
+  "orientation": "portrait",
+  "subject": "Two friends tapping the glowing LED ring booth under purple light",
+  "use": [
+   "photobooth:hero",
+   "photobooth:gallery"
+  ],
+  "score": 7,
+  "focal": "45% 40%",
+  "notes": "Phone shot; best in-action image.",
+  "crop": null,
+  "file": "media/library/photobooth-action-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "photobooth-pose-01",
+  "id": 1729,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000067.jpg",
+  "orientation": "portrait",
+  "subject": "Friends posing in front of the ring-light booth with poster wall",
+  "use": [
+   "photobooth:gallery"
+  ],
+  "score": 6,
+  "focal": "70% 60%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/photobooth-pose-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "photobooth-screen-01",
+  "id": 1748,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000086.jpg",
+  "orientation": "portrait",
+  "subject": "LED-ring booth screen showing a branded photo-strip template",
+  "use": [
+   "photobooth:gallery",
+   "photobooth:prints"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "notes": "Print/template proof.",
+  "crop": null,
+  "file": "media/library/photobooth-screen-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "photobooth-touch-01",
+  "id": 1739,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000077.jpg",
+  "orientation": "portrait",
+  "subject": "Hand tapping the rainbow-ring booth screen with a guest print",
+  "use": [
+   "photobooth:gallery"
+  ],
+  "score": 6,
+  "focal": "40% 45%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/photobooth-touch-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "photobooth-glow-01",
+  "id": 1747,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000085.jpg",
+  "orientation": "portrait",
+  "subject": "Guest reaching into the white ring light, reef video above",
+  "use": [
+   "photobooth:gallery"
+  ],
+  "score": 6,
+  "focal": "60% 50%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/photobooth-glow-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "photobooth-standalone-01",
+  "id": 1749,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000087.jpg",
+  "orientation": "portrait",
+  "subject": "Photo booth kiosk standing alone, 'Tap to start' glow",
+  "use": [
+   "photobooth:product"
+  ],
+  "score": 5,
+  "focal": "50% 35%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/photobooth-standalone-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "party-laffy-taps-bus-01",
+  "id": 1697,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000020.jpg",
+  "orientation": "square",
+  "subject": "Lime-green VW 'Laffy Taps' mobile beer bus taps and menu",
+  "use": [
+   "rentals:mobile-bar",
+   "photobooth:mobile"
+  ],
+  "score": 6,
+  "focal": "55% 55%",
+  "notes": "The 'Good Vibes Mobile' equivalent in the drop is this bus.",
+  "crop": null,
+  "file": "media/library/party-laffy-taps-bus-01.jpg",
+  "w": 2048,
+  "h": 2048
+ },
+ {
+  "slug": "party-laffy-taps-event-01",
+  "id": 1755,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000093.jpg",
+  "orientation": "portrait",
+  "subject": "Laffy Taps bus serving at a Chez La Fete courtyard event",
+  "use": [
+   "rentals:mobile-bar",
+   "chez:events"
+  ],
+  "score": 6,
+  "focal": "55% 50%",
+  "notes": "",
+  "crop": null,
+  "file": "media/library/party-laffy-taps-event-01.jpg",
+  "w": 1512,
+  "h": 2016
+ },
+ {
+  "slug": "party-skedaddle-van-01",
+  "id": 1717,
+  "source": "SGV Photobooth/SE Party Rentals Photo/000050.jpg",
+  "orientation": "square",
+  "subject": "Black Mercedes Sprinter 'Skedaddle' party van under oaks",
+  "use": [
+   "rentals:transport"
+  ],
+  "score": 6,
+  "focal": "45% 60%",
+  "notes": "1286px.",
+  "crop": null,
+  "file": "media/library/party-skedaddle-van-01.jpg",
+  "w": 1286,
+  "h": 1267
+ },
+ {
+  "slug": "photobooth-logo-01",
+  "id": 1771,
+  "source": "SGV Photobooth/SGV Photobooth Logo_Rectangle.png",
+  "orientation": "landscape",
+  "subject": "Serving Good Vibes Photobooth logo on cream",
+  "use": [
+   "photobooth:logo"
+  ],
+  "score": 5,
+  "focal": "50% 50%",
+  "notes": "Brand asset, not a photo.",
+  "crop": null,
+  "file": "media/library/photobooth-logo-01.jpg",
+  "w": 1536,
+  "h": 1024
+ }
+]

@@ -61,15 +61,7 @@ export function Hero() {
                     className={`hero-line block ${i === 3 ? "italic" : ""}`}
                     style={{ animationDelay: `${120 + i * 110}ms` }}
                   >
-                    {i === 3 ? (
-                      <>
-                        {/* optical kern: the italic E's arm otherwise touches the x */}
-                        <span className="mr-[0.045em]">{line.charAt(0)}</span>
-                        {line.slice(1)}
-                      </>
-                    ) : (
-                      line
-                    )}
+                    {line}
                   </span>
                 </span>
               ))}

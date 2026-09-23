@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 import { clsx } from "clsx";
 import { SgvMark } from "@sgv/brand";
 import { EASE } from "@sgv/brand/motion";
-import { Wordmark } from "./Wordmark";
+import { Logo } from "./Logo";
 import { FlagRule } from "./FlagRule";
 import { NAV } from "./nav";
 
@@ -68,8 +68,8 @@ export function Header() {
         <div className="shell pt-5 pb-0 lg:pt-7">
           <div className="flex items-start justify-between gap-6">
             <a href="#top" className="group block" aria-label="Braziliana — home">
-              <Wordmark animate size="clamp(40px, 5.1vw, 74px)" />
-              <span className="kicker mt-2 block text-[10px] tracking-[0.26em] text-ink/80 sm:text-[11px] lg:ml-[0.4em]">
+              <Logo priority height="clamp(46px, 5.6vw, 84px)" sizes="(min-width: 1024px) 390px, 240px" className="bz-logo-in" />
+              <span className="kicker mt-2.5 block text-[10px] tracking-[0.26em] text-ink/80 sm:text-[11px] lg:ml-[0.3em]">
                 Culture. Community. Good Vibes.
               </span>
             </a>
@@ -150,7 +150,7 @@ export function Header() {
           >
             <div className="shell flex h-[60px] items-center justify-between gap-4">
               <a href="#top" aria-label="Braziliana — back to top" className="shrink-0">
-                <Wordmark size={24} accents={false} onDark shadow="rgba(0,0,0,.55)" />
+                <Logo plate height={26} className="-my-1 -rotate-1" />
               </a>
               <nav aria-label="Sections" className="hidden xl:block">
                 <ul className="flex gap-5">
@@ -202,7 +202,7 @@ export function Header() {
             className="grain fixed inset-0 z-[60] flex flex-col overflow-y-auto bg-mata text-paper"
           >
             <div className="shell flex items-center justify-between pt-5">
-              <Wordmark size={30} onDark shadow="rgba(0,0,0,.55)" />
+              <Logo plate height={34} className="-rotate-1" />
               <button
                 type="button"
                 onClick={() => setOpen(false)}

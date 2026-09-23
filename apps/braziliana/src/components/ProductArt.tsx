@@ -4,35 +4,22 @@
  * illustrated (not faked photos) so nobody mistakes them for final goods.
  */
 
-const WM = [
-  ["B", "var(--anil)"],
-  ["R", "var(--urucum)"],
-  ["A", "var(--ouro)"],
-  ["Z", "var(--folha)"],
-  ["I", "var(--urucum)"],
-  ["L", "var(--anil)"],
-  ["I", "var(--ouro)"],
-  ["A", "var(--folha)"],
-  ["N", "var(--urucum)"],
-  ["A", "var(--anil)"],
-] as const;
+const LOGO = "/brand/logos/braziliana.webp";
+const RATIO = 1800 / 391;
 
-/** mini wordmark as SVG text, centred at x,y */
-function MiniMark({ x, y, size, rotate = 0, onDark = false }: { x: number; y: number; size: number; rotate?: number; onDark?: boolean }) {
+/** the official logo, printed onto the product — centred at x,y, `w` wide */
+function MiniMark({ x, y, w, rotate = 0 }: { x: number; y: number; w: number; rotate?: number }) {
+  const h = w / RATIO;
   return (
-    <text
-      x={x}
-      y={y}
-      textAnchor="middle"
+    <image
+      href={LOGO}
+      x={x - w / 2}
+      y={y - h / 2}
+      width={w}
+      height={h}
+      preserveAspectRatio="xMidYMid meet"
       transform={rotate ? `rotate(${rotate} ${x} ${y})` : undefined}
-      style={{ fontFamily: "var(--font-wordmark)", fontSize: size, letterSpacing: "-0.02em" }}
-    >
-      {WM.map(([ch, c], i) => (
-        <tspan key={i} fill={onDark ? (c === "var(--anil)" ? "#7fa3e8" : c === "var(--folha)" ? "var(--paper)" : c) : c} dy={i % 2 ? -size * 0.04 : size * 0.04}>
-          {ch}
-        </tspan>
-      ))}
-    </text>
+    />
   );
 }
 
@@ -47,9 +34,8 @@ export function GiftBox() {
       {/* open lid, tilted back */}
       <path d="M40 70 L70 30 L176 40 L150 78Z" fill="#23201a" />
       <path d="M70 30 L176 40 L178 48 L72 38Z" fill="#3a352c" />
-      <text x="116" y="58" textAnchor="middle" transform="rotate(6 116 58) skewX(-18)" style={{ fontFamily: "var(--font-wordmark)", fontSize: 13 }} fill="var(--paper)">
-        BRAZILIANA
-      </text>
+      <path d="M84 42 L160 49 L152 64 L78 57Z" fill="#f7efdd" />
+      <image href={LOGO} x="84" y="46" width="68" height={68 / RATIO} transform="rotate(6 118 53) skewX(-14)" preserveAspectRatio="xMidYMid meet" />
       {/* box body */}
       <path d="M26 92 L150 78 L176 92 L176 176 L50 188 L26 170Z" fill="#2c2821" />
       <path d="M26 92 L50 104 L50 188 L26 170Z" fill="#1d1a15" />
@@ -67,7 +53,7 @@ export function GiftBox() {
       <rect x="94" y="68" width="28" height="42" rx="4" fill="var(--folha)" />
       <rect x="94" y="68" width="28" height="9" rx="4" fill="#15502b" />
       <rect x="128" y="76" width="30" height="30" fill="var(--paper)" />
-      <MiniMark x={143} y={95} size={5.2} />
+      <MiniMark x={143} y={91} w={26} />
       <rect x="128" y="76" width="30" height="30" fill="none" stroke="rgba(0,0,0,.15)" />
       <path d="M50 104 L176 92 L176 100 L50 112Z" fill="rgba(0,0,0,.12)" />
     </svg>
@@ -80,13 +66,13 @@ export function Tee() {
       <Ground w={66} />
       <path
         d="M72 22 C80 30 120 30 128 22 L166 38 L184 78 L156 90 L150 74 L150 180 L50 180 L50 74 L44 90 L16 78 L34 38Z"
-        fill="#1f5a34"
+        fill="#efe6d0"
       />
-      <path d="M72 22 C80 34 120 34 128 22 L122 20 C114 28 86 28 78 20Z" fill="#164427" />
-      <path d="M50 74 L50 180 L58 180 L58 86Z M150 74 L150 180 L142 180 L142 86Z" fill="rgba(0,0,0,.14)" />
+      <path d="M72 22 C80 34 120 34 128 22 L122 20 C114 28 86 28 78 20Z" fill="var(--folha)" />
+      <path d="M50 74 L50 180 L58 180 L58 86Z M150 74 L150 180 L142 180 L142 86Z" fill="rgba(0,0,0,.07)" />
       <path d="M100 32 C96 60 104 120 98 178" stroke="rgba(0,0,0,.08)" strokeWidth="6" fill="none" />
-      <MiniMark x={100} y={86} size={15} onDark />
-      <text x="100" y="100" textAnchor="middle" fill="var(--paper)" opacity=".75" style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: 4.6, letterSpacing: "0.22em" }}>
+      <MiniMark x={100} y={80} w={78} />
+      <text x="100" y="100" textAnchor="middle" fill="var(--mata)" opacity=".8" style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: 4.6, letterSpacing: "0.22em" }}>
         CULTURE · COMMUNITY · GOOD VIBES
       </text>
     </svg>
@@ -108,7 +94,7 @@ export function Cap() {
       <path d="M96 56 C124 76 138 108 136 144" stroke="rgba(0,0,0,.1)" strokeWidth="1.3" fill="none" />
       <circle cx="96" cy="57" r="4.2" fill="#cdb68a" />
       <path d="M26 156 C50 150 74 150 92 152 L92 158 C70 156 48 157 28 162Z" fill="#cdb68a" />
-      <MiniMark x={100} y={116} size={12} rotate={-5} />
+      <MiniMark x={100} y={112} w={62} rotate={-5} />
     </svg>
   );
 }
@@ -124,7 +110,7 @@ export function Mug() {
       <ellipse cx="95" cy="51" rx="49" ry="6.5" fill="#3a2414" />
       <path d="M40 50 L44 176 C44 180 56 182 64 182 L58 58Z" fill="rgba(0,0,0,.07)" />
       <path d="M150 50 L146 176 C146 180 136 182 128 182 L136 58Z" fill="rgba(0,0,0,.05)" />
-      <MiniMark x={96} y={118} size={13} />
+      <MiniMark x={95} y={114} w={82} />
     </svg>
   );
 }

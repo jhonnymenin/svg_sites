@@ -7,6 +7,8 @@ import { clsx } from "clsx";
 import { SELogo } from "./marks";
 import { EASE } from "./Reveal";
 
+const PARTNERS_URL = "https://socialentertainment.net/partners-sponsors";
+
 const NAV_LINKS = [
   { label: "Food + Drink", href: "#food-drink" },
   { label: "Serving Good Vibes", href: "#serving-good-vibes" },
@@ -87,10 +89,13 @@ export function Nav() {
             compact ? "pt-[7px] pb-[7px]" : "pt-[7px] pb-[9px] lg:pt-[9px] lg:pb-[13px]"
           )}
         >
+          {/* official artwork, 241×193 source: capped at 118px wide (~95px tall) so it stays crisp at 2x */}
           <SELogo
+            alt=""
+            priority
             className={clsx(
               "transition-[width] duration-300 ease-out group-hover:opacity-90",
-              compact ? "w-[60px] lg:w-[70px]" : "w-[92px] lg:w-[138px]"
+              compact ? "w-[56px] lg:w-[66px]" : "w-[88px] lg:w-[118px]"
             )}
           />
           {/* concave fillet where the tab meets the bar */}
@@ -134,7 +139,9 @@ export function Nav() {
           </nav>
 
           <a
-            href="#contact"
+            href={PARTNERS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden items-center bg-rust px-5 py-[10px] font-label text-[15px] font-semibold uppercase tracking-[0.08em] text-cream shadow-[inset_0_0_0_1px_rgba(0,0,0,0.15)] transition-all duration-150 hover:-translate-y-px hover:bg-rust-hi active:translate-y-0 sm:inline-flex"
             style={{ borderRadius: 2 }}
           >
@@ -202,7 +209,9 @@ export function Nav() {
             </motion.nav>
 
             <motion.a
-              href="#contact"
+              href={PARTNERS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setOpen(false)}
               initial={reduce ? false : { opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}

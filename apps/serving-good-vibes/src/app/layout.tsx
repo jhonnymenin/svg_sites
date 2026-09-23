@@ -1,49 +1,44 @@
 import type { Metadata, Viewport } from "next";
-import { Archivo_Black, Barlow, Oswald } from "next/font/google";
+import { Fraunces, Rubik } from "next/font/google";
 import "./globals.css";
 
-const oswald = Oswald({
-  variable: "--font-oswald",
+// Body + UI — the brand guide's Rubik (Medium for body, Bold as the alternate).
+const rubik = Rubik({
+  variable: "--font-rubik",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const barlow = Barlow({
-  variable: "--font-barlow",
+// Web stand-in for TAN Tangkiwood: Fraunces at 800–900 with SOFT 100 reads as the
+// same soft, fat 70s serif as the "good vibes" logotype.
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
-});
-
-// Heavy grotesk for the shared Serving Good Vibes lockup (@sgv/brand reads --font-sgv)
-// and for the Braziliana display lettering.
-const archivoBlack = Archivo_Black({
-  variable: "--font-sgv",
-  subsets: ["latin"],
-  weight: "400",
+  axes: ["SOFT", "opsz"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
-  title: "Serving Good Vibes — Experiences that bring people together",
+  metadataBase: new URL("https://servinggoodvibes.com"),
+  title: "Serving Good Vibes — Events, stays & hospitality in Acadiana",
   description:
-    "Serving Good Vibes is a social entertainment company building unforgettable experiences through hospitality, events, media and community. We celebrate culture, connection and the spirit of good vibes.",
+    "Serving Good Vibes is a lifestyle-driven experience company rooted in hospitality, events, and consulting. We create, host, and advise on experiences that bring people together — from downtown Lafayette to Perdido Key and São Paulo.",
   openGraph: {
     title: "Serving Good Vibes",
     description:
-      "Events, stays, hospitality, production & media and community — five ways we serve good vibes.",
+      "The vibes are just getting started. Fall/Winter 2026 — Downtown Rising, Sugar Jam, Acadiana Eats, High Notes, Egan Cup and more.",
     type: "website",
+    images: ["/video/sgv-hero-loop-poster.jpg"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#041c0c",
+  themeColor: "#02262c",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${oswald.variable} ${barlow.variable} ${archivoBlack.variable} antialiased`}
-    >
+    <html lang="en" className={`${rubik.variable} ${fraunces.variable} antialiased`}>
       <body>{children}</body>
     </html>
   );

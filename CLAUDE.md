@@ -17,6 +17,8 @@ Serving Good Vibes family of sites — npm workspaces + Turborepo.
 - Run one site: `npm run dev:se | dev:sgv | dev:braziliana | dev:chez | dev:villabo`. All: `npm run dev`.
 - Screenshots: `node scripts/shot.mjs <url> <out.png> <width>`.
 - Placeholder photography: `node scripts/find-images.mjs search "<query>"` then `get <id> apps/<app>/public/images/<name>.jpg` (writes CREDITS.md). Every stock image is a placeholder until real client photography arrives.
+- Real client media: `media/FACTS.md` (verified brand, calendar, properties — source of truth), curated photos in `media/selections/*.json` (library files in `media/library`, gitignored; rebuild with `media/export.py` from `~/Downloads/SGV Marketing`), video notes in `media/video/README.md`.
+- Official logos live in `packages/brand/assets/logos` and are synced to each app's `public/brand/` on `predev`/`prebuild` (`npm run sync:brand`).
 - Keep the repo outside iCloud-synced folders — evicted `node_modules` files make Next hang.
 
 This is a design-led web project.

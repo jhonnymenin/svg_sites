@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { clsx } from "clsx";
 import { motion, useReducedMotion, useScroll, useTransform, type MotionValue } from "motion/react";
@@ -17,6 +17,8 @@ import { roughCircle, torn } from "@/lib/torn";
   Every piece is laid down with a CSS "paste" keyframe (runs without JS); scroll
   parallax is layered on top with Motion as progressive enhancement.
 
+  REAL: /video/se-loop-bw.* is the client's own event footage (keys, the SGV sign,
+  dancing feet, accordion, crowds) — silent 9.6s loop, paused for reduced motion.
   PLACEHOLDER IMAGERY: /images/collage-building.webp and collage-palm.webp are
   processed from freely-licensed photos (see public/images/CREDITS.md). Replace
   with the client's own venue photography when available — any high-contrast
@@ -27,6 +29,7 @@ const SUN_CLIP = roughCircle(11, { amp: 1.1 });
 const TEAL_A = torn(21, { amp: 4.5, steps: 16 });
 const TEAL_B = torn(34, { amp: 5, steps: 14 });
 const MUSTARD_SCRAP = torn(52, { amp: 5, steps: 12 });
+const CROWD_CLIP = torn(88, { amp: 2, steps: 18 });
 
 function Layer({
   y,
@@ -155,13 +158,22 @@ function VibesSign() {
 
 export function HeroCollage({ className }: { className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
   const reduce = useReducedMotion();
+
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    if (reduce) v.pause();
+    else v.play().catch(() => {});
+  }, [reduce]);
   const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end start"] });
   const k = reduce ? 0 : 1;
   const ySun = useTransform(scrollYProgress, [0, 1], [0, 70 * k]);
   const yDots = useTransform(scrollYProgress, [0, 1], [0, 110 * k]);
   const yBuilding = useTransform(scrollYProgress, [0, 1], [0, 30 * k]);
   const yPalm = useTransform(scrollYProgress, [0, 1], [0, -20 * k]);
+  const yCrowd = useTransform(scrollYProgress, [0, 1], [0, -60 * k]);
   const ySign = useTransform(scrollYProgress, [0, 1], [0, -45 * k]);
   const yMarquee = useTransform(scrollYProgress, [0, 1], [0, -70 * k]);
   const yStamp = useTransform(scrollYProgress, [0, 1], [0, -90 * k]);
@@ -272,6 +284,40 @@ export function HeroCollage({ className }: { className?: string }) {
           unoptimized
           className="h-auto w-full"
         />
+      </Layer>
+
+      {/* a live print: our own event footage (se-loop-bw) running inside a torn snapshot */}
+      <Layer
+        y={yCrowd}
+        delay={740}
+        fromRot="6deg"
+        className="left-[50%] top-[70%] w-[40%] sm:left-[58%] sm:top-[62%] sm:w-[25%]"
+      >
+        <div className="rotate-[3.5deg]">
+          <div
+            className="relative bg-paper-hi p-[4%] pb-[12%] shadow-[3px_5px_0_rgba(21,20,18,0.2)]"
+            style={{ clipPath: CROWD_CLIP }}
+          >
+            <video
+              ref={videoRef}
+              className="block aspect-video w-full object-cover [filter:sepia(0.22)_contrast(1.05)]"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster="/video/se-loop-bw-poster.jpg"
+              aria-hidden
+            >
+              <source src="/video/se-loop-bw.webm" type="video/webm" />
+              <source src="/video/se-loop-bw.mp4" type="video/mp4" />
+            </video>
+            <span className="absolute inset-x-[5%] bottom-[3.5%] flex items-center gap-[0.6em] font-label text-[clamp(8px,0.8vw,11.5px)] font-semibold uppercase tracking-[0.12em] text-ink/70">
+              <span className="live-dot h-[0.6em] w-[0.6em] shrink-0 rounded-full bg-rust" />
+              Live from Acadiana
+            </span>
+          </div>
+        </div>
       </Layer>
 
       {/* VIBES blade sign */}

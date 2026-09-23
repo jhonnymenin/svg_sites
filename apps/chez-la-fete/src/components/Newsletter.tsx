@@ -20,14 +20,20 @@ export function Newsletter() {
 
   return (
     <section aria-labelledby="news-title" className="on-dark relative isolate overflow-hidden bg-night text-ivory">
-      <div className="absolute inset-y-0 left-0 -z-10 w-full lg:w-[34%]">
-        {/* PLACEHOLDER — stock candlelit bar; replace with an evening detail of the house. */}
-        <Image src="/images/stay-bar.jpg" alt="" fill sizes="(min-width:1024px) 46vw, 100vw" className="grade-night object-cover opacity-45 lg:opacity-80" />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgb(18_15_11/0.2)_50%,var(--night)_100%)] max-lg:bg-night/40" />
+      <div className="relative aspect-[16/8] w-full lg:absolute lg:inset-y-0 lg:left-0 lg:-z-10 lg:aspect-auto lg:w-[34%]">
+        {/* The pink "Chez La Fête" neon on the living wall */}
+        <Image
+          src="/images/chez-detail-neon-01.jpg"
+          alt=""
+          fill
+          sizes="(min-width:1024px) 34vw, 100vw"
+          className="object-cover object-[50%_42%] opacity-95"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgb(18_15_11/0.15)_55%,var(--night)_100%)] max-lg:bg-[linear-gradient(0deg,var(--night)_0%,transparent_45%)]" />
       </div>
-      <div className="frame grid gap-10 py-20 lg:grid-cols-12 lg:items-end lg:py-24">
+      <div className="frame grid gap-10 pt-6 pb-20 lg:grid-cols-12 lg:pt-24 lg:items-end lg:py-24">
         <div className="lg:col-span-4 lg:col-start-5">
-          <Fleur className="h-6 w-auto text-gold-bright" />
+          <Fleur className="h-6 w-auto text-pink-glow" />
           <h2 id="news-title" className="display mt-6 text-[clamp(38px,3.8vw,54px)]">
             Stay in the Know
           </h2>
@@ -63,11 +69,11 @@ export function Newsletter() {
                   />
                 </label>
                 {error ? (
-                  <p role="alert" className="text-[13px] text-gold-pale">
+                  <p role="alert" className="text-[13px] text-pink-glow">
                     {error}
                   </p>
                 ) : null}
-                <button type="submit" className="btn btn-gold w-full">
+                <button type="submit" className="btn btn-pink w-full">
                   Subscribe
                 </button>
               </motion.form>

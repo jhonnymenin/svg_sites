@@ -4,18 +4,18 @@ import { torn } from "@/lib/torn";
 import { TornEdge } from "./TornEdge";
 
 /*
-  PLACEHOLDER PORTRAITS — /public/images/person-*.jpg are stock/freely-licensed
-  photos processed to a warm B&W. Replace with the real team, shot in the same
-  register (waist-up, candid, at work), and pass real names as alt text.
+  The real crew — candid iPhone shots from our own events, processed to one
+  warm B&W (public/images/people-*.jpg) so the torn-paper strip reads as a set.
+  Swap alt text for names once the team confirms who's who.
 */
 const PEOPLE = [
-  { img: "/images/person-1.jpg", h: 94, rot: -1.6 },
-  { img: "/images/person-2.jpg", h: 100, rot: 1.1 },
-  { img: "/images/person-3.jpg", h: 91, rot: -0.6 },
-  { img: "/images/person-4.jpg", h: 99, rot: 1.4 },
-  { img: "/images/person-5.jpg", h: 90, rot: -1.1 },
-  { img: "/images/person-6.jpg", h: 100, rot: 0.8 },
-  { img: "/images/person-7.jpg", h: 95, rot: -1.3 },
+  { img: "/images/people-dtr-staff-bar-01.jpg", alt: "Bar crew in Downtown Rising tees behind the drink station", h: 94, rot: -1.6 },
+  { img: "/images/people-fi-bartender-01.jpg", alt: "Serving Good Vibes bartender handing a drink across the bar at Festival International", h: 100, rot: 1.1 },
+  { img: "/images/people-plp-bartender-01.jpg", alt: "Crew member in a Serving Good Vibes tee pouring drinks", h: 91, rot: -0.6 },
+  { img: "/images/people-plp-crew-portrait-01.jpg", alt: "Crew member in a straw hat and Serving Good Vibes tee, smiling", h: 100, rot: 1.4 },
+  { img: "/images/people-sugarjam-holiday-elf-01.jpg", alt: "Staffer dressed as an elf at Holiday Sugar Jam", h: 90, rot: -1.1 },
+  { img: "/images/people-plp-crew-03.jpg", alt: "Two crew members in Good Vibes tees at a festival", h: 97, rot: 0.8 },
+  { img: "/images/people-vb-bartender-01.jpg", alt: "Bartender giving a thumbs up at the Village Beats bar tent", h: 94, rot: -1.3 },
 ];
 
 /* mobile: a 4-over-3 stagger; desktop: one overlapping strip */
@@ -76,7 +76,7 @@ export function OurPeople() {
             style={{ ["--dot" as string]: "var(--color-ink)", ["--pitch" as string]: "9px", ["--size" as string]: "1.6px" }}
           />
 
-          {PEOPLE.map(({ img, h, rot }, i) => (
+          {PEOPLE.map(({ img, alt, h, rot }, i) => (
             <div
               key={img}
               className={`group absolute w-[27%] ${i % 2 ? "z-[2]" : "z-[1]"} hover:z-20 max-lg:h-[50%] max-lg:top-(--mt) left-(--ml) lg:bottom-0 lg:left-(--dl) lg:top-auto lg:h-(--dh) lg:w-[15.4%]`}
@@ -101,7 +101,7 @@ export function OurPeople() {
                     <div className="relative h-full w-full overflow-hidden">
                       <Image
                         src={img}
-                        alt="Social Entertainment team member (placeholder portrait)"
+                        alt={alt}
                         fill
                         unoptimized
                         sizes="(min-width: 1024px) 15vw, 27vw"

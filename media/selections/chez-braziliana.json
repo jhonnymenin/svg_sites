@@ -1,0 +1,605 @@
+[
+ {
+  "slug": "braziliana-bossa-nova-dance-01",
+  "id": 75,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000006.jpg",
+  "event": "Bossa Nova @ The Collective 2025",
+  "orientation": "landscape",
+  "subject": "Couples dancing in the Good Vibes Room — Brazilian flag, red lampshades, congas, live guitarist at right",
+  "use": [
+   "braziliana:hero",
+   "braziliana:good-vibes-room",
+   "braziliana:community",
+   "sgv:good-vibes-room"
+  ],
+  "score": 8,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": "Best Braziliana image in the drop: warm, joyful, real cultural setting. Wide lens; ceiling gives headline room at top. Phone-quality, soft at 100% — keep ≤1600px display. 74/76 are near-dups (skip)."
+ },
+ {
+  "slug": "braziliana-good-vibes-room-01",
+  "id": 73,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000004.jpg",
+  "event": "Bossa Nova @ The Collective 2025",
+  "orientation": "landscape",
+  "subject": "Wider view of the Good Vibes Room during Bossa Nova night — wood ceiling, rattan lamp, dancers, band by the window",
+  "use": [
+   "braziliana:good-vibes-room",
+   "sgv:good-vibes-room",
+   "sgv:holiday:private-events"
+  ],
+  "score": 7,
+  "focal": "55% 55%",
+  "negative_space": "top",
+  "notes": "Shows the room itself as a cultural living room. Warm tungsten cast, darker left edge; crop left 10% if needed."
+ },
+ {
+  "slug": "braziliana-house-band-01",
+  "id": 77,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000008.jpg",
+  "event": "Bossa Nova @ The Collective 2025",
+  "orientation": "portrait",
+  "subject": "Guitarist-singer in green shirt with percussionist on green congas, backlit sheer curtains",
+  "use": [
+   "braziliana:house-band",
+   "sgv:holiday-open-house"
+  ],
+  "score": 7,
+  "focal": "60% 45%",
+  "negative_space": "none",
+  "notes": "Best musician portrait. Crop removes the backwards banner text at top. Portrait; good for a tall card.",
+  "crop": "0,0.14,1,1"
+ },
+ {
+  "slug": "braziliana-house-band-02",
+  "id": 82,
+  "source": "SGV Event Photos/Bossa Nova @The Collective 2025/BossaNovaTheCollective_5d10d0/000013.jpg",
+  "event": "Bossa Nova @ The Collective 2025",
+  "orientation": "landscape",
+  "subject": "Vocalist between green congas and drum kit, Brazilian and US flags above, plants and piano",
+  "use": [
+   "braziliana:house-band",
+   "braziliana:good-vibes-room"
+  ],
+  "score": 6,
+  "focal": "48% 60%",
+  "negative_space": "top",
+  "notes": "Landscape context shot of the Sala stage. Slightly dim; lift shadows in CSS/processing. 85 is near-dup."
+ },
+ {
+  "slug": "braziliana-dta-dance-01",
+  "id": 159,
+  "source": "SGV Event Photos/DTA! Ft. Braziliana/DTAFtBraziliana41026_415e12/000006.jpg",
+  "event": "DTA! ft. Braziliana",
+  "orientation": "landscape",
+  "subject": "Crowd dancing on brick plaza before the gazebo stage, string lights and dusk sky",
+  "use": [
+   "braziliana:hero",
+   "braziliana:community",
+   "sgv:event-card:holiday-open-house"
+  ],
+  "score": 8,
+  "focal": "45% 65%",
+  "negative_space": "top",
+  "notes": "Strong outdoor hero candidate: energy, string lights, band visible under gazebo, sky for headline. 160 is tighter alt (near-dup)."
+ },
+ {
+  "slug": "braziliana-dta-band-01",
+  "id": 173,
+  "source": "SGV Event Photos/DTA! Ft. Braziliana/DTAFtBraziliana41026_415e12/000064.jpg",
+  "event": "DTA! ft. Braziliana",
+  "orientation": "landscape",
+  "subject": "Full band on the gazebo stage — ukulele/cavaquinho, washboard, accordion, keys",
+  "use": [
+   "braziliana:house-band",
+   "braziliana:events"
+  ],
+  "score": 6,
+  "focal": "55% 50%",
+  "negative_space": "top",
+  "notes": "Daylight stage shot; cropped stage floor. Pink uplight on columns adds color. 167–172 near-dups.",
+  "crop": "0,0,1,0.82"
+ },
+ {
+  "slug": "braziliana-carnaval-facepaint-01",
+  "id": 241,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000073.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "portrait",
+  "subject": "Girl with rainbow butterfly face paint, white feathered wings, Mardi Gras beads, big smile",
+  "use": [
+   "braziliana:carnaval",
+   "braziliana:hero-mobile",
+   "chez:city-events"
+  ],
+  "score": 8,
+  "focal": "50% 30%",
+  "negative_space": "bottom",
+  "notes": "Sharpest, most colorful portrait in the set; eye contact. Portrait — mobile hero or feature tile. Minor: branded cup at bottom (crop bottom 20% if unwanted). Public use of a child's image — confirm release."
+ },
+ {
+  "slug": "braziliana-carnaval-costume-01",
+  "id": 239,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000071.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "portrait",
+  "subject": "Mother in rainbow sweater and daughter in face paint and wings posing at a courtyard table",
+  "use": [
+   "braziliana:carnaval",
+   "chez:city-events"
+  ],
+  "score": 6,
+  "focal": "45% 45%",
+  "negative_space": "none",
+  "notes": "Color-rich, pink window frame. Busy background; secondary tile. Child — confirm release."
+ },
+ {
+  "slug": "braziliana-carnaval-facepaint-02",
+  "id": 262,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000120.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "portrait",
+  "subject": "Close portrait of woman with full blue/orange festival face paint and beads",
+  "use": [
+   "braziliana:carnaval"
+  ],
+  "score": 6,
+  "focal": "45% 35%",
+  "negative_space": "none",
+  "notes": "Selfie framing (arm-length) but vivid and sharp; good as a square crop tile."
+ },
+ {
+  "slug": "braziliana-carnaval-dancer-01",
+  "id": 265,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000128.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "portrait",
+  "subject": "Woman dancing in flower headpiece and bead skirt with green cup, parade float behind",
+  "use": [
+   "braziliana:carnaval",
+   "chez:city-events"
+  ],
+  "score": 6,
+  "focal": "40% 45%",
+  "negative_space": "top",
+  "notes": "Joyful motion, parade context. Overcast light, wide-angle distortion. 266/268 near-dups."
+ },
+ {
+  "slug": "braziliana-carnaval-horse-01",
+  "id": 267,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000130.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "portrait",
+  "subject": "Rider on horse dressed in purple/green/gold tinsel leg wraps and beads",
+  "use": [
+   "braziliana:carnaval"
+  ],
+  "score": 5,
+  "focal": "55% 60%",
+  "negative_space": "none",
+  "notes": "Distinctive, but plain brick/trailer backdrop."
+ },
+ {
+  "slug": "chez-carnaval-courtyard-day-01",
+  "id": 247,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000079.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "landscape",
+  "subject": "Busy courtyard under yellow umbrellas, guests in purple/green, costumes",
+  "use": [
+   "chez:city-events",
+   "braziliana:carnaval"
+  ],
+  "score": 5,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": "Good establishing shot of the courtyard in use; cluttered foreground."
+ },
+ {
+  "slug": "chez-courtyard-night-01",
+  "id": 274,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000137.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "landscape",
+  "subject": "Courtyard at night — uplit oak, glowing orange-trimmed stage, guests at picnic tables under umbrellas",
+  "use": [
+   "chez:private-events",
+   "chez:hero",
+   "chez:property"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": "Best property-at-night landscape: live oak, stage glow, intimate tables. Some noise in sky; reads well at web size."
+ },
+ {
+  "slug": "chez-courtyard-night-02",
+  "id": 277,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000140.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "landscape",
+  "subject": "Blue-hour courtyard, yellow umbrellas, string lights, bistro tables, smoke haze",
+  "use": [
+   "chez:private-events",
+   "chez:property"
+  ],
+  "score": 6,
+  "focal": "55% 50%",
+  "negative_space": "top",
+  "notes": "Moody blue hour; small figures slightly soft. 278 near-dup."
+ },
+ {
+  "slug": "chez-courtyard-golden-01",
+  "id": 285,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Carnaval Courtyard 2026/CARNAVALCOURTYARD_37f932/000150.jpg",
+  "event": "Carnaval Courtyard 2026",
+  "orientation": "landscape",
+  "subject": "Courtyard at golden hour — yellow umbrellas, mint bistro sets, warm brick hotel behind",
+  "use": [
+   "chez:private-events",
+   "chez:property",
+   "sgv:holiday:private-events"
+  ],
+  "score": 7,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": "Clean, bright venue shot with color harmony (yellow/mint/brick). Best daytime 'tables set' image. Kid in costume cut at left edge."
+ },
+ {
+  "slug": "chez-courtyard-day-01",
+  "id": 335,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Celtic Bayou Festival 2026/CBF2026_223d82/000048.jpg",
+  "event": "Celtic Bayou Festival 2026",
+  "orientation": "landscape",
+  "subject": "Guests at umbrella tables under deep blue sky, cedar fence, brick building",
+  "use": [
+   "chez:private-events",
+   "chez:property"
+  ],
+  "score": 6,
+  "focal": "55% 65%",
+  "negative_space": "top",
+  "notes": "Crisp and saturated; lots of sky for type. Green shirts (St. Patrick's) are event-specific."
+ },
+ {
+  "slug": "chez-festhouse-crowd-01",
+  "id": 373,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Fest House 2026/FESTHOUSE2026_1893d5/000036.jpg",
+  "event": "Fest House 2026",
+  "orientation": "landscape",
+  "subject": "Packed tented courtyard with long tables, ferns in foreground",
+  "use": [
+   "chez:city-events",
+   "chez:private-events"
+  ],
+  "score": 6,
+  "focal": "50% 55%",
+  "negative_space": "none",
+  "notes": "Shows capacity/scale for large events. Flat overcast light."
+ },
+ {
+  "slug": "chez-festhouse-dining-01",
+  "id": 365,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Fest House 2026/FESTHOUSE2026_1893d5/000028.jpg",
+  "event": "Fest House 2026",
+  "orientation": "landscape",
+  "subject": "Guests eating at picnic tables under yellow umbrellas and tent",
+  "use": [
+   "chez:city-events",
+   "chez:food"
+  ],
+  "score": 5,
+  "focal": "30% 55%",
+  "negative_space": "right",
+  "notes": "Lively, candid; wide-angle stretch at edges."
+ },
+ {
+  "slug": "chez-festhouse-dining-02",
+  "id": 362,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Fest House 2026/FESTHOUSE2026_1893d5/000025.jpg",
+  "event": "Fest House 2026",
+  "orientation": "landscape",
+  "subject": "Under-tent communal dining with string lights overhead",
+  "use": [
+   "chez:private-events"
+  ],
+  "score": 5,
+  "focal": "40% 65%",
+  "negative_space": "top",
+  "notes": "Tent + string lights hint at private-event setup."
+ },
+ {
+  "slug": "chez-high-notes-band-01",
+  "id": 412,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 3.6.26/HighNotes3626_996a18/000023.jpg",
+  "event": "High Notes (3.6.26)",
+  "orientation": "landscape",
+  "subject": "Cajun band — fiddles, guitar, trumpet, upright bass — under the blue-uplit live oak, crowd in front",
+  "use": [
+   "chez:hero",
+   "chez:high-notes",
+   "sgv:event-card:high-notes",
+   "chez:city-events"
+  ],
+  "score": 8,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": "Best High Notes image and the closest match to a Lost Bayou Ramblers-style lineup. Landscape, great color (blue oak + red stage lights), canopy gives headline room. Parking lot visible through fence mid-right — minor."
+ },
+ {
+  "slug": "chez-high-notes-band-02",
+  "id": 411,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 3.6.26/HighNotes3626_996a18/000022.jpg",
+  "event": "High Notes (3.6.26)",
+  "orientation": "portrait",
+  "subject": "Tighter portrait of the same fiddle band under blue oak with disco-ball lanterns",
+  "use": [
+   "chez:high-notes",
+   "sgv:event-card:high-notes"
+  ],
+  "score": 7,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": "Portrait companion to 412 for mobile."
+ },
+ {
+  "slug": "chez-high-notes-stage-01",
+  "id": 385,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 10.3.25/Highnotes103_147167/000020.jpg",
+  "event": "High Notes (10.3.25)",
+  "orientation": "portrait",
+  "subject": "Audience seated on gravel facing the stage under a violet-lit live oak",
+  "use": [
+   "chez:high-notes",
+   "chez:city-events",
+   "chez:hero-mobile"
+  ],
+  "score": 7,
+  "focal": "45% 45%",
+  "negative_space": "top",
+  "notes": "Atmospheric 'backyard concert' storytelling shot; oak fills top. Portrait. Crowd in dark foreground is noisy but acceptable. 386/388 near-dups."
+ },
+ {
+  "slug": "chez-high-notes-stage-02",
+  "id": 391,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 11.14.25/HighNotes111425_d637ec/000012.jpg",
+  "event": "High Notes",
+  "orientation": "portrait",
+  "subject": "Band with horns on the Courtyard Stage under violet oak",
+  "use": [
+   "chez:high-notes"
+  ],
+  "score": 6,
+  "focal": "60% 45%",
+  "negative_space": "left",
+  "notes": "Oak trunk dominates; musicians small."
+ },
+ {
+  "slug": "chez-high-notes-stage-03",
+  "id": 534,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000050.jpg",
+  "event": "High Notes (9.5.25)",
+  "orientation": "portrait",
+  "subject": "Guitarists on the lit 'Courtyard Stage' — signage visible, fairy lights on the oak",
+  "use": [
+   "chez:high-notes",
+   "chez:property",
+   "sgv:event-card:high-notes"
+  ],
+  "score": 6,
+  "focal": "40% 40%",
+  "negative_space": "none",
+  "notes": "Shows the stage branding ('Chez La Fête Courtyard Stage'). Soft at 100%."
+ },
+ {
+  "slug": "chez-high-notes-crowd-01",
+  "id": 541,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000066.jpg",
+  "event": "High Notes (9.5.25)",
+  "orientation": "landscape",
+  "subject": "Night crowd dancing on gravel in front of the lit stage, hotel lit behind",
+  "use": [
+   "chez:high-notes",
+   "chez:city-events"
+  ],
+  "score": 6,
+  "focal": "45% 55%",
+  "negative_space": "none",
+  "notes": "Landscape, energy; some motion blur in dancers (expressive). Glare on right edge — crop right 10%."
+ },
+ {
+  "slug": "chez-high-notes-band-03",
+  "id": 571,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes/HighNotes_a07a43/000030.jpg",
+  "event": "High Notes",
+  "orientation": "portrait",
+  "subject": "Big brass/funk band with hands raised, magenta-lit backdrop and oak",
+  "use": [
+   "chez:high-notes",
+   "sgv:event-card:high-notes"
+  ],
+  "score": 7,
+  "focal": "50% 55%",
+  "negative_space": "top",
+  "notes": "Peak-moment energy. Color is strong. 568/572/573 near-dups."
+ },
+ {
+  "slug": "chez-high-notes-band-04",
+  "id": 590,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes/HighNotes_a07a43/000065.jpg",
+  "event": "High Notes",
+  "orientation": "portrait",
+  "subject": "Same horn band at dusk, oak canopy and pink sail backdrop",
+  "use": [
+   "chez:high-notes",
+   "chez:city-events"
+  ],
+  "score": 6,
+  "focal": "50% 60%",
+  "negative_space": "top",
+  "notes": "Cleaner daylight version of 571; less drama."
+ },
+ {
+  "slug": "chez-high-notes-crowd-02",
+  "id": 580,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes/HighNotes_a07a43/000041.jpg",
+  "event": "High Notes",
+  "orientation": "portrait",
+  "subject": "Twilight crowd filling the courtyard, moon in pale sky",
+  "use": [
+   "chez:city-events",
+   "chez:high-notes"
+  ],
+  "score": 6,
+  "focal": "50% 75%",
+  "negative_space": "top",
+  "notes": "Big empty sky = headline room. Shows turnout."
+ },
+ {
+  "slug": "chez-dance-floor-bluehour-01",
+  "id": 419,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 7.25.25/HighNotes725_55c734/000025.jpg",
+  "event": "High Notes",
+  "orientation": "portrait",
+  "subject": "Couples two-stepping on the dance floor at blue hour, hotel windows lit",
+  "use": [
+   "chez:high-notes",
+   "chez:city-events",
+   "chez:private-events"
+  ],
+  "score": 7,
+  "focal": "45% 70%",
+  "negative_space": "top",
+  "notes": "Beautiful blue/amber balance; some dancer motion blur reads as movement. Phone edge at right — crop right 8%."
+ },
+ {
+  "slug": "chez-neon-sign-01",
+  "id": 418,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 7.25.25/HighNotes725_55c734/000020.jpg",
+  "event": "High Notes",
+  "orientation": "landscape",
+  "subject": "'Chez La Fête' pink neon script on a green living wall",
+  "use": [
+   "chez:signage",
+   "chez:property"
+  ],
+  "score": 6,
+  "focal": "50% 50%",
+  "negative_space": "none",
+  "notes": "Cropped to sign only (faces removed) and mirrored back to read correctly — source is a front-camera selfie. ~1450x625 banner strip; neon slightly blown. Use as a texture/detail band, not full-bleed.",
+  "crop": "0.02,0.03,0.98,0.34",
+  "flip": "horizontal"
+ },
+ {
+  "slug": "chez-holiday-firepit-01",
+  "id": 639,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000044.jpg",
+  "event": "SE_Central Holiday Party 2026",
+  "orientation": "landscape",
+  "subject": "Guests around a fire pit at night in the courtyard",
+  "use": [
+   "chez:private-events",
+   "sgv:holiday:private-events"
+  ],
+  "score": 5,
+  "focal": "45% 60%",
+  "negative_space": "top",
+  "notes": "Cozy holiday mood; lens flare streaks and noise. Best of a weak set."
+ },
+ {
+  "slug": "chez-holiday-guests-01",
+  "id": 633,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000038.jpg",
+  "event": "SE_Central Holiday Party 2026",
+  "orientation": "portrait",
+  "subject": "Two dressed-up guests toasting with cups by a patio heater",
+  "use": [
+   "chez:private-events",
+   "sgv:holiday:private-events"
+  ],
+  "score": 5,
+  "focal": "40% 45%",
+  "negative_space": "none",
+  "notes": "Closest to a 'guests toasting' shot. 634 near-dup."
+ },
+ {
+  "slug": "chez-holiday-interior-01",
+  "id": 641,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000046.jpg",
+  "event": "SE_Central Holiday Party 2026",
+  "orientation": "landscape",
+  "subject": "Guests at wooden bar inside the house, wreath and window light behind",
+  "use": [
+   "chez:private-events",
+   "chez:property"
+  ],
+  "score": 5,
+  "focal": "40% 45%",
+  "negative_space": "none",
+  "notes": "Shows interior of the house for private events. Flash-flat; remote control on table."
+ },
+ {
+  "slug": "chez-property-night-01",
+  "id": 656,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/SE_Central Holiday Party 2026/HOLIDAYPARTY_19639a/000064.jpg",
+  "event": "SE_Central Holiday Party 2026",
+  "orientation": "portrait",
+  "subject": "Courtyard and cottages at night, heaters, guests mingling",
+  "use": [
+   "chez:property",
+   "chez:private-events"
+  ],
+  "score": 5,
+  "focal": "50% 50%",
+  "negative_space": "top",
+  "notes": "Wide property view at night; dim, noisy; use small."
+ },
+ {
+  "slug": "chez-comedy-night-01",
+  "id": 608,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/Jokes & Tokes/JOKESANDTOKES_3a08a0/000002.jpg",
+  "event": "Jokes & Tokes",
+  "orientation": "portrait",
+  "subject": "Comedian at mic in front of fairy-lit oak trunk",
+  "use": [
+   "chez:city-events"
+  ],
+  "score": 5,
+  "focal": "45% 45%",
+  "negative_space": "none",
+  "notes": "Fairy lights nice; poster at left."
+ },
+ {
+  "slug": "chez-food-board-01",
+  "id": 538,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000063.jpg",
+  "event": "High Notes (9.5.25)",
+  "orientation": "portrait",
+  "subject": "Charcuterie — grapes, croissant, cheeses, salami on wood",
+  "use": [
+   "chez:food",
+   "sgv:holiday:private-events"
+  ],
+  "score": 5,
+  "focal": "45% 50%",
+  "negative_space": "none",
+  "notes": "Only clean food close-up. Overhead-ish, a bit warm."
+ },
+ {
+  "slug": "chez-guest-string-lights-01",
+  "id": 517,
+  "source": "SGV Event Photos/EVENTS @CHEZ LA FETE/High Notes 9.5.25/HighNotes95_b0eba6/000011.jpg",
+  "event": "High Notes (9.5.25)",
+  "orientation": "portrait",
+  "subject": "Smiling guest with drink in front of string-lit fence",
+  "use": [
+   "chez:private-events",
+   "chez:city-events"
+  ],
+  "score": 5,
+  "focal": "45% 40%",
+  "negative_space": "none",
+  "notes": "Warm string lights; candid vendor moment. 518–521 near-dups."
+ }
+]

@@ -1,0 +1,6 @@
+library/*.jpg
+.frames/
+sheets/
+vsheets/
+video/*
+!video/README.md

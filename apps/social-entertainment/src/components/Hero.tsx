@@ -68,7 +68,7 @@ export function Hero() {
               <ArrowRight size={19} strokeWidth={2} className="transition-transform duration-200 group-hover:translate-x-1" />
             </a>
             <a
-              href="#our-people"
+              href="#since-sep"
               className="group inline-flex w-full items-center justify-between gap-5 border-[1.5px] sm:w-auto border-ink px-6 py-[13.5px] font-label text-[16px] font-semibold uppercase tracking-[0.09em] text-ink transition-colors duration-150 hover:bg-ink hover:text-cream"
               style={{ borderRadius: 2 }}
             >

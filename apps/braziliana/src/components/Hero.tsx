@@ -55,50 +55,52 @@ export function Hero() {
       `}</style>
       <div className="flex flex-col lg:grid lg:min-h-[720px] lg:grid-cols-12 lg:items-center lg:gap-6 lg:px-[max(var(--gutter),calc((100vw-var(--page-max))/2+var(--gutter)))] lg:py-16 xl:min-h-[760px]">
         {/* ---------- copy ---------- */}
-        <div className="relative z-10 px-[var(--gutter)] pb-10 pt-10 sm:pt-14 lg:col-span-6 lg:row-start-1 lg:p-0 xl:col-span-5">
-          <h1 className="display text-[clamp(62px,17.5vw,100px)] leading-[0.88] sm:text-[108px] lg:text-[clamp(84px,7.1vw,116px)]">
+        <div className="relative z-10 px-[var(--gutter)] pb-10 pt-10 sm:pt-14 lg:col-span-4 lg:row-start-1 lg:p-0">
+          <h1 className="display text-[clamp(62px,17.5vw,100px)] leading-[0.88] sm:text-[108px] lg:text-[clamp(64px,6vw,100px)]">
             {LINES.map((l, i) => (
               <span key={l.text} className={`bz-line block overflow-hidden pb-[0.04em] ${l.cls}`}>
                 <span style={{ animationDelay: `${150 + i * 120}ms` }}>{l.text}</span>
               </span>
             ))}
           </h1>
-          <div className="bz-fade mt-7 max-w-[30rem] lg:mt-9" style={{ animationDelay: "560ms" }}>
-            <p className="text-[19px] font-medium leading-[1.35] text-paper sm:text-[21px]">
+          <div className="bz-fade mt-7 max-w-[30rem] lg:mt-9 lg:max-w-[23rem] xl:max-w-[26rem]" style={{ animationDelay: "560ms" }}>
+            <p className="text-[19px] font-medium leading-[1.35] text-paper sm:text-[21px] lg:text-[19px] xl:text-[21px]">
               Braziliana is the philanthropic and community arm of Serving Good Vibes.
             </p>
-            <p className="mt-3 max-w-[27rem] text-[16px] leading-[1.5] text-paper/80 sm:text-[17px]">
+            <p className="mt-3 text-[16px] leading-[1.5] text-paper/80 sm:text-[17px]">
               Uniting people through culture, experiences, and purpose &ndash; creating positive impact in our
               community and beyond.
             </p>
           </div>
         </div>
 
-        {/* ---------- photo (mobile: between copy and form; desktop: right 61%) ---------- */}
-        <div className="relative h-[min(128vw,560px)] overflow-hidden sm:h-[600px] lg:absolute lg:inset-y-0 lg:right-0 lg:h-auto lg:w-[61%]">
-          <motion.div style={{ y: photoY }} className="absolute inset-x-0 -inset-y-[8%] -scale-x-100 overflow-hidden">
-            {/* PLACEHOLDER photo — replace with Braziliana community photography */}
+        {/* ---------- photo (mobile: between copy and form; desktop: a torn print in the middle) ---------- */}
+        <div className="relative h-[min(118vw,540px)] overflow-hidden sm:h-[560px] bz-torn lg:absolute lg:inset-y-0 lg:left-[29%] lg:right-[28%] lg:h-auto xl:left-[30%] xl:right-[29%]">
+          <motion.div style={{ y: photoY }} className="absolute inset-x-0 -inset-y-[8%] overflow-hidden">
             <Image
-              src="/images/frevo-girl.jpg"
-              alt="A smiling girl in a sequined festival headdress dances with a rainbow frevo umbrella at a street carnival."
+              src="/images/hero-bossa-nova.jpg"
+              alt="Couples dance to live bossa nova in the Good Vibes Room — a Brazilian flag on the wall, green congas and a guitarist by the window."
               fill
               priority
-              sizes="(min-width: 1024px) 61vw, 100vw"
-              className="grade-warm bz-photo-in object-cover object-[92%_36%] lg:object-[100%_42%]"
+              sizes="(min-width: 1024px) 44vw, 100vw"
+              className="grade-live bz-photo-in object-cover object-[82%_62%] sm:object-[74%_60%] lg:object-[100%_58%]"
             />
           </motion.div>
-          {/* golden-hour wash, then melt into the green field */}
-          <div aria-hidden className="absolute inset-0 bg-[linear-gradient(180deg,rgba(242,178,40,.2),rgba(224,120,43,.14)_60%,rgba(15,58,35,.5))] mix-blend-multiply" />
-          <div aria-hidden className="absolute inset-0 bg-[linear-gradient(180deg,var(--mata)_0%,transparent_20%)] lg:bg-[linear-gradient(90deg,var(--mata)_0%,var(--mata)_3%,rgba(15,58,35,.75)_14%,rgba(15,58,35,.25)_30%,transparent_42%)]" />
+          {/* warm lamp-light wash, then melt into the green field */}
+          <div aria-hidden className="absolute inset-0 bg-[linear-gradient(180deg,rgba(238,184,31,.16),rgba(224,120,43,.1)_60%,rgba(15,58,35,.35))] mix-blend-multiply" />
+          <div aria-hidden className="absolute inset-0 bg-[linear-gradient(180deg,var(--mata)_0%,transparent_18%)] lg:bg-[linear-gradient(90deg,var(--mata)_0%,rgba(15,58,35,.8)_10%,rgba(15,58,35,.2)_26%,transparent_36%)]" />
           <motion.div style={{ y: leavesY }} className="absolute inset-0 hidden lg:block">
-            <SeamFoliage className="absolute bottom-0 left-[-4%] h-[64%] w-[33%]" />
+            <SeamFoliage className="absolute bottom-0 left-[-6%] h-[52%] w-[40%]" />
           </motion.div>
-          <SeamFoliage className="absolute right-[-30%] top-[-6%] h-[52%] w-[64%] rotate-180 sm:right-auto sm:top-auto sm:bottom-[-2%] sm:left-[-10%] sm:h-[70%] sm:w-[46%] sm:rotate-0 lg:hidden" />
+          <SeamFoliage className="absolute right-[-30%] top-[-6%] h-[48%] w-[64%] rotate-180 sm:right-auto sm:top-auto sm:bottom-[-2%] sm:left-[-10%] sm:h-[62%] sm:w-[40%] sm:rotate-0 lg:hidden" />
+          <p className="bz-fade absolute right-3 top-16 whitespace-nowrap rotate-[1.5deg] bg-ouro px-3 py-1.5 font-body text-[10px] font-bold uppercase leading-[1.3] tracking-[0.18em] text-mata-deep shadow-[0_6px_14px_-8px_rgba(0,0,0,.6)] sm:right-6 sm:top-8 lg:bottom-9 lg:left-auto lg:right-12 lg:top-auto" style={{ animationDelay: "900ms" }}>
+            Bossa Nova night &middot; the Good Vibes Room
+          </p>
         </div>
 
         {/* ---------- form ---------- */}
         <div
-          className="bz-fade relative z-10 -mt-28 px-[var(--gutter)] pb-12 sm:-mt-72 sm:ml-auto sm:w-[480px] lg:col-span-5 lg:col-start-8 lg:row-start-1 lg:m-0 lg:w-auto lg:max-w-[440px] lg:justify-self-end lg:p-0 xl:col-span-4 xl:col-start-9"
+          className="bz-fade relative z-10 -mt-24 px-[var(--gutter)] pb-12 sm:-mt-32 sm:mx-auto sm:w-[560px] lg:col-span-4 lg:col-start-9 lg:row-start-1 lg:m-0 lg:w-auto lg:max-w-[420px] lg:justify-self-end lg:p-0"
           style={{ animationDelay: "420ms" }}
         >
           <JoinForm />

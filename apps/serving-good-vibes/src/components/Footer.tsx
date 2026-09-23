@@ -1,37 +1,41 @@
 import { SgvMark } from "@sgv/brand";
 import { Container } from "./Container";
-import { StripeRule } from "./StripeRule";
+import { Newsletter } from "./Newsletter";
 
-const EXPLORE = [
-  [
-    { label: "Events", href: "#events" },
-    { label: "Stays", href: "#stays" },
-    { label: "Hospitality", href: "#hospitality" },
-  ],
-  [
-    { label: "Braziliana", href: "#braziliana" },
-    { label: "Production & Media", href: "#production-media" },
-    { label: "Community & Development", href: "#community" },
-  ],
-];
-const COMPANY = [
-  { label: "About Us", href: "#about" },
-  { label: "Our Story", href: "#about" },
-  { label: "Contact", href: "#contact" },
-];
-const RESOURCES = [
-  [
-    { label: "News", href: "#" },
-    { label: "Partners", href: "#" },
-    { label: "FAQs", href: "#" },
-  ],
-  [
-    { label: "Careers", href: "#" },
-    { label: "Press Inquiries", href: "#" },
-  ],
+const SE = "https://socialentertainment.net";
+
+const COLS = [
+  {
+    head: "Explore",
+    links: [
+      { label: "Events", href: "#events" },
+      { label: "Stays", href: "#stays" },
+      { label: "Braziliana", href: "#braziliana" },
+      { label: "Hospitality", href: "#hospitality" },
+      { label: "Production & Media", href: "#production-media" },
+      { label: "Community & Development", href: "#community" },
+    ],
+  },
+  {
+    head: "Book",
+    links: [
+      { label: "Holiday events", href: "#spaces" },
+      { label: "Good Vibes Photo Booth", href: "#hospitality" },
+      { label: "Chez La Fête", href: "https://chezlafete.com" },
+      { label: "Downtown Rising tickets", href: `${SE}/event-details/downtown-rising` },
+    ],
+  },
+  {
+    head: "Work with us",
+    links: [
+      { label: "Partners & sponsors", href: `${SE}/partners-sponsors` },
+      { label: "Vendors", href: `${SE}/vendors` },
+      { label: "Social Entertainment", href: SE },
+    ],
+  },
 ];
 
-// Generic social glyphs drawn for this page (lucide v1 ships no brand icons). Links are placeholders.
+// Generic social glyphs (lucide v1 ships no brand icons). Profile URLs pending from the client.
 const SOCIAL = [
   {
     label: "Instagram",
@@ -45,7 +49,12 @@ const SOCIAL = [
   },
   {
     label: "Facebook",
-    path: <path d="M13.2 20v-7h2.4l.4-2.8h-2.8V8.5c0-.8.3-1.4 1.4-1.4H16V4.6c-.3 0-1.1-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6v2.1H8v2.8h2.4v7" fill="currentColor" />,
+    path: (
+      <path
+        d="M13.2 20v-7h2.4l.4-2.8h-2.8V8.5c0-.8.3-1.4 1.4-1.4H16V4.6c-.3 0-1.1-.1-2.1-.1-2.1 0-3.5 1.3-3.5 3.6v2.1H8v2.8h2.4v7"
+        fill="currentColor"
+      />
+    ),
   },
   {
     label: "YouTube",
@@ -56,124 +65,70 @@ const SOCIAL = [
       </>
     ),
   },
-  {
-    label: "Spotify",
-    path: (
-      <>
-        <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" strokeWidth="1.6" />
-        <path d="M8 10.2c2.8-.8 5.8-.5 8.2.8M8.6 12.9c2.2-.6 4.5-.3 6.4.7M9.2 15.4c1.6-.4 3.2-.2 4.6.5" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" />
-      </>
-    ),
-  },
 ];
-
-function Head({ children }: { children: React.ReactNode }) {
-  return (
-    <h3 className="font-display text-[12px] font-medium uppercase tracking-[0.14em] text-gold">{children}</h3>
-  );
-}
-
-function LinkList({ links }: { links: { label: string; href: string }[] }) {
-  return (
-    <ul className="space-y-[9px]">
-      {links.map((l) => (
-        <li key={l.label}>
-          <a href={l.href} className="text-[14px] leading-[1.25] text-cream-dim transition-colors duration-150 hover:text-white md:text-[13.5px]">
-            {l.label}
-          </a>
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 export function Footer() {
   return (
-    <footer id="contact" className="ink-tooth relative border-t border-gold/70 bg-ink pt-12 pb-8 text-cream xl:pt-11">
+    <footer id="contact" className="tooth relative bg-night pt-(--band-y) text-cream">
       <Container>
-        <div className="grid grid-cols-2 gap-x-6 gap-y-10 md:grid-cols-3 xl:grid-cols-[1.35fr_1.25fr_0.6fr_1fr_0.8fr] xl:gap-x-8">
-          <div className="col-span-2 md:col-span-3 xl:col-span-1">
-            <a href="#top" aria-label="Serving Good Vibes — back to top" className="inline-flex items-center gap-4">
-              <SgvMark tone="light" height={52} />
-              <span className="flex items-center gap-2.5">
-                <span aria-hidden className="block h-[28px] w-px bg-white/25" />
-                <span className="font-display text-[9.5px] font-medium uppercase leading-[1.3] tracking-[0.16em] text-white/60">
-                  A Social
-                  <br />
-                  Entertainment
-                  <br />
-                  Company
-                </span>
-              </span>
-            </a>
-            <StripeRule className="mt-6 w-[183px]" />
-            <p className="mt-5 max-w-[34ch] text-[13.5px] leading-[1.5] text-cream-dim/80">
-              Experiences that bring people together — from Lafayette, Louisiana to São Paulo.
-            </p>
-          </div>
+        <Newsletter />
+      </Container>
 
-          <nav aria-label="Explore">
-            <Head>Explore</Head>
-            <div className="mt-4 grid grid-cols-1 gap-y-[9px] sm:grid-cols-2 sm:gap-x-6">
-              <LinkList links={EXPLORE[0]} />
-              <LinkList links={EXPLORE[1]} />
-            </div>
-          </nav>
+      <div aria-hidden className="stripe-edge mt-20 w-full md:mt-28" />
 
-          <nav aria-label="Company">
-            <Head>Company</Head>
-            <div className="mt-4">
-              <LinkList links={COMPANY} />
-            </div>
-          </nav>
-
-          <nav aria-label="Resources">
-            <Head>Resources</Head>
-            <div className="mt-4 grid grid-cols-1 gap-y-[9px] sm:grid-cols-2 sm:gap-x-6">
-              <LinkList links={RESOURCES[0]} />
-              <LinkList links={RESOURCES[1]} />
-            </div>
-          </nav>
-
+      <Container className="pt-14 pb-10 md:pt-16">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1fr] lg:gap-10">
           <div>
-            <Head>Follow us</Head>
-            <ul className="mt-4 flex gap-2.5">
-              {SOCIAL.map((s) => (
-                <li key={s.label}>
-                  <a
-                    href="#"
-                    aria-label={`Serving Good Vibes on ${s.label}`}
-                    className="flex h-[38px] w-[38px] items-center justify-center rounded-full border border-white/35 text-cream transition-colors duration-200 hover:border-gold hover:bg-gold hover:text-ink"
-                  >
-                    <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" aria-hidden>
-                      {s.path}
-                    </svg>
-                  </a>
-                </li>
-              ))}
-            </ul>
+            <a href="#top" aria-label="Serving Good Vibes — back to top" className="inline-block">
+              <SgvMark variant="stacked" tone="light" height={96} />
+            </a>
+            <p className="mt-6 text-[12px] font-semibold tracking-[0.16em] text-cream/55 uppercase">
+              Hospitality · Production · Community &amp; Development
+            </p>
+            <a href={SE} className="mt-6 inline-flex items-center gap-3 text-[13px] text-cream/60 hover:text-cream">
+              {/* eslint-disable-next-line @next/next/no-img-element -- parent-company mark */}
+              <img src="/brand/logos/se-white.webp" alt="" width={241} height={193} className="h-9 w-auto opacity-80" />
+              A Social Entertainment company
+            </a>
           </div>
+
+          {COLS.map((c) => (
+            <nav key={c.head} aria-label={c.head}>
+              <h3 className="text-[12px] font-semibold tracking-[0.16em] text-gold uppercase">{c.head}</h3>
+              <ul className="mt-5 space-y-3">
+                {c.links.map((l) => (
+                  <li key={l.label}>
+                    <a href={l.href} className="group text-[15px] text-cream/75 transition-colors hover:text-paper-hi">
+                      <span className="stripe-link">{l.label}</span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          ))}
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-5 text-[12.5px] text-white/45 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} Serving Good Vibes. A Social Entertainment Company.</p>
-          <ul className="flex gap-6">
-            <li>
-              <a href="#" className="hover:text-white">
-                Privacy
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Terms
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-white">
-                Accessibility
-              </a>
-            </li>
+        <div className="mt-16 flex flex-col gap-6 border-t border-white/10 pt-6 md:flex-row md:items-center md:justify-between">
+          <p className="display-italic text-[20px] text-cream/85">Pardon our progress. Come join the vibes.</p>
+          <ul className="flex gap-2.5">
+            {SOCIAL.map((s) => (
+              <li key={s.label}>
+                <a
+                  href="#"
+                  aria-label={`Serving Good Vibes on ${s.label}`}
+                  className="flex h-[42px] w-[42px] items-center justify-center rounded-full border border-white/25 text-cream transition-colors duration-200 hover:border-gold hover:bg-gold hover:text-ink"
+                >
+                  <svg viewBox="0 0 24 24" className="h-[18px] w-[18px]" aria-hidden>
+                    {s.path}
+                  </svg>
+                </a>
+              </li>
+            ))}
           </ul>
+        </div>
+        <div className="mt-6 flex flex-col gap-2 text-[13px] text-white/40 md:flex-row md:justify-between">
+          <p>© 2026 Serving Good Vibes · servinggoodvibes.com</p>
+          <p>Downtown Lafayette, Louisiana</p>
         </div>
       </Container>
     </footer>

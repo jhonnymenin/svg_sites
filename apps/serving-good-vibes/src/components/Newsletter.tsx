@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { Check, Mail } from "lucide-react";
+import { Check } from "lucide-react";
 import { EASE } from "@sgv/brand/motion";
-import { Container } from "./Container";
 
-/** The capture band (§7.10). Client-side only for now — no backend yet. */
+/** Newsletter capture. Client-side only for now — no email platform connected yet. */
 export function Newsletter() {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "error" | "done">("idle");
@@ -23,29 +22,18 @@ export function Newsletter() {
   };
 
   return (
-    <section
-      aria-labelledby="newsletter-title"
-      className="relative bg-ochre py-7 md:py-8 xl:py-[14px]"
-      style={{
-        backgroundImage:
-          "linear-gradient(90deg, rgba(60,30,0,0.28), rgba(60,30,0,0) 18%, rgba(60,30,0,0) 82%, rgba(60,30,0,0.28))",
-      }}
-    >
-      <Container className="flex flex-col gap-5 md:gap-6 xl:flex-row xl:items-center xl:justify-between xl:gap-10">
-        <div className="flex items-start gap-4 xl:items-center xl:gap-5 xl:pl-[4%]">
-          <Mail aria-hidden size={46} strokeWidth={1.1} className="-my-1 hidden shrink-0 text-parchment-hi md:block" />
-          <div>
-            <h2 id="newsletter-title" className="flex items-center gap-3 font-display text-[22px] font-semibold uppercase leading-none tracking-[0.02em] text-ink md:text-[20px]">
-              <Mail aria-hidden size={26} strokeWidth={1.4} className="shrink-0 text-parchment-hi md:hidden" />
-              Stay in the loop
-            </h2>
-            <p className="mt-1.5 max-w-[46ch] text-[14.5px] leading-[1.38] text-ink/[0.8] xl:max-w-[42ch] xl:text-[13.5px]">
-              Be the first to know about upcoming events, new experiences and special offers.
-            </p>
-          </div>
-        </div>
-
-        <div className="w-full xl:w-auto xl:pr-[6%]">
+    <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr] lg:items-end lg:gap-20">
+      <div>
+        <p className="eyebrow text-gold">Stay in the loop</p>
+        <h2 id="newsletter-title" className="display mt-4 text-[clamp(44px,6.4vw,104px)] text-paper-hi">
+          The vibes are just <span className="display-italic text-gold">getting started.</span>
+        </h2>
+      </div>
+      <div>
+        <p className="max-w-[28rem] text-[16px] leading-[1.55] text-cream/75">
+          Be the first to know about upcoming events, new experiences and special offers. So much more coming in 2027.
+        </p>
+        <div className="mt-6 min-h-[60px]">
           <AnimatePresence mode="wait" initial={false}>
             {state === "done" ? (
               <motion.p
@@ -54,12 +42,12 @@ export function Newsletter() {
                 initial={reduce ? { opacity: 0 } : { opacity: 0, y: 8 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.35, ease: EASE }}
-                className="flex h-[44px] items-center gap-3 font-display text-[15px] font-medium uppercase tracking-[0.06em] text-ink xl:h-[40px] xl:w-[463px]"
+                className="flex h-[60px] items-center gap-3 text-[16px] font-medium text-paper-hi"
               >
-                <span className="flex h-7 w-7 items-center justify-center bg-forest text-parchment-hi" style={{ borderRadius: 3 }}>
-                  <Check size={16} strokeWidth={2.5} />
+                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold text-ink">
+                  <Check size={17} strokeWidth={2.6} />
                 </span>
-                You&rsquo;re on the list — see you soon.
+                You’re on the list — see you at the next one.
               </motion.p>
             ) : (
               <motion.form
@@ -68,7 +56,7 @@ export function Newsletter() {
                 onSubmit={onSubmit}
                 exit={reduce ? { opacity: 0 } : { opacity: 0, y: -8 }}
                 transition={{ duration: 0.2 }}
-                className="flex flex-col gap-2 md:flex-row"
+                className="flex flex-col gap-2 rounded-[32px] sm:flex-row sm:rounded-full sm:border sm:border-white/25 sm:p-1.5 sm:focus-within:border-gold"
               >
                 <label htmlFor="newsletter-email" className="sr-only">
                   Email address
@@ -86,13 +74,11 @@ export function Newsletter() {
                     setEmail(e.target.value);
                     if (state === "error") setState("idle");
                   }}
-                  className="h-[46px] w-full border border-black/15 bg-parchment-hi px-4 text-[15px] text-ink placeholder:text-ink/45 focus:border-forest focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-forest md:flex-1 xl:h-[40px] xl:w-[343px] xl:flex-none"
-                  style={{ borderRadius: 3 }}
+                  className="h-[52px] w-full rounded-full border border-white/25 bg-transparent px-5 text-[16px] text-paper-hi placeholder:text-cream/45 focus:outline-none sm:h-[48px] sm:flex-1 sm:border-0"
                 />
                 <button
                   type="submit"
-                  className="h-[46px] shrink-0 bg-forest px-7 font-display text-[14px] font-medium uppercase tracking-[0.08em] text-white transition-colors duration-200 hover:bg-ink xl:h-[40px] xl:w-[112px] xl:px-0"
-                  style={{ borderRadius: 3 }}
+                  className="h-[52px] shrink-0 rounded-full bg-gold px-7 text-[15px] font-semibold text-ink transition-colors hover:bg-paper-hi sm:h-[48px]"
                 >
                   Subscribe
                 </button>
@@ -100,12 +86,12 @@ export function Newsletter() {
             )}
           </AnimatePresence>
           {state === "error" && (
-            <p id="newsletter-error" role="alert" className="mt-2 text-[13px] font-medium text-brick-deep">
+            <p id="newsletter-error" role="alert" className="mt-2 pl-5 text-[14px] font-medium text-gold">
               Please enter a valid email address.
             </p>
           )}
         </div>
-      </Container>
-    </section>
+      </div>
+    </div>
   );
 }
