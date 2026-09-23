@@ -9,7 +9,7 @@ import json, os, sys, argparse
 from PIL import Image, ImageOps, ImageCms
 Image.MAX_IMAGE_PIXELS = None
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.expanduser("~/Downloads/SGV Marketing")
+SRC = os.environ.get("SGV_MEDIA_SRC", "/Users/jhonnymenin/Documents/On Educação/On Digital/CLIENTES/Serving Good Vibes/SGV Marketing")
 LIB = os.path.join(HERE, "library"); os.makedirs(LIB, exist_ok=True)
 ap = argparse.ArgumentParser(); ap.add_argument("id", type=int); ap.add_argument("slug")
 ap.add_argument("--max", type=int, default=2400); ap.add_argument("--crop")

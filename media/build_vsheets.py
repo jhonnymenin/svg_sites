@@ -2,7 +2,7 @@
 import json, os, subprocess, glob
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image, ImageDraw, ImageFont
-SRC = os.path.expanduser("~/Downloads/SGV Marketing"); HERE = os.path.dirname(os.path.abspath(__file__))
+SRC = os.environ.get("SGV_MEDIA_SRC", "/Users/jhonnymenin/Documents/On Educação/On Digital/CLIENTES/Serving Good Vibes/SGV Marketing"); HERE = os.path.dirname(os.path.abspath(__file__))
 FR = os.path.join(HERE, ".frames"); OUT = os.path.join(HERE, "vsheets")
 font = ImageFont.load_default(size=15)
 vids = json.load(open(os.path.join(HERE, "videos.json")))

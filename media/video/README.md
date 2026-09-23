@@ -3,7 +3,7 @@
 The loops are silent. H.264 files are High profile, yuv420p, +faststart and have no audio track. VP9 WebM files are also silent, yuv420p, 2-pass.
 Every loop ends with a 0.3 s (Sunset Grove: 0.5 s) crossfade back into its first frame, so `loop` plays through without a visible jump.
 Posters are the first frame of each file, JPG q80 progressive. Cuts inside each loop are 0.3 s fades (Sunset Grove: 0.5 s).
-Source paths are relative to `~/Downloads/SGV Marketing/`. `vNNN` ids match `media/videos.json`. Timecodes are in seconds.
+Source paths are relative to `/Users/jhonnymenin/Documents/On Educação/On Digital/CLIENTES/Serving Good Vibes/SGV Marketing/`. `vNNN` ids match `media/videos.json`. Timecodes are in seconds.
 
 Recommended markup:
 

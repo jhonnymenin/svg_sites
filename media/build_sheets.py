@@ -4,7 +4,7 @@ import glob, json, os, sys
 from multiprocessing import Pool
 from PIL import Image, ImageDraw, ImageOps, ImageFont
 Image.MAX_IMAGE_PIXELS = None
-SRC = os.path.expanduser("~/Downloads/SGV Marketing")
+SRC = os.environ.get("SGV_MEDIA_SRC", "/Users/jhonnymenin/Documents/On Educação/On Digital/CLIENTES/Serving Good Vibes/SGV Marketing")
 OUT = os.path.join(os.path.dirname(__file__), "sheets")
 TW, TH, COLS, ROWS = 300, 225, 6, 5
 

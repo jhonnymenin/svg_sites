@@ -1,6 +1,6 @@
 # Verified facts from the client's marketing drop (2026-09-22)
 
-Source: `~/Downloads/SGV Marketing` — brand guide, Fall/Winter 2026 master launch file, 2026 event lineup poster, social media guide. These override mockup/placeholder copy where they conflict.
+Source: `/Users/jhonnymenin/Documents/On Educação/On Digital/CLIENTES/Serving Good Vibes/SGV Marketing` — brand guide, Fall/Winter 2026 master launch file, 2026 event lineup poster, social media guide. These override mockup/placeholder copy where they conflict.
 
 ## Brand — Serving Good Vibes (FINAL Brand Guide 2026)
 - Positioning: "Serving Good Vibes is a lifestyle-driven experience company rooted in hospitality, events, and consulting. Built on the belief that how people feel is just as important as how something is executed, we create, host, and advise on experiences that bring people together, strengthen communities, and leave a lasting impression. Whether we're welcoming guests, producing events, or consulting with partners, we exist to set the tone, remove the stress, and deliver moments worth remembering, so everyone involved can fully show up and enjoy the experience."
